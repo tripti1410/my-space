@@ -1,0 +1,65 @@
+:root {
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 2.4rem;
+}
+
+.logo {
+  grid-column: 2/4;
+}
+
+.navigation {
+  grid-column: 8/11;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu-item {
+  display: inline;
+  padding: 1.6rem;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Home */
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.home-about-container {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.home-about-container .image-container {
+  grid-column: 2/5;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.home-about-container .content {
+  grid-column: 5/12;
+}
