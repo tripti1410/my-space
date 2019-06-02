@@ -1,9 +1,25 @@
 :root {
-
+  /* Font sizes */
+  --fs-m: 1.6rem;
+  /* Line height */
+  --lh-5: 1.5;
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: var(--fs-m);
+  font-weight: 300;
+  line-height: var(--lh-5);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
 }
 
 /* Header */
@@ -11,10 +27,11 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 2.4rem;
+  padding: 1.6rem 0;
 }
 
 .logo {
-  grid-column: 2/4;
+  grid-column: 2/ span 3;
 }
 
 .navigation {
@@ -56,10 +73,14 @@ main {
   grid-column: 2/5;
   width: 25rem;
   height: 25rem;
-  border-radius: 50%;
-  background-color: aqua;
+  grid-row: span 3;
+}
+
+.home-about-container .image-container img {
+  max-width: 100%;
 }
 
 .home-about-container .content {
   grid-column: 5/12;
 }
+

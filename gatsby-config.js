@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-netlify-cms`],
+  plugins: [
+    `gatsby-plugin-netlify-cms`, 
+  {
+    resolve: 'gatsby-plugin-web-font-loader',
+    options: {
+      google: {
+        families: ['Raleway', 'Roboto Slab']
+      }
+    }
+  }],
 }
