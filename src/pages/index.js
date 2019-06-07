@@ -1,5 +1,5 @@
 import React from "react"
-import profile from "../images/profile.svg"
+import profile from "../images/profile.jpg"
 import Header from "./layout-components/header"
 import Footer from "./layout-components/footer"
 import SocialLinks from "./components/social-links"
