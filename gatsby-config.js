@@ -14,5 +14,7 @@ module.exports = {
         families: ['Noto Sans', 'Noto Serif']
       }
     }
-  }],
+  },
+  `gatsby-plugin-react-helmet`
+],
 }
