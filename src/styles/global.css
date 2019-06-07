@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --background-color: hsla(44deg, 8%, 100%, 0.4);
+  --background-color: #FFFCF7;
   --text-color: #032b43;
   --highlight-color: #d17702;
   /* Font sizes */
@@ -47,7 +47,8 @@ figure {
   margin: 0;
 }
 ul,
-ol {
+ol,
+blockquote {
   padding: 0;
   margin: 0;
 }
@@ -220,14 +221,37 @@ img {
   padding-left: 5rem;
 }
 
+.blog-post__content a {
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--highlight-color);
+}
+
+.blog-post__content blockquote p {
+  margin: 4rem 4rem 4rem 0;
+  padding-left: 4rem;
+  border-left: 0.5rem solid var(--highlight-color);
+}
+
+.blog-post__details date {
+  font-style: italic;
+}
+.blog-post__title {
+  line-height: 1.2;
+}
+
+.blog-post__details {
+  margin-bottom: 1.6rem;
+}
 
 @media (min-width: 768px) {
   .blog-post {
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
   .blog-post__title {
     grid-column: 2/12;
+    margin-bottom: 0.8rem;
   }
   .blog-post__details {
     grid-column: 2/12;
