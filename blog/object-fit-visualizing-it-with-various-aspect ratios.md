@@ -41,4 +41,3 @@ Container width is set default to 500px above screen devices 500px, below it is 
 Math to calculate height is width/height = aspect ratio.
 
 For the image set the width (default to 400px), height will calculated based on aspect ratio selected(default to 3:4), with this width and height will fetch the image eg: https://source.unsplash.com/4w8-xhdcZoU/400x533.33.
-
