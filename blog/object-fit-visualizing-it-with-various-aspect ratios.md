@@ -14,7 +14,7 @@ We can solve this problem using object-fit. **Object-fit** is a property which d
 
 These are few options, which will help us to fulfil these requirements.
 
-> object-fit: fill | contain | cover | none | scale-down
+> **object-fit: fill | contain | cover | none | scale-down**
 
 I will explain these options in detail below. 
 
@@ -26,7 +26,6 @@ It is painful to visualize how an image with certain size will look inside a con
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
 
 This tool allow us to visualise **object-fit** property in different scenarios. I created this because I often come across dealing with raster images (images in .png, .jpg etc. format). These images can not be scaled unlike SVG's. Same concept is valid for videos and other embeddable media formats.
 
@@ -43,11 +42,6 @@ Before going in detail to learn **object-fit** options let's look at how I have 
 
 Container width is set default to 500px above screen devices 500px, below it is 100% of the width the device(for responsive design). Height of the container will be calculated based on the width of the container and aspect ratio (default is 16:9).
 
-> Math to calculate height is width/height = aspect ratio.
+> **Math to calculate height is width/height = aspect ratio.**
 
-For the image set the width (default to 400px), height will calculated based on aspect ratio selected(default to 3:4), with this width and height will fetch the image eg: https://source.unsplash.com/4w8-xhdcZoU/400x533.33.
-
-## Other Resources
-
-* <https://tympanus.net/codrops/css_reference/object-fit/>
-* <https://css-tricks.com/almanac/properties/o/object-fit/>
+For the image set the width (default to 400px), height will calculated based on aspect ratio selected(default to 3:4), with this width and height will fetch the image eg: source.unsplash.com/4w8-xhdcZoU/400x533.33.
