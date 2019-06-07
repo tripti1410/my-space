@@ -10,7 +10,7 @@ There are times where we have to show image or video inside a container(which ha
 3. Just fill the container with image do not care for aspect ratio.
 4. Don't do anything just show as it is. If it is cropping that's also fine. we might control which are to be cropped off.
 
-We can solve this problem using object-fit. Object-fit is a property which defines how the element looks inside the container in which it is set.
+We can solve this problem using object-fit. **Object-fit** is a property which defines how the element looks inside the container in which it is set.
 
 These are few options, which will help us to fulfil these requirements.
 
@@ -26,14 +26,18 @@ It is painful to visualize how an image with certain size will look inside a con
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-This tool allow us to visualise object-fit property in different scenarios. I created this because I often come across dealing with raster images (images in .png, .jpg etc. format). These images can not be scaled unlike SVG's. Same concept is valid for videos and other embeddable media formats.
-There are few use cases I am listing down according to my experience, but there can be many - 
-Slider 
-Thumbnail
-Avatar
-Showing embedded media. etc.
 
-Before going in detail to learn object-fit options let's look at how I have done demo setup because I will be using this to explain object-fit options.
+
+This tool allow us to visualise **object-fit** property in different scenarios. I created this because I often come across dealing with raster images (images in .png, .jpg etc. format). These images can not be scaled unlike SVG's. Same concept is valid for videos and other embeddable media formats.
+
+There are few use cases I am listing down according to my experience, but there can be many - 
+
+1. Slider 
+2. Thumbnail
+3. Avatar
+4. Showing embedded media. etc.
+
+Before going in detail to learn **object-fit** options let's look at how I have done demo setup because I will be using this to explain object-fit options.
 
 **Demo setup details:**
 
@@ -42,3 +46,8 @@ Container width is set default to 500px above screen devices 500px, below it is 
 > Math to calculate height is width/height = aspect ratio.
 
 For the image set the width (default to 400px), height will calculated based on aspect ratio selected(default to 3:4), with this width and height will fetch the image eg: https://source.unsplash.com/4w8-xhdcZoU/400x533.33.
+
+## Other Resources
+
+* <https://tympanus.net/codrops/css_reference/object-fit/>
+* <https://css-tricks.com/almanac/properties/o/object-fit/>
