@@ -52,7 +52,7 @@ const Home = () => {
         <meta name="language" content="en" />
       </Helmet>
       <Header />
-      <main>
+      <main className="home-content">
         <section className="home-about-container">
           <figure className="image-container">
             <img src={profile} alt="Trapti rahangdale" />
