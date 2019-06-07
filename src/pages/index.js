@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../images/profile.jpg";
+import profile from "../images/profile.svg";
 import Header from "./layout-components/header";
 import Footer from "./layout-components/footer";
 import SocialLinks from "./components/social-links";
@@ -39,7 +39,7 @@ const Home = () => {
 			<main>
 				<section className="home-about-container">
 					<figure className="image-container">
-						<img src={profile} alt="Trapti Rahangdale" />
+						<img src={profile} alt="Trapti rahangdale" />
 					</figure>
 					<p className="content">
 						<strong className="highlight">Frontend Engineer </strong>
