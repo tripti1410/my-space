@@ -14,7 +14,7 @@ We can solve this problem using object-fit. **Object-fit** is a property which d
 
 These are few options, which will help us to fulfil these requirements.
 
-> **object-fit: fill | contain | cover | none | scale-down**
+**`object-fit: fill | contain | cover | none | scale-down`**
 
 I will explain these options in detail below. 
 
