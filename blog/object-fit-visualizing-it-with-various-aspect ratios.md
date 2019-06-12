@@ -45,3 +45,9 @@ Container width is set default to 500px above screen devices 500px, below it is 
 > **Math to calculate height is width/height = aspect ratio.**
 
 For the image set the width (default to 400px), height will calculated based on aspect ratio selected(default to 3:4), with this width and height will fetch the image eg: source.unsplash.com/4w8-xhdcZoU/400x533.33.
+
+Then you can select object-fit options to check how the images look with these set up and figure out what works for you. Details of each property will be discussed below. 
+
+**Fill:** It is the default property for object-fit. It tries to fill the image inside the container with respect to container's width and height. As a result this will not respect the aspect ratio of the image. As described in the below gif while I have kept containers aspect ratio 16:9 and object-fit is fill. Just by changing image aspect ratio, we are getting the different different size images  and these images are trying to fill them self in the 16:9 container because of that we are not able to see proper image. As you can see if aspect ratio of image and aspect ratio of container is same resulting image is still visible better.
+
+![object-fit: fill](/assets/object-fit-fill.gif "Object-fit: fill")
