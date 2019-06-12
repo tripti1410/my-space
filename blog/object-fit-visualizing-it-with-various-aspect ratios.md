@@ -51,3 +51,7 @@ Then you can select object-fit options to check how the images look with these s
 **Fill:** It is the default property for object-fit. It tries to fill the image inside the container with respect to container's width and height. As a result this will not respect the aspect ratio of the image. As described in the below gif while I have kept containers aspect ratio 16:9 and object-fit is fill. Just by changing image aspect ratio, we are getting the different different size images  and these images are trying to fill them self in the 16:9 container because of that we are not able to see proper image. As you can see if aspect ratio of image and aspect ratio of container is same resulting image is still visible better.
 
 ![object-fit: fill](/assets/object-fit-fill.gif "Object-fit: fill")
+
+**Cover:**  It will maintain the aspect ratio but try to fill the image to width and height of the container and while doing that it will crop the image. For example as shown in below gif when aspect ratio is changed to 3:4 image got cropped.
+
+![object-fit: cover](/assets/object-fit-cover.gif "object-fit: cover")
