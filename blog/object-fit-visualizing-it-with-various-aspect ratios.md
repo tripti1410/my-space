@@ -48,21 +48,17 @@ For the image set the width (default to 400px), height will calculated based on 
 
 Then you can select object-fit options to check how the images look with these set up and figure out what works for you. Details of each property will be discussed below. 
 
-#### Fill:
+### Object fit options in detail:
 
-It is the default property for object-fit. It tries to fill the image inside the container with respect to container's width and height. As a result this will not respect the aspect ratio of the image. As described in the below gif while I have kept containers aspect ratio 16:9 and object-fit is fill. Just by changing image aspect ratio, we are getting the different different size images  and these images are trying to fill them self in the 16:9 container because of that we are not able to see proper image. As you can see if aspect ratio of image and aspect ratio of container is same resulting image is still visible better.
+**Fill:** It is the default property for object-fit. It tries to fill the image inside the container with respect to container's width and height. As a result this will not respect the aspect ratio of the image. As described in the below gif while I have kept containers aspect ratio 16:9 and object-fit is fill. Just by changing image aspect ratio, we are getting the different different size images  and these images are trying to fill them self in the 16:9 container because of that we are not able to see proper image. As you can see if aspect ratio of image and aspect ratio of container is same resulting image is still visible better.
 
 ![object-fit: fill](/assets/object-fit-fill.gif "Object-fit: fill")
 
-#### Cover:
-
-It will maintain the aspect ratio but try to fill the image to width and height of the container and while doing that it will crop the image. For example as shown in below gif when aspect ratio is changed to 3:4 image got cropped.
+**Cover:** It will maintain the aspect ratio but try to fill the image to width and height of the container and while doing that it will crop the image. For example as shown in below gif when aspect ratio is changed to 3:4 image got cropped.
 
 ![object-fit: cover](/assets/object-fit-cover.gif "object-fit: cover")
 
-#### Contain:
-
-It will maintain aspect ratio and try to fit in the container leaving the extra space horizontally or vertically. Let's see in the image below.
+**Contain:** It will maintain aspect ratio and try to fit in the container leaving the extra space horizontally or vertically. Let's see in the image below.
 
 ![object-fit: contain](/assets/object-fit-contain.png "object-fit: contain")
 
@@ -80,9 +76,7 @@ There is black space on top and bottom of the image. Container size is 500x333px
 
 Image size is 500x281px. And image is placed vertically in centre, so there is space.
 
-#### None:
-
-Image will not try to fit into the container. This will simply maintain image's original size. Irrespective of how it looks.
+**None:** Image will not try to fit into the container. This will simply maintain image's original size. Irrespective of how it looks.
 
 ![object-fit: none](/assets/object-fit-none.png "object-fit: none")
 
@@ -90,9 +84,7 @@ In the above image deers are looking cropped, because image is going outside of 
 
 In the above image, all deers are visible as it is able to fit in the container.
 
-#### Scale down:
-
-This will consider setting none and contain whichever gives the smallest size will be shown.
+**Scale down:** This will consider setting none and contain whichever gives the smallest size will be shown.
 
 ![object-fit: scale-down](/assets/object-fit-contain-none-1.png "object-fit: scale-down")
 
