@@ -55,3 +55,21 @@ Then you can select object-fit options to check how the images look with these s
 **Cover:**  It will maintain the aspect ratio but try to fill the image to width and height of the container and while doing that it will crop the image. For example as shown in below gif when aspect ratio is changed to 3:4 image got cropped.
 
 ![object-fit: cover](/assets/object-fit-cover.gif "object-fit: cover")
+
+**Contain:** It will maintain aspect ratio and try to fit in the container leaving the extra space horizontally or vertically. Let's see in the image below. 
+
+![object-fit: contain](/assets/object-fit-contain.png "object-fit: contain")
+
+There is black space left on both side of the image. Container size is 500x281px. Here is how image size calculated and rendered. We have set image width 400 and aspect ratio 3:4. So image size is 400x 533px. As we can see the height is greater than the width so it will take container's height i.e. 281px, and render image vertically.
+
+> **imageWidth/281 = 3/4**
+
+ Image size is 210x281px. And image is placed horizontally in centre, so there is space.
+
+![object-fit: contain](/assets/object-fit-conatin-black-up-down.png "object-fit: contain")
+
+There is black space on top and bottom of the image. Container size is 500x333px. Here is how image size calculated. We have set image width 400 and aspect ratio 16:9. So image size is 400x 255px. As we can see the height is less than the width so it will take container's width i.e. 500px, and render image horizontally.
+
+> **500/imageHeight = 16/9**
+
+Image size is 500x281px. And image is placed vertically in centre, so there is space.
