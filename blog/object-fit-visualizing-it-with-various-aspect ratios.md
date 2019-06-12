@@ -73,3 +73,13 @@ There is black space on top and bottom of the image. Container size is 500x333px
 > **500/imageHeight = 16/9**
 
 Image size is 500x281px. And image is placed vertically in centre, so there is space.
+
+**None:** Image will not try to fit into the container. This will simply maintain image's original size. Irrespective of how it looks. 
+
+![object-fit: none](/assets/object-fit-none.png "object-fit: none")
+
+In the above image deers are looking cropped, because image is going outside of the container.
+
+In the above image, all deers are visible as it is able to fit in the container.
+
+**Browser Support** for object-fit: https://caniuse.com/#search=object-fit
