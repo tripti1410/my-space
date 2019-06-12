@@ -1,8 +1,11 @@
 :root {
   /* Colors */
-  --background-color: #FFFCF7;
-  --text-color: #032b43;
-  --highlight-color: #d17702;
+  --background-color: #f8fcfe;
+  --text-color: #171719;
+  --mono-1: #f6674f;
+  --mono-2: #f5b326;
+  --accent-1: #b4e6ff;
+
   /* Font sizes */
   --fs-m: 1.6rem;
   --fs-l: 1.8rem;
@@ -57,12 +60,15 @@ img {
   max-width: 100%;
 }
 
+h3 {
+  border-bottom: 2px solid var(--accent-1);
+}
+
 /* Header */
 .header {
   display: grid;
   grid-template-columns: none;
   margin-bottom: 2.4rem;
-  padding: 0.8rem 0;
 }
 
 .logo {
@@ -99,6 +105,7 @@ img {
   align-items: center;
   justify-content: center;
   height: 6.4rem;
+  margin: 1.2rem;
 }
 .footer .copyright-text {
   text-align: center;
@@ -156,7 +163,7 @@ img {
 }
 
 .highlight {
-  color: var(--highlight-color);
+  color: var(--accent-1);
 }
 
 .social-links {
@@ -201,6 +208,7 @@ img {
 
 .blog-post {
   padding: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .blog-post__title {
@@ -221,19 +229,27 @@ img {
   padding-left: 5rem;
 }
 
+.blog-post code {
+  padding: 1.6rem;
+  background-color: var(--mono-2);
+  font-size: var(--fs-xl);
+  font-weight: normal;
+}
+
 .blog-post__content a {
   padding-bottom: 0.8rem;
-  border-bottom: 2px solid var(--highlight-color);
+  border-bottom: 2px solid var(--accent-1);
 }
 
 .blog-post__content blockquote p {
   margin: 4rem 4rem 4rem 0;
   padding-left: 4rem;
-  border-left: 0.5rem solid var(--highlight-color);
+  border-left: 0.7rem solid var(--accent-1);
 }
 
 .blog-post__details date {
   font-style: italic;
+  border-bottom: 0.3rem solid var(--accent-1);
 }
 .blog-post__title {
   line-height: 1.2;
@@ -246,17 +262,18 @@ img {
 @media (min-width: 768px) {
   .blog-post {
     padding: 0;
+    margin-bottom: 2.4rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
   .blog-post__title {
-    grid-column: 2/12;
+    grid-column: 2/10;
     margin-bottom: 0.8rem;
   }
   .blog-post__details {
-    grid-column: 2/12;
+    grid-column: 2/10;
   }
   .blog-post__content {
-    grid-column: 2/12;
+    grid-column: 2/10;
   }
 }
