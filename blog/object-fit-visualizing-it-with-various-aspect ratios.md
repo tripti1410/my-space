@@ -27,6 +27,8 @@ It is painful to visualize how an image with certain size will look inside a con
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+
+
 This tool allow us to visualise **object-fit** property in different scenarios. I created this because I often come across dealing with raster images (images in .png, .jpg etc. format). These images can not be scaled unlike SVG's. Same concept is valid for videos and other embeddable media formats.
 
 There are few use cases I am listing down according to my experience, but there can be many - 
@@ -44,7 +46,7 @@ Container width is set default to 500px above screen devices 500px, below it is 
 
 > **Math to calculate height is width/height = aspect ratio.**
 
-For the image set the width (default to 400px), height will calculated based on aspect ratio selected(default to 3:4), with this width and height will fetch the image eg: source.unsplash.com/4w8-xhdcZoU/400x533.33.
+Image width is can be set (default to 400px), height will calculated based on aspect ratio selected(default to 3:4), with this width and height will fetch the image eg: source.unsplash.com/4w8-xhdcZoU/400x533.33.
 
 Then you can select object-fit options to check how the images look with these set up and figure out what works for you. Details of each property will be discussed below. 
 
