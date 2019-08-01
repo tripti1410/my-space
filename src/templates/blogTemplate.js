@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Header from "../pages/layout-components/header";
-import Footer from "../pages/layout-components/footer";
+import Header from "../layout-components/header";
+import Footer from "../layout-components/footer";
 
 export default function Template({
   data // this prop will be injected by the GraphQL query below.

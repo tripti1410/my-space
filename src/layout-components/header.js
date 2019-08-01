@@ -16,14 +16,14 @@ const Header = () => {
             <path
               id="curve-path-1"
               d="M 0 60 C 140 90 190 0 290 50 "
-              stroke-width="3"
+              strokeWidth="3"
               stroke="#f5b326"
               fill="none"
             />
             <path
               id="curve-path-2"
               d="M 0 56 C 140 86 190 0 290 46 "
-              stroke-width="3"
+              strokeWidth="3"
               stroke="#b4e6ff"
               fill="none"
             />
