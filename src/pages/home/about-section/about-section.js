@@ -1,6 +1,7 @@
 import React from "react";
 import profile from "../../../images/profile.jpg"
 import "./about-section.css";
+import { Link } from "gatsby"
 
 const AboutSection = () => {
   return (
@@ -21,11 +22,9 @@ const AboutSection = () => {
         Currently focusing on learning &nbsp;
         <strong>web animations, SVG's and accessibility.</strong>
       </p>
-      {/* <p className="content">
-        <a href="/about" className="link">
-          Know more
-        </a>
-      </p> */}
+      <p className="content">
+        <Link to="/about" className="link">Know more</Link>
+      </p>
     </section>
   )
 }

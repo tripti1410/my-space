@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1 className="logo">
+        <a href="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="300px"
@@ -43,6 +44,7 @@ const Header = () => {
             </textPath>
           </text>
         </svg>
+        </a>
       </h1>
       {/* <nav className="navigation"><ul className="menu"><li className="menu-item">About</li><li className="menu-item">Writing</li></ul></nav> */}
     </header>
