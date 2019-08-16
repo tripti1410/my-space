@@ -3,10 +3,6 @@ path: trip-to-varkala-kerala
 date: 2019-08-14T18:51:07.758Z
 title: "Trip to Varkala - a cliff side beach in\_Kerala"
 ---
-
-
-
-
 ![Varkala - a cliff beach](/assets/collage-cover.jpg "Varkala - a cliff beach")
 
 2 years back, some of our friends visited Varkala and they gave us good reviews. By that time it was in our wish list. Hah! And we made it in August first week. And believe me it is amazing. Beauty of this beach is that it's a cliff beach as the name suggests. Entire cliff is full of restaurants shops and hotels facing towards the beach, at restaurants you can sit and feel the cool breeze coming in. Most of the restaurants are roof top or has steps pattern in it which makes it easy to sit anywhere inside the restaurant and you will be feeling cool breeze coming in. It is a great place to sit have tea/coffee read books spend quality time with each other, it's just amazing. And going near beach having fun at water has its own charm. So if you are on beach or at cliff you will enjoy both the places.
