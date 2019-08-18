@@ -43,6 +43,7 @@ h5,
 h6 {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
+  color: var(--black);
 }
 a {
   text-decoration: none;
@@ -252,8 +253,7 @@ strong {
 }
 
 .blog-post__content a {
-  padding-bottom: 0.8rem;
-  border-bottom: 2px solid var(--accent-1);
+  border-bottom: 2px solid var(--mono-1);
 }
 
 .blog-post__content blockquote p {
@@ -274,22 +274,27 @@ strong {
   margin-bottom: 1.6rem;
 }
 
+.blog-post__content img {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .blog-post {
+    max-width: 700px;
     padding: 0;
-    margin-bottom: 2.4rem;
+    margin: 0 auto 2.4rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
   .blog-post__title {
-    grid-column: 2/10;
+    grid-column: 1/-1;
     margin-bottom: 0.8rem;
   }
   .blog-post__details {
-    grid-column: 2/10;
+    grid-column: 1/-1;
   }
   .blog-post__content {
-    grid-column: 2/10;
+    grid-column: 1/-1;
   }
 }
 
