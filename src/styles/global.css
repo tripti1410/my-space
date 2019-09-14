@@ -1,12 +1,12 @@
 :root {
   /* Colors */
   --background-color: #f8fcfe;
-  --mono-1: #f6674f;
+  --mono-1: hsl(9, 65%, 45%);
   --mono-2: #f5b326;
   --accent-1: #b4e6ff;
-  --black: #171719;
-  --gray-1: #5c5c5e;
-  --gray-2: #a2a2a3;
+  --black: hsl(240, 1%, 10%);
+  --gray-1: hsl(240, 5%, 30%);
+  /* --gray-2: #a2a2a3;  */
   --gray-3: #e7e7e8;
 
   /* Font sizes */
@@ -150,6 +150,7 @@ strong {
 .link {
   border-bottom: 1px solid var(--mono-1);
   color: var(--mono-1);
+  font-weight: bold;
 }
 
 .social-links {
