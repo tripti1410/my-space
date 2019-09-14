@@ -23,6 +23,12 @@ module.exports = {
       path: `${__dirname}/blog`,
     },
   },
-  `gatsby-transformer-remark`
+  `gatsby-transformer-remark`,
+  {
+    resolve: 'gatsby-plugin-html-attributes',
+    options: {
+      lang: 'en'
+    }
+  }
 ],
 }
