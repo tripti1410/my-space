@@ -1,6 +1,7 @@
 import React from "react"
-import BLOGS from "../../../data/blogs";
-import "./writing-section.css";
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import BLOGS from "../../../data/blogs"
+import "./writing-section.css"
 
 const WritingSection = () => {
   return (
@@ -9,10 +10,10 @@ const WritingSection = () => {
       <ul className="medium-blogs">
         {BLOGS.map(blog => (
           <li className="medium-blog" key={blog.id}>
-            <a href={blog.slug} target="_blank">
+            <OutboundLink href={blog.slug} target="_blank">
               <h3 className="medium-blog__title">{blog.title}</h3>
               <p className="medium-blog__subtitle">{blog.subtitle}</p>
-            </a>
+            </OutboundLink>
           </li>
         ))}
       </ul>
@@ -46,4 +47,4 @@ const WritingSection = () => {
   )
 }
 
-export default WritingSection;
+export default WritingSection
