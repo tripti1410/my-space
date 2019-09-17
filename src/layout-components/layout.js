@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../layout-components/header"
 import Footer from "../layout-components/footer"
 import SocialLinks from "../components/social-links"
+import SkipLinks from "./skip-links/skip-links";
 
 import { Helmet } from "react-helmet"
 
@@ -13,10 +14,11 @@ const Layout = ({children}) => {
         <meta name="description" content="Frontend UI Developer - India" />
         <meta
           name="keywords"
-          content="frontend web developer, UI developer, HTML, CSS, SVG, UI, UX, a11y, javascript, react, animations, India"
+          content="frontend web developer, UI developer, HTML, CSS, SVG, UI, UX, accessibility, javascript, react, vue, animations, India"
         />
         <meta name="language" content="en" />
       </Helmet>
+      <SkipLinks />
       <Header />
       {children}
       <SocialLinks />

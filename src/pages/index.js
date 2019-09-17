@@ -7,7 +7,7 @@ import Layout from "../layout-components/layout"
 const Home = () => {
   return (
     <Layout>
-      <main className="home-content">
+      <main id="main" className="home-content">
         <AboutSection />
         <WritingSection />
         <PopularWorkSection />

@@ -2,9 +2,8 @@ import React from "react"
 
 const Header = () => {
   return (
-    <header className="header">
-      <h1 className="logo">
-        <a href="/">
+    <header className="header" role="banner">
+        <a href="/" className="logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="300px"
@@ -12,7 +11,7 @@ const Header = () => {
           viewBox="0 0 300 100"
           stroke="currentColor"
         >
-          <title id="logo">logo</title>
+          <title id="logo">logo- Trapti Rahangdale</title>
           <defs>
             <path
               id="curve-path-1"
@@ -45,7 +44,6 @@ const Header = () => {
           </text>
         </svg>
         </a>
-      </h1>
       {/* <nav className="navigation"><ul className="menu"><li className="menu-item">About</li><li className="menu-item">Writing</li></ul></nav> */}
     </header>
   )
