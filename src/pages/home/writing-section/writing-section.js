@@ -1,5 +1,5 @@
 import React from "react"
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import BLOGS from "../../../data/blogs"
 import "./writing-section.css"
 
@@ -10,7 +10,11 @@ const WritingSection = () => {
       <ul className="medium-blogs">
         {BLOGS.map(blog => (
           <li className="medium-blog" key={blog.id}>
-            <OutboundLink href={blog.slug} target="_blank">
+            <OutboundLink
+              href={blog.slug}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <h3 className="medium-blog__title">{blog.title}</h3>
               <p className="medium-blog__subtitle">{blog.subtitle}</p>
             </OutboundLink>
@@ -34,6 +38,7 @@ const WritingSection = () => {
             me with customized icons and small animation.
             <a
               href="https://codepen.io/tripti1410/full/WqXegY"
+              rel="noopener noreferrer"
               target="_blank"
               className="go-to-codepen"
             >

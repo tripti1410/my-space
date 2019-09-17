@@ -3,9 +3,12 @@
   margin: auto;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-  background-color: white;
   padding: 1.6rem 2.4rem;
-  border-radius: 5px;
+}
+
+.about-page-heading {
+  grid-column: 1/-1;
+  margin-bottom: 1.6rem;
 }
 
 .about-page p {
@@ -16,8 +19,10 @@
 
 .about-page .skills-title {
   color: initial;
+  grid-column: 1/-1;
 }
 
 .about-page .skills-list {
   padding: 1.6rem 0 1.6rem 3.2rem;
+  grid-column: 1/-1;
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Card = ({ title, description, imgSrc, link }) => {
   return (
@@ -10,7 +10,12 @@ const Card = ({ title, description, imgSrc, link }) => {
         <img src={imgSrc} alt={title} />
       </figure>
       <div className="popular-pen-link-container">
-        <OutboundLink href={link} target="_blank" className="go-to-codepen">
+        <OutboundLink
+          href={link}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="go-to-codepen"
+        >
           Open at Codepen
         </OutboundLink>
       </div>
