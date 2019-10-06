@@ -16,7 +16,7 @@ const AboutSection = () => {
       </p>
       <p className="content">
         Core skills are &nbsp;
-        <strong>HTML CSS & JAVASCRIPT.</strong>
+        <strong>HTML, CSS & JAVASCRIPT.</strong>
       </p>
       <p className="content">
         Currently focusing on learning &nbsp;

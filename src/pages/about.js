@@ -27,7 +27,7 @@ const About = () => {
           <li>Webpack</li>
         </ul>
         <p>
-          In May 2019 I took a break from{" "}
+          In May 2019 I took a break from &nbsp;
           <a
             rel="noopener noreferrer"
             href="https://www.quintype.com/"
@@ -39,20 +39,20 @@ const About = () => {
           to upskill myself in SVG, animations and accessibility.
         </p>
         <p>
-          I like to draft my ideas/designs at Codepen. I have created many{" "}
+          I like to draft my ideas/designs at Codepen. I have created many &nbsp;
           <a
             rel="noopener noreferrer"
             href="https://codepen.io/tripti1410"
             target="_blank"
           >
             pens
-          </a>{" "}
+          </a>
           of svg and animations, some of them got showcased under codepen’s
           picked category.
         </p>
         <p>
           When I learn and want to make a note I write it as blogpost. I have
-          written a few blogs. One of them got published in Medium publication{" "}
+          written a few blogs. One of them got published in Medium publication &nbsp;
           <a
             rel="noopener noreferrer"
             href="https://medium.com/statuscode/thinking-in-css-grid-48922b25ee69"
@@ -65,15 +65,15 @@ const About = () => {
         <p>
           I am looking for some interesting work. If you’d like to find out
           more, we can then set up a call to discuss how I can be of most value
-          to your project. Send me an email with details at{" "}
+          to your project. Send me an email with details at &nbsp;
           <a
             rel="noopener noreferrer"
             href="mailto:reach.trapti@gmail.com"
             target="_top"
           >
             reach.trapti@gmail.com
-          </a>{" "}
-          or DM on{" "}
+          </a>
+          or DM on &nbsp;
           <a
             rel="noopener noreferrer"
             href="https://twitter.com/imtraptir"

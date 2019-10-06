@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Header from "../layout-components/header";
+import Header from "../layout-components/header/header";
 import Footer from "../layout-components/footer";
 
 export default function Template({

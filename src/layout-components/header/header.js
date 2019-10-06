@@ -1,13 +1,15 @@
 import React from "react"
+import { Link } from "gatsby"
+import "./header.css"
 
 const Header = () => {
   return (
     <header className="header" role="banner">
-        <a href="/" className="logo">
+      <a href="/" className="logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="300px"
-          height="100px"
+          width="100%"
+          height="100%"
           viewBox="0 0 300 100"
           stroke="currentColor"
         >
@@ -32,19 +34,22 @@ const Header = () => {
           <use xlinkHref="#curve-path-2" />
           <text fontSize="3rem" x="0" y="0" className="name-text">
             <textPath xlinkHref="#curve-path-1">
-              <tspan fontSize="7rem" dy="25">
-                T
-              </tspan>
-              <tspan dx="-15">rapti</tspan>
-              <tspan fontSize="7rem" dx="10" dy="2" rotate="10">
-                R
-              </tspan>
-              <tspan dx="-5">ahangdale</tspan>
+              <tspan dx="15">trapti</tspan>
+              <tspan dx="15">rahangdale</tspan>
             </textPath>
           </text>
         </svg>
-        </a>
-      {/* <nav className="navigation"><ul className="menu"><li className="menu-item">About</li><li className="menu-item">Writing</li></ul></nav> */}
+      </a>
+      <nav className="navigation">
+        <ul className="menu">
+          <li className="menu-item">
+            <Link to="/about">About</Link>
+          </li>
+          <li className="menu-item">
+            <Link to="/projects">Projects</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../layout-components/header"
+import Header from "../layout-components/header/header"
 import Footer from "../layout-components/footer"
 import SocialLinks from "../components/social-links"
 import SkipLinks from "./skip-links/skip-links";

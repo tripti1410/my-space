@@ -21,33 +21,6 @@ const WritingSection = () => {
           </li>
         ))}
       </ul>
-      {/* <section className="layout-pens">
-      <h2 className="section-title">CSS Grid Layout</h2> 
-      <article className="popular-pen">
-        <figure className="popular-pen-media">
-          <img
-            src={magazineLayout}
-            alt="magazine layout of an Indian dessert recipe"
-          />
-        </figure>
-        <div className="pen-overlay" />
-        <div className="popular-pen-desc-and-action">
-          <p className="popular-pen-description">
-            Created this as part of Codepen challenge, and this got added
-            to codepen dessert collection. This layout is designed by
-            me with customized icons and small animation.
-            <a
-              href="https://codepen.io/tripti1410/full/WqXegY"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="go-to-codepen"
-            >
-              Open at Codepen
-            </a>
-          </p>
-        </div>
-      </article>
-    </section> */}
     </section>
   )
 }
