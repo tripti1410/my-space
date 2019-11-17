@@ -1,0 +1,30 @@
+---
+path: /blog/why-svg
+date: 2019-11-17T21:03:17.517Z
+title: Why SVG?
+---
+![cover image indicating why SVG text](/assets/still-jpg-1000x420-.jpg)
+
+Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics. There are various reasons why we should use this, some are listed below - 
+
+1. [File size] (https://www.sitepoint.com/gif-png-jpg-which-one-to-use/) of well optimised SVG is less than any other image format(ex. png, jpg etc.).
+
+2. [Accessibility](https://simplyaccessible.com/article/7-solutions-svgs/) and [SEO](https://css-tricks.com/accessible-svgs/).
+
+3. SVG's can be animated and interactive. 
+
+4. SVG's are resolution independent and responsive.
+
+5. All Modern [browser support] (https://caniuse.com/#search=svg) SVG.
+
+6. Various tools are available to create SVG's like [Illustrator](https://www.adobe.com/in/products/illustrator/free-trial-download.html), [Figma](https://www.figma.com/) etc.
+
+7. SVG's are easy to read and write. It has syntax like HTML. 
+
+8. Styling can be done on SVG's using id's and classes. 
+
+9. Practical use cases of SVG's are logo, icons, creative graphics, graphs, etc.
+
+**SVG is Awesome.**  
+
+
