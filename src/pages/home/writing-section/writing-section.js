@@ -6,10 +6,10 @@ import "./writing-section.css"
 const WritingSection = () => {
   return (
     <section className="home-writing-container">
-      <h2 className="section-title">Writing on Medium</h2>
-      <ul className="medium-blogs">
+      <h2 className="section-title">Writing</h2>
+      <ul className="blogs">
         {BLOGS.map(blog => (
-          <li className="medium-blog" key={blog.id}>
+          <li className="blog" key={blog.id}>
             <OutboundLink
               href={blog.slug}
               rel="noopener noreferrer"

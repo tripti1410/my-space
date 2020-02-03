@@ -8,7 +8,6 @@
 
 .popular-pens-title {
   grid-column: 1/-1;
-  justify-self: center;
   display: flex;
   align-items: center;
 }
