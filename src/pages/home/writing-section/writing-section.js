@@ -15,8 +15,9 @@ const WritingSection = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <h3 className="medium-blog__title">{blog.title}</h3>
-              <p className="medium-blog__subtitle">{blog.subtitle}</p>
+              <h3 className="blog__title">{blog.title}</h3>
+              {blog.publication && <span className="blog__badge">{blog.publication}</span>}
+              <p className="blog__subtitle">{blog.subtitle}</p>
             </OutboundLink>
           </li>
         ))}
