@@ -10,12 +10,12 @@ export default function Template({
   const { frontmatter, html } = markdownRemark;
   
   return (
-    <div className="blog-post-container">
+    <div className="wrapper">
       <Header />
       <main className="blog-post">
-        <h2 class="blog-post__title">{frontmatter.title}</h2>
-        <div class="blog-post__details">
-          <date>{frontmatter.date}</date>
+        <h2 className="blog-post__title">{frontmatter.title}</h2>
+        <div className="blog-post__details">
+          <span>{frontmatter.date}</span>
         </div>
         <div
           className="blog-post__content"

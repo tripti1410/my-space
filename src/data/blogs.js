@@ -36,7 +36,7 @@ const BLOGS = [
   {
     id: 502,
     slug:
-      "https://dev.to/imtraptir/bend-it-like-trapti-a-svg-logo-3e9k",
+      "/blog/bend-it-like-trapti-a-svg-logo",
     title: "Bend It Like Trapti - a SVG logo",
     subtitle:
       "Creating a wave shape logo using the SVG textOnAPath.",
@@ -44,7 +44,7 @@ const BLOGS = [
   {
     id: 503,
     slug:
-      "https://dev.to/imtraptir/why-svg-5acj",
+      "/blog/why-svg",
     title: "Why SVG?",
     subtitle:
       "Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics. There are various reasons why we should use this",
