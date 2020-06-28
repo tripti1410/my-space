@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 import profile from "../../../images/profile.jpg"
-import "./about-section.css";
+import "./about-section.css"
 import { Link } from "gatsby"
 
 const AboutSection = () => {
@@ -16,14 +16,12 @@ const AboutSection = () => {
       </p>
       <p className="content">
         Core skills are &nbsp;
-        <strong>HTML, CSS & JAVASCRIPT.</strong>
+        <strong>HTML, CSS, SVG, Animations & Javascript.</strong>
       </p>
       <p className="content">
-        Currently focusing on learning &nbsp;
-        <strong>web animations, SVG's and accessibility.</strong>
-      </p>
-      <p className="content">
-        <Link to="/about" className="link">Know more</Link>
+        <Link to="/about" className="link">
+          Know more
+        </Link>
       </p>
     </section>
   )
