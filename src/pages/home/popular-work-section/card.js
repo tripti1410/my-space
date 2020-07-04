@@ -7,7 +7,7 @@ const Card = ({ title, description, imgSrc, link }) => {
       <h3 className="popular-pen-title">{title}</h3>
       <p className="popular-pen-description">{description}</p>
       <figure className="popular-pen-media">
-        <img src={imgSrc} alt={title} />
+        <img data-src={imgSrc} alt={title} className="lazyload" />
       </figure>
       <div className="popular-pen-link-container">
         <OutboundLink
