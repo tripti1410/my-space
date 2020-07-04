@@ -11,10 +11,10 @@ const Layout = ({children}) => {
     <div className="wrapper">
       <Helmet>
         <title>Trapti Rahangdale - Frontend Engineer</title>
-        <meta name="description" content="Frontend UI Developer - India" />
+        <meta name="description" content="Frontend UI Engineer - India" />
         <meta
           name="keywords"
-          content="frontend web developer, UI developer, HTML, CSS, SVG, UI, UX, accessibility, javascript, react, vue, animations, India"
+          content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India"
         />
         <meta name="language" content="en" />
       </Helmet>
