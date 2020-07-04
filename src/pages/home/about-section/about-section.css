@@ -28,11 +28,15 @@
   line-height: 1.2;
   margin-bottom: 0.8rem;
 }
+.about-heading .heart {
+  width: 40px;
+  fill: var(--mono-1);
+}
 
 @media (min-width: 768px) {
   .home-about-container {
     display: grid;
-    grid-template-columns: 40rem minmax(24ch, 1fr);
+    grid-template-columns: 30rem minmax(24ch, 1fr);
     grid-column-gap: 2.4rem;
     padding: 0;
   }

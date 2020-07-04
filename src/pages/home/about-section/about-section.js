@@ -9,14 +9,29 @@ const AboutSection = () => {
       <figure className="image-container">
         <img src={profile} alt="Trapti rahangdale" />
       </figure>
-      <h1 className="about-heading">Hi, I'm Trapti. I'm a Frontend Engineer</h1>
+      <h1 className="about-heading">
+        Hi, I'm Trapti. I{" "}
+        <svg
+          className="heart"
+          width="40px"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 25.1 25"
+        >
+          <path d="M25,8.8C25.2,2,16.8-1.9,12.2,3.1h0c-7-6-16.1,4.5-10.6,11.3h0l.6.7,10,10.7L22.9,14.4h-.1A7.9,7.9,0,0,0,25,8.8Z" />
+        </svg>{" "}
+        SVG, animations and Web
+      </h1>
       <p className="content">
-        I am passionate about building a responsive, accessible, performant web
-        for everyone. I love SVG, animations and CSS grid the most.
+        I am a freelance frontend engineer. I can help you with creating and
+        optimizing SVGs, creating web animations, responsive layouts, websites,
+        webapps and many more.
       </p>
       <p className="content">
-        Core skills are &nbsp;
-        <strong>HTML, CSS, SVG, Animations & Javascript.</strong>
+        I emphasize on <strong>accessibility</strong> and{" "}
+        <strong>performance</strong> in my work.
+      </p>
+      <p className="content">
+        I blog on these topics and I am available as a guest author.
       </p>
       <p className="content">
         <Link to="/about" className="link">
