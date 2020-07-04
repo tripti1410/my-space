@@ -74,5 +74,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Trapti Rahangdale",
+        short_name: "Trapti Rahangdale",
+        start_url: "/",
+        icon: "src/images/profile.jpg",
+      },
+    },
   ],
 }
