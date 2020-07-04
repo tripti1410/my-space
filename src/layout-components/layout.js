@@ -10,8 +10,8 @@ const Layout = ({children}) => {
   return (
     <div className="wrapper">
       <Helmet>
-        <title>Trapti Rahangdale - Frontend Engineer</title>
-        <meta name="description" content="Frontend UI Engineer - India" />
+        <title>Trapti Rahangdale - Freelance Frontend Engineer</title>
+        <meta name="description" content="Freelance Frontend Web UI/UX Engineer - India" />
         <meta
           name="keywords"
           content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India"
