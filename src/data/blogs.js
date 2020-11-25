@@ -1,5 +1,12 @@
 const BLOGS = [
   {
+    id: 301,
+    slug: "https://css-tricks.com/how-to-get-handwriting-animation-with-irregular-svg-strokes",
+    title: "How to Get Handwriting Animation With Irregular SVG Strokes",
+    subtitle: "An innovative application of SVG masking to achieve this affect in matter of minutes.",
+    publication: "CSS-TRICKS",
+  },
+  {
     id: 302,
     slug: "https://medium.com/statuscode/thinking-in-css-grid-48922b25ee69",
     title: "Thinking in CSS Grid",
