@@ -91,6 +91,15 @@ const BLOGS = [
     subtitle:
       "Sharing experience of my trip",
   },
+  {
+    id: 199,
+    slug:
+      "/blog/my-journey-of-becoming-a-bookworm",
+    title:
+      "My Journey of becoming a bookworm",
+    subtitle:
+      "Finding reading a boring hobby to reading 15 books in 2020",
+  }
 ]
 
 export default BLOGS;

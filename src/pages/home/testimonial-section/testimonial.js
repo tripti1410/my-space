@@ -15,8 +15,13 @@ const Testimonial = () => {
         professional attitude.
         <footer>Alexandra Spalato - Co-Founder GatsbyWPThemes</footer>
       </blockquote>
+      <blockquote>
+        We were looking for a few high-end animation prototypes to bring particular sports photos to life, and Tripti delivered! She brought creativity to the table, plus her extreme attention to coding details.
+        <footer>Alan Karben - Presiden at XML Team Solutions, LLC</footer>
+      </blockquote>
     </div>
   )
 }
 
 export default Testimonial
+
