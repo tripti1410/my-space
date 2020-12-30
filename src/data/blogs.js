@@ -99,6 +99,15 @@ const BLOGS = [
       "My Journey of becoming a bookworm",
     subtitle:
       "Finding reading a boring hobby to reading 15 books in 2020",
+  },
+  {
+    id: 200,
+    slug:
+      "/blog/recollecting-2020",
+    title:
+      "Recollecting 2020",
+    subtitle:
+      "2020 recalling and it was good",
   }
 ]
 
