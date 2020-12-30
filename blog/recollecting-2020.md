@@ -9,6 +9,8 @@ From past two years I am writing reviews at the end of the year and every year i
 
 In January 2020, I did a solo trip. Attended a close friend’s wedding and met friends. I preserved those moments in my sketch note.
 
+![solo trip sketch note](/assets/solo-trip-sketch-note.jpg "solo trip sketch note")
+
 After coming from here I decided to get back to work again as I was in long break. But all thanks to pandemic I took a step back and decided to just focus on family and health.
 
 Around this lockdown time March and April, I did **binge reading**. From a person who used to hate reading books apart from technical once it is big achievement. I wrote about my book reading journey [here](/blog/my-journey-of-becoming-a-bookworm). This year I read around 15 books(tech + no tech) and around 6 are in progress, I maintain my reading status in [Goodreads app](https://www.goodreads.com/user/show/97302367-trapti-rahangdale).
@@ -31,7 +33,9 @@ I dealt with mental health issues for around 2 months, came out of it with the s
 
 I **learned doodling** by joining a workshop by [Swetha Singh](https://www.instagram.com/doodleshoodle_/). And I loved it. I joined few more art classes, started painting. Because this gives me lot of joy. To explore more with digital tools and unleash my creativity my husband gifted me ***[iPad](https://www.apple.com/in/ipad/)* with pencil**. So I started exploring illustrator on iPad and started by digital art journey. I have separate [Instagram](https://www.instagram.com/triptiscreations/) for all my creations.
 
-From early this year my in-laws are staying with us. Before they used to come max for 15 days. I was little worried about staying together for longer time that tooit was unplanned. By gods grace everything is going good till now, and they being with us helped us in lot of ways. And hence we shifted to bigger home. This place is way more spacious and comfortable with lot of wind and sunlight.
+![ipad image](/assets/ipad-pencil.jpg "ipad image")
+
+From early this year my in-laws are staying with us. Before they used to come max for 15 days. I was little worried about staying together for longer time that too it was unplanned. By gods grace everything is going good till now, and they being with us helped us in lot of ways. And hence we shifted to bigger home. This place is way more spacious and comfortable with lot of wind and sunlight.
 
 With lot of learnings-personal and professional, experiences good and bad, having some vision for the future, peace of mind, positivity in my thoughts looking forward for the new year. I do not believe in making resolutions so not writing about it.
 
