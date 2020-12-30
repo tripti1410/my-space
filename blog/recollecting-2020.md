@@ -5,7 +5,7 @@ title: Recollecting 2020
 ---
 From past two years I am writing reviews at the end of the year and every year it used to be tweet. This time I decided to do a blog post. Below are the past reviews.
 
-![2018-2019 year review](assets/2018-19-review.jpg "2018 and 2019 year review")
+![2018-2019 year review](/assets/2018-19-review.jpg "2018 and 2019 year review")
 
 In January 2020, I did a solo trip. Attended a close friend’s wedding and met friends. I preserved those moments in my sketch note.
 
