@@ -39,4 +39,4 @@ From early this year my in-laws are staying with us. Before they used to come ma
 
 With lot of learnings-personal and professional, experiences good and bad, having some vision for the future, peace of mind, positivity in my thoughts looking forward for the new year. I do not believe in making resolutions so not writing about it.
 
-With this wishing you all a happy and healthy**NEW YEAR**.
+With this wishing you all a happy and healthy **NEW YEAR**.
