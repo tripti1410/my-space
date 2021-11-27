@@ -1,0 +1,4 @@
+[build]
+  base = "."
+  publish = "gatsby/public"
+  command = "npm run gatsby-build"
