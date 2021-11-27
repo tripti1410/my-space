@@ -1,46 +1,27 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "my-space",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Personal site for Trapti Rahangdale",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "gatsby-build": "npm --prefix gatsby/ run build",
+    "gatsby-develop": "npm --prefix gatsby/ run gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "gatsby-start": "npm --prefix gatsby/ run develop",
+    "gatsby-serve": "npm --prefix gatsby/ run gatsby serve",
+    "astro-dev": "astro dev",
+    "astro-start": "astro dev",
+    "astro-build": "astro build",
+    "astro-preview": "astro preview"
   },
-  "dependencies": {
-    "gatsby": "^2.29.2",
-    "gatsby-plugin-google-analytics": "^2.1.35",
-    "gatsby-plugin-html-attributes": "^1.0.5",
-    "gatsby-plugin-manifest": "^2.9.1",
-    "gatsby-plugin-netlify-cms": "^4.1.39",
-    "gatsby-plugin-react-helmet": "^3.1.22",
-    "gatsby-plugin-sharp": "^2.11.2",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-remark-images": "^3.3.17",
-    "gatsby-remark-lazy-load": "^1.0.2",
-    "gatsby-remark-prismjs": "^3.3.31",
-    "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.50",
-    "lazysizes": "^5.2.2",
-    "netlify-cms-app": "^2.11.15",
-    "prismjs": "^1.25.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/tripti1410/my-space"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/tripti1410/my-space/issues"
   }
 }
