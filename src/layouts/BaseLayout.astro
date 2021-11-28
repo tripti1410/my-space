@@ -1,7 +1,4 @@
 ---
-// import "prismjs/themes/prism-solarizedlight.css";
-// import "$src/../public/styles/global.css";
-
 const {title} = Astro.props;
 const pageTitle = title?.trim() === "" ?
 	"Trapti Rahangdale - Freelance Frontend Engineer" :
@@ -15,6 +12,8 @@ const pageTitle = title?.trim() === "" ?
 		<title>{pageTitle}</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans%7CNoto+Serif" media="all">
 		<link rel="stylesheet" href="/styles/global.css">
+		<link rel="icon" href="/favicon-32x32.png" type="image/png">
+		<link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png">
 	</head>
 	<body>
 		<slot></slot>
