@@ -1,6 +1,6 @@
 ---
 const {title} = Astro.props;
-const pageTitle = title?.trim() === "" ?
+const pageTitle = (title === undefined || title.trim() === "") ?
 	"Trapti Rahangdale - Freelance Frontend Engineer" :
 	`${title} | Trapti Rahangdale - Freelance Frontend Engineer`;
 ---
@@ -10,6 +10,8 @@ const pageTitle = title?.trim() === "" ?
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{pageTitle}</title>
+		<meta name="description" content="Freelance Frontend Web UI/UX Engineer - India" />
+		<meta name="keywords" content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans%7CNoto+Serif" media="all">
 		<link rel="stylesheet" href="/styles/global.css">
 		<link rel="icon" href="/favicon-32x32.png" type="image/png">
