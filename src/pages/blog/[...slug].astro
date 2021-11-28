@@ -1,7 +1,7 @@
 ---
-import "prismjs/themes/prism-solarizedlight.css";
+// import "prismjs/themes/prism-solarizedlight.css";
 
-import BaseLayout from "$src/layouts/BaseLayout.astro";
+import PostLayout from "$src/layouts/PostLayout.astro";
 
 import Header from "$src/components/header/header.jsx";
 import Footer from "$src/components/footer.jsx";
@@ -23,7 +23,7 @@ const {slug} = Astro.request.params;
 const {post} = Astro.props;
 
 ---
-<BaseLayout title={post.title}>
+<PostLayout title={post.title}>
 	<div class="wrapper">
 		<Header />
 		<main class="blog-post">
@@ -37,4 +37,4 @@ const {post} = Astro.props;
 		</main>
 		<Footer />
 	</div>
-</BaseLayout>
+</PostLayout>

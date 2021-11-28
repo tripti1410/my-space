@@ -1,0 +1,11 @@
+---
+import "prismjs/themes/prism-solarizedlight.css";
+
+import BaseLayout from "$src/layouts/BaseLayout.astro";
+
+const {title} = Astro.props;
+---
+
+<BaseLayout title={title}>
+	<slot></slot>
+</BaseLayout>
