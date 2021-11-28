@@ -1,3 +1,6 @@
+# astro
+/dist
+
 # Logs
 logs
 *.log

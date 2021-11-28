@@ -1,5 +1,6 @@
 ---
 path: /blog/object-fit-visualizing-it-with-various-aspect-ratios-1
+slug: object-fit-visualizing-it-with-various-aspect-ratios-1
 date: 2019-06-07T09:46:12.291Z
 title: "Object-fit visualizing it with various aspect ratio"
 ---

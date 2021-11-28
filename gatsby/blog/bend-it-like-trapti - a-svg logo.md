@@ -1,8 +1,10 @@
 ---
 path: /blog/bend-it-like-trapti-a-svg-logo
+slug: bend-it-like-trapti-a-svg-logo
 date: 2019-11-03T17:46:24.033Z
 title: "Bend It Like Trapti - a SVG\_logo"
 ---
+
 Creating a wave shape logo using the SVG **textOnAPath**.
 
 ![svg-logo](/assets/screenshot-2019-11-03-at-14.41.56.png "Final svg logo")

@@ -6,16 +6,18 @@
   "license": "MIT",
   "scripts": {
     "gatsby-build": "npm --prefix gatsby/ run build",
-    "gatsby-develop": "npm --prefix gatsby/ run gatsby develop",
+    "gatsby-develop": "npm --prefix gatsby/ run develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "gatsby-start": "npm --prefix gatsby/ run develop",
-    "gatsby-serve": "npm --prefix gatsby/ run gatsby serve",
+    "gatsby-serve": "npm --prefix gatsby/ run serve",
     "astro-dev": "astro dev",
     "astro-start": "astro dev",
     "astro-build": "astro build",
     "astro-preview": "astro preview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "astro": "^0.21.4"
+  },
   "devDependencies": {},
   "repository": {
     "type": "git",

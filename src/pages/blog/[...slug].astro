@@ -1,0 +1,12 @@
+---
+export async function getStaticPaths({paginate, rss}) {
+	const posts = Astro.fetchContent('../../../gatsby/blog/*.md');
+	const pages = posts.map(post => {
+		return {
+			params: {slug: post.slug},
+		 	props: {post}
+		 };
+	});
+	return pages;
+}
+---
