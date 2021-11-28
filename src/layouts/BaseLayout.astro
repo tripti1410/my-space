@@ -1,0 +1,22 @@
+---
+// import "prismjs/themes/prism-solarizedlight.css";
+// import "$src/../public/styles/global.css";
+
+const {title} = Astro.props;
+const pageTitle = title?.trim() === "" ?
+	"Trapti Rahangdale - Freelance Frontend Engineer" :
+	`${title} | Trapti Rahangdale - Freelance Frontend Engineer`;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans%7CNoto+Serif" media="all">
+		<link rel="stylesheet" href="/styles/global.css">
+	</head>
+	<body>
+		<slot></slot>
+	</body>
+</html>
