@@ -1,6 +1,6 @@
-import "$src/styles/projects.css"
-
 import React from "react"
+
+import "$src/styles/projects.css"
 
 const Projects = ({ repos, magazineImageUrl }) => {
   return (
