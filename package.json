@@ -7,7 +7,7 @@
   "scripts": {
     "gatsby-build": "npm --prefix gatsby/ run build",
     "gatsby-develop": "npm --prefix gatsby/ run develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write --plugin-search-dir=. .",
     "gatsby-start": "npm --prefix gatsby/ run develop",
     "gatsby-serve": "npm --prefix gatsby/ run serve",
     "dev": "astro dev",
@@ -21,7 +21,10 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^2.5.0",
+    "prettier-plugin-astro": "^0.0.11"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tripti1410/my-space"
