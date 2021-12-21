@@ -10,9 +10,7 @@ const Projects = ({ repos, magazineImageUrl }) => {
           <div key={repo.id} className="project">
             <h2 className="project-name">{repo.name}</h2>
             <div className="project-details">
-              <span className="project-stars">
-                ✷&nbsp;{repo["stargazers_count"]}
-              </span>
+              <span className="project-stars">✷&nbsp;{repo.stars}</span>
               <span className="badge">
                 <a href={repo.url} target="_blank" rel="noopener noreferrer">
                   Github

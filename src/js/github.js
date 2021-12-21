@@ -12,5 +12,16 @@ export async function repos({ user }, { includeForks }) {
     return repos
   }
 
-  return repos.filter((repo) => repo.fork === false)
+  return repos
+    .filter((repo) => repo.fork === false)
+    .map((repo) => {
+      return {
+        id: repo.id,
+        name: repo.name,
+        stars: repo.stargazers_count,
+        url: repo.html_url,
+        homepage: repo.homepage,
+        description: repo.description,
+      }
+    })
 }
