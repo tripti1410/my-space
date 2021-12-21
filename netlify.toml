@@ -1,4 +1,4 @@
 [build]
   base = "."
-  publish = "gatsby/public"
-  command = "npm --prefix gatsby/ install && npm --prefix gatsby/ run build"
+  publish = "dist"
+  command = "npm run build"

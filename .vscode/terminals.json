@@ -1,0 +1,28 @@
+{
+  "terminals": [
+    {
+      "name": "dev-server",
+      "description": "Start Astro dev server",
+      "cwd": "[cwd]",
+      "command": "npm run dev",
+      "substitution": true,
+      "recycle": false,
+      "open": true,
+      "focus": false,
+      "execute": true,
+      "envInherit": true
+    },
+    {
+      "name": "preview-server",
+      "description": "Start Astro preview server",
+      "cwd": "[cwd]",
+      "command": "npx http-server dist/",
+      "substitution": true,
+      "recycle": false,
+      "open": true,
+      "focus": false,
+      "execute": true,
+      "envInherit": true
+    }
+  ]
+}

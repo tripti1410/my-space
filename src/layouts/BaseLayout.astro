@@ -1,0 +1,25 @@
+---
+import "../styles/site.css";
+
+const {title} = Astro.props;
+const pageTitle = (title === undefined || title.trim() === "") ?
+	"Trapti Rahangdale - Freelance Frontend Engineer" :
+	`${title} | Trapti Rahangdale - Freelance Frontend Engineer`;
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{pageTitle}</title>
+		<meta name="description" content="Freelance Frontend Web UI/UX Engineer - India" />
+		<meta name="keywords" content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans%7CNoto+Serif" media="all">
+
+		<link rel="icon" href="/favicon-32x32.png" type="image/png">
+		<link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png">
+	</head>
+	<body>
+		<slot></slot>
+	</body>
+</html>

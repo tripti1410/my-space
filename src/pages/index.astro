@@ -1,0 +1,26 @@
+---
+import PageLayout from "$src/layouts/PageLayout.astro";
+
+import AboutSection from "$src/components/about-section/about-section.jsx"
+import WritingSection from "$src/components/writing-section/writing-section.jsx"
+import PopularWorkSection from "$src/components/popular-work-section/popular-work-section.jsx"
+import Testimonial from "$src/components/testimonial-section/testimonial.jsx"
+
+import BLOGS from "$src/data/blogs.js"
+import POPULAR_WORK from "$src/data/popular-work.js"
+
+let popularWork = POPULAR_WORK;
+
+---
+
+<PageLayout>
+	<main id="main" class="home-content">
+		<AboutSection profileImg={Astro.resolve("../images/profile.jpg")} />
+		<WritingSection blogs={BLOGS}/>
+		<PopularWorkSection popularWork={popularWork}/>
+		<Testimonial />
+	</main>
+
+	<script type="module" src={Astro.resolve("../js/lazysizes.min.js")} defer></script>
+</PageLayout>
+

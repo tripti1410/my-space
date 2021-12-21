@@ -1,5 +1,6 @@
 ---
 path: /blog/trip-to-varkala-kerala
+slug: trip-to-varkala-kerala
 date: 2019-08-14T18:51:07.758Z
 title: "Trip to Varkala - a cliff side beach in\_Kerala"
 ---

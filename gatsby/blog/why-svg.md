@@ -1,5 +1,6 @@
 ---
 path: /blog/why-svg
+slug: why-svg
 date: 2019-11-17T21:03:17.517Z
 title: Why SVG?
 ---

@@ -6,17 +6,25 @@
   "license": "MIT",
   "scripts": {
     "gatsby-build": "npm --prefix gatsby/ run build",
-    "gatsby-develop": "npm --prefix gatsby/ run gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "gatsby-develop": "npm --prefix gatsby/ run develop",
+    "format": "prettier --write --plugin-search-dir=. .",
     "gatsby-start": "npm --prefix gatsby/ run develop",
-    "gatsby-serve": "npm --prefix gatsby/ run gatsby serve",
-    "astro-dev": "astro dev",
-    "astro-start": "astro dev",
-    "astro-build": "astro build",
-    "astro-preview": "astro preview"
+    "gatsby-serve": "npm --prefix gatsby/ run serve",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "astro": "^0.21.13",
+    "lazysizes": "^5.3.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.0",
+    "prettier-plugin-astro": "^0.0.11"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tripti1410/my-space"
