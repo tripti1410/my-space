@@ -108,6 +108,15 @@ const BLOGS = [
       "Recollecting 2020",
     subtitle:
       "2020 recalling and it was good",
+  },
+  {
+    id: 222,
+    slug:
+      "/blog/my-freelance-journey-2021",
+    title:
+      "My Freelancing Journey 2021",
+    subtitle:
+      "In this article I will talk about how I started and my experience as freelancer.",
   }
 ]
 
