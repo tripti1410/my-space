@@ -9,7 +9,7 @@ const WritingSection = ({ blogs }) => {
       <ul className="blogs">
         {blogs.map((blog) => (
           <li className="blog" key={blog.id}>
-            <a href={blog.slug} rel="noopener noreferrer" target="_blank">
+            <a href={blog.slug} rel="noopener noreferrer">
               <h3 className="blog__title">{blog.title}</h3>
               {blog.publication && (
                 <span className="blog__badge">{blog.publication}</span>
