@@ -14,12 +14,12 @@ let popularWork = POPULAR_WORK;
 ---
 
 <PageLayout>
-	<main id="main" class="home-content">
-		<AboutSection profileImg={Astro.resolve("../images/profile.jpg")} />
-		<WritingSection blogs={BLOGS}/>
-		<PopularWorkSection popularWork={popularWork}/>
-		<Testimonial />
-	</main>
+  <main id="main" class="home-content">
+    <AboutSection profileImg="/assets/profile.[hash].jpg" />
+    <WritingSection blogs={BLOGS} />
+    <PopularWorkSection {popularWork} />
+    <Testimonial />
+  </main>
 
 	<script type="module" src={Astro.resolve("../js/lazysizes.min.js")} defer></script>
 </PageLayout>
