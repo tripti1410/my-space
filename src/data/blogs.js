@@ -117,6 +117,15 @@ const BLOGS = [
       "My Freelancing Journey 2021",
     subtitle:
       "In this article I will talk about how I started and my experience as freelancer.",
+  },
+  {
+    id: 223,
+    slug:
+      "/blog/year-review-2021",
+    title:
+      "Year review 2021",
+    subtitle:
+      "Wrote about how the year went by",
   }
 ]
 
