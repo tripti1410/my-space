@@ -1,0 +1,16 @@
+---
+const posts = Astro.fetchContent("../../../gatsby/blog/*.md")
+const tags = posts
+  .map((post) => post.tags)
+  .filter((tags) => tags)
+  .flat()
+const uniquetags = [...new Set(tags)]
+---
+
+<ul>
+  {uniquetags.map((tag) => (
+    <li>
+      {tag} {posts.filter((post) => post.tags?.find((t) => t === tag)).length}
+    </li>
+  ))}
+</ul>
