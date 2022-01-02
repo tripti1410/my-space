@@ -15,11 +15,13 @@ When this year started I was prepared and planned that I am going to do freelanc
 4. Attended AAA conference in November
 5. Worked with 3 clients for web development small to medium size.
 
-> **One of the best thing that happened was I got one amazing client whose work was pretty challenging and it was the highest paying work of mine. This gave me validation for my skills and hell lot of confidence 😁. Treated myself by buying 16-inch M1 Pro MacBook Pro 😀.**
+> **One of the best thing that happened was I got one amazing client whose work was pretty challenging and it was the highest paying work of mine. This gave me validation for my skills and hell lot of confidence 😁. Treated myself by buying 16-inch M1 MacBook Pro 😀.**
 
 6. Bought an iPhone as well. Now I have a well connected Apple ecosystem with MacBook, iPhone and iPad.
 
 I learnt doodling in November 2020. And I have been practicing it throughout 2021. On average I created around one illustration a week. Find them on my [Instagram](https://www.instagram.com/triptiscreations/).
+
+I like to plan and organise things in general. So This year I thought of trying to use planner, One of my friend recommended planner by [Alicia Souza](https://aliciasouza.com). I like to write things down with pen and paper, hence I choose this physical planner. I am glad I bought this, I write about everyday in this as nighttime routine, do monthly planning, write summary of every month. This has helped me lot in seeing how I am spending my time, prioritizing stuff and many more. 
 
 ## Books
 
