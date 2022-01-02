@@ -3,6 +3,8 @@ path: /blog/recollecting-2020
 slug: recollecting-2020
 date: 2020-12-29T18:06:47.076Z
 title: Recollecting 2020
+tags:
+  - journal
 ---
 
 From past two years I am writing reviews at the end of the year and every year it used to be tweet. This time I decided to do a blog post. Below are the past reviews.

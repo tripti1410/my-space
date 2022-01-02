@@ -1,0 +1,23 @@
+---
+export async function getStaticPaths() {
+  const posts = Astro.fetchContent("../../../gatsby/blog/*.md")
+  const tags = posts
+    .map((post) => post.tags)
+    .filter((tags) => tags)
+    .flat()
+  const uniquetags = [...new Set(tags)]
+
+  return uniquetags.map((tag) => ({
+    params: { slug: tag },
+    props: {
+      slug: tag,
+      posts: posts.filter((post) => post.tags?.find((t) => t === tag)),
+    },
+  }))
+}
+
+const { slug, posts } = Astro.props
+---
+
+<div>{slug}</div>
+<div>{posts?.map((post) => <h2>{post.title}</h2>)}</div>
