@@ -15,9 +15,9 @@ let popularWork = POPULAR_WORK
 <PageLayout>
   <main id="main" class="home-content">
     <AboutSection profileImg="/assets/profile.[hash].jpg" />
+    <Testimonial />
     <WritingSection blogs={BLOGS} />
     <PopularWorkSection {popularWork} />
-    <Testimonial />
   </main>
 
   <script type="module" src={Astro.resolve("../js/lazysizes.min.js")} defer

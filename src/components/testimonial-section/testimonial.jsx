@@ -6,6 +6,10 @@ const Testimonial = () => {
     <div className="testimonial-section">
       <h2 className="testimonial-title">What people say</h2>
       <blockquote>
+      “We worked with Trapti to build our corporate website. The design was extremely custom with many complex SVG animations. Trapti was a great development partner with a positive attitude and she completed the website build exactly as we had imagined. The complex animations were built to be fully responsive and Trapti was sure to advise us with best practices throughout the process. I recommend Trapti for website development services and hope to partner with her in the future!”
+        <footer>Vicki O'Neil - Creative Director, LifeSci Communications</footer>
+      </blockquote>
+      <blockquote>
         I had the chance to work with Trapti on a tricky svg animation, not only
         she delivered a perfect work in time and struggled to solve challenging
         points of the project, but she also gave me advices and followed up the
