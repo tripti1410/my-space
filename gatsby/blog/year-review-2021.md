@@ -3,6 +3,8 @@ path: /blog/year-review-2021
 slug: year-review-2021
 date: 2022-01-01T18:57:25Z
 title: "Year review 2021"
+tags:
+  - journal
 ---
 
 ## Work
@@ -21,7 +23,7 @@ When this year started I was prepared and planned that I am going to do freelanc
 
 I learnt doodling in November 2020. And I have been practicing it throughout 2021. On average I created around one illustration a week. Find them on my [Instagram](https://www.instagram.com/triptiscreations/).
 
-I like to plan and organise things in general. So This year I thought of trying to use planner, One of my friend recommended planner by [Alicia Souza](https://aliciasouza.com). I like to write things down with pen and paper, hence I choose this physical planner. I am glad I bought this, I write about everyday in this as nighttime routine, do monthly planning, write summary of every month. This has helped me lot in seeing how I am spending my time, prioritizing stuff and many more. 
+I like to plan and organise things in general. So This year I thought of trying to use planner, One of my friend recommended planner by [Alicia Souza](https://aliciasouza.com). I like to write things down with pen and paper, hence I choose this physical planner. I am glad I bought this, I write about everyday in this as nighttime routine, do monthly planning, write summary of every month. This has helped me lot in seeing how I am spending my time, prioritizing stuff and many more.
 
 ## Books
 

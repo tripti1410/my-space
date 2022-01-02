@@ -1,38 +1,41 @@
 ---
-import PostLayout from "$src/layouts/PostLayout.astro";
+import PostLayout from "$src/layouts/PostLayout.astro"
 
-import Header from "$src/components/header/header.jsx";
-import Footer from "$src/components/footer.jsx";
+import Header from "$src/components/header/header.jsx"
+import Footer from "$src/components/footer.jsx"
 
-import {toLocaleString} from "$src/js/dateUtils.js";
+import { toLocaleString } from "$src/js/dateUtils.js"
 
-export async function getStaticPaths({paginate, rss}) {
-	const posts = Astro.fetchContent('../../../gatsby/blog/*.md');
-	const pages = posts.map(post => {
-		return {
-			params: {slug: post.slug},
-		 	props: {post}
-		 };
-	});
-	return pages;
+export async function getStaticPaths({ paginate, rss }) {
+  const posts = Astro.fetchContent("../../../gatsby/blog/*.md")
+  const pages = posts.map((post) => {
+    return {
+      params: { slug: post.slug },
+      props: { post },
+    }
+  })
+  return pages
 }
 
-const {slug} = Astro.request.params;
-const {post} = Astro.props;
-
+const { slug } = Astro.request.params
+const { post } = Astro.props
 ---
+
 <PostLayout title={post.title}>
-	<div class="wrapper">
-		<Header />
-		<main class="blog-post">
-			<h2 class="blog-post__title">{post.title}</h2>
-			<div class="blog-post__details">
-				<span>{toLocaleString(post.date)}</span>
-			</div>
-			<div class="blog-post__content">
-			{ post.astro.html }
-			</div>
-		</main>
-		<Footer />
-	</div>
+  <div class="wrapper">
+    <Header />
+    <main class="blog-post">
+      <h2 class="blog-post__title">{post.title}</h2>
+      <div class="blog-post__details">
+        <span>{toLocaleString(post.date)}</span>
+      </div>
+      <div>
+        {post.tags?.map((tag) => <span>{tag}</span>)}
+      </div>
+      <div class="blog-post__content">
+        {post.astro.html}
+      </div>
+    </main>
+    <Footer />
+  </div>
 </PostLayout>
