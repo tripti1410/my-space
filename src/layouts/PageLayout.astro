@@ -1,19 +1,20 @@
 ---
 import React from "react"
-import BaseLayout from "$src/layouts/BaseLayout.astro";
+import BaseLayout from "$src/layouts/BaseLayout.astro"
 
 import SkipLinks from "$src/components/skip-links/skip-links.jsx"
 import Header from "$src/components/header/header.jsx"
 import SocialLinks from "$src/components/social-links.jsx"
 import Footer from "$src/components/footer.jsx"
-
+const { title } = Astro.props
 ---
-<BaseLayout>
-	<div class="wrapper">
-		<SkipLinks />
-		<Header />
-		<main><slot></slot></main>
-		<SocialLinks />
-		<Footer />
-	</div>
+
+<BaseLayout {title}>
+  <div class="wrapper">
+    <SkipLinks />
+    <Header />
+    <main><slot /></main>
+    <SocialLinks />
+    <Footer />
+  </div>
 </BaseLayout>

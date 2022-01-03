@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 const { slug, posts } = Astro.props
 ---
 
-<PageLayout title={slug}>
+<PageLayout title={`Tag - ${slug}`}>
   <h2>#{slug}</h2>
   <ul class="tag-posts-listing">
     {posts?.map((post) => (
