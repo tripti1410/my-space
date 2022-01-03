@@ -43,21 +43,27 @@ const { post } = Astro.props
 <PostLayout title={post.title}>
   <div class="wrapper">
     <Header />
-    <main class="blog-post">
-      <h2 class="blog-post__title">{post.title}</h2>
-      <div class="blog-post__details">
-        <span>{toLocaleString(post.date)}</span>
-      </div>
-      <ul class="blog-post__tags">
-        {post.tags?.map((tag) => (
-          <li>
-            <a href={`/tags/${tag}`}>{tag}</a>
-          </li>
-        ))}
-      </ul>
-      <div class="blog-post__content">
-        {post.astro.html}
-      </div>
+    <main>
+      <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h2 itemprop="title" class="blog-post__title">{post.title}</h2>
+        <div class="blog-post__details">
+          <time
+            itemprop="dateCreated pubdate datePublished"
+            datetime={post.date}>{toLocaleString(post.date)}</time
+          >
+        </div>
+
+        <ul class="blog-post__tags">
+          {post.tags?.map((tag) => (
+            <li>
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </li>
+          ))}
+        </ul>
+        <div class="blog-post__content">
+          {post.astro.html}
+        </div>
+      </article>
     </main>
     <Footer />
   </div>

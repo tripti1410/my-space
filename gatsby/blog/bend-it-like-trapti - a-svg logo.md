@@ -99,5 +99,5 @@ Text based graphic can be created very easily by hand or using any tool(Illustra
 
 **References**
 
-1. Official docs on text along the path <https://www.w3.org/TR/SVG11/text.html#TextOnAPath>
-2. SVG Text cheatsheet <https://codepen.io/tripti1410/pen/WBmMOB>
+1. [Official docs](https://www.w3.org/TR/SVG11/text.html#TextOnAPath) on text along the path
+2. SVG Text [cheatsheet](https://codepen.io/tripti1410/pen/WBmMOB)
