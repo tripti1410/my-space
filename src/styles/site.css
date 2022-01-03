@@ -20,6 +20,9 @@
   /* Line height */
   --lh-5: 1.5;
   --lh-8: 1.8;
+
+  --footerHeight: 6.4rem;
+  --headerHeight: 10rem;
 }
 
 html {
@@ -64,7 +67,9 @@ blockquote {
 img {
   max-width: 100%;
 }
-
+main {
+  min-height: calc(100vh - (var(--headerHeight) + 7rem + var(--footerHeight)));
+}
 strong {
   color: var(--black);
 }
@@ -85,7 +90,7 @@ strong {
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 6.4rem;
+  height: var(--footerHeight);
   margin: 1.2rem;
 }
 .footer .copyright-text {
@@ -202,6 +207,19 @@ strong {
 .gatsby-highlight {
   max-width: 700px;
 }
+.blog-post__tags {
+  margin-bottom: 1rem;
+  list-style: none;
+  display: flex;
+}
+.blog-post__tags li {
+  background-color: var(--accent-1);
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
 
 @media (min-width: 768px) {
   .blog-post {
@@ -231,4 +249,18 @@ strong {
   padding-right: 1em;
   padding-left: 0.75em;
   border-left: 0.25em solid #f99;
+}
+.tag-posts-listing {
+  margin-top: 3rem;
+}
+.tag-posts-listing li {
+  display: grid;
+  margin-bottom: 2rem;
+}
+.tag-posts-listing li span {
+  font-size: var(--fs-s);
+}
+.tag-posts-listing li a {
+  font-size: var(--fs-xl);
+  text-decoration: underline;
 }

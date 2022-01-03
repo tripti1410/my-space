@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 2fr 0.5fr;
   margin-bottom: 2.4rem;
+  height: var(--headerHeight);
 }
 
 .logo {
@@ -53,7 +54,7 @@
   .navigation .menu-item a:hover {
     color: var(--mono-1);
   }
-  
+
   .navigation .menu-item:hover {
     border-bottom-color: var(--mono-1);
   }

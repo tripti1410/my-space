@@ -3,6 +3,8 @@ path: /blog/object-fit-visualizing-it-with-various-aspect-ratios
 slug: object-fit-visualizing-it-with-various-aspect-ratios
 date: 2019-06-07T09:46:12.291Z
 title: "Object-fit visualizing it with various aspect\_ratios"
+tags:
+  - CSS
 ---
 There are times where we have to show image or video inside a container(which has width and height). And requirements can be any of these types -
 

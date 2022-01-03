@@ -3,6 +3,8 @@ path: /blog/bend-it-like-trapti-a-svg-logo
 slug: bend-it-like-trapti-a-svg-logo
 date: 2019-11-03T17:46:24.033Z
 title: "Bend It Like Trapti - a SVG\_logo"
+tags:
+  - SVG
 ---
 
 Creating a wave shape logo using the SVG **textOnAPath**.
@@ -23,11 +25,11 @@ Following SVG elements were used to create this logo.
 
 **path:** This element is used to draw the line, arc, curves etc. It is very powerful element in SVG because any graphic can be created with this.
 
-> While doing this, I learned all about text in SVG and created a cheatsheet of this for the future reference. 
+> While doing this, I learned all about text in SVG and created a cheatsheet of this for the future reference.
 >
 > [**SVG text cheatsheet**](https://codepen.io/tripti1410/pen/WBmMOB)
 >
-> - - -
+> ---
 
 First we will create the wave pattern for the logo, which can be created using any tool like Illustrator, figma or [**SVG path builder Codepen**](https://codepen.io/anthonydugois/pen/mewdyZ). Or if you are comfortable writing path coordinates in SVG, handcraft it like I did.
 
@@ -63,7 +65,7 @@ When tested in **voice over** text was not pronounced properly. It was sounding 
 
 [Soundcloud link](https://soundcloud.com/trapti-rahangdale/svg-logo-voice-over)
 
-Basically the problem was on writing letters separately on a tspan, I did this because I wanted it to style differently. Voice over was pronouncing "T" separately and "rapti" separately instead of  "Trapti".
+Basically the problem was on writing letters separately on a tspan, I did this because I wanted it to style differently. Voice over was pronouncing "T" separately and "rapti" separately instead of "Trapti".
 
 Then I made changes in my design and changed all letters to lowercase and showing them above the path. But to give a little more twist I added one more path with different color. Making it all lowercase was my choice, one can make it capitalize or uppercase using CSS or by just writing it that way.
 
@@ -71,21 +73,21 @@ In the code, I changed the SVG document and wrote entire text inside textPath el
 
 > **Tip1: -**
 >
->  Avoid using tspan to segregate letters for styling purposes. 
+> Avoid using tspan to segregate letters for styling purposes.
 >
 > **Tip2: -**
 >
->  textpath element works fine in HTML, but while writing in JSX use textPath otherwise it will not work.
+> textpath element works fine in HTML, but while writing in JSX use textPath otherwise it will not work.
 
 ## Final result
 
 <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="tripti1410" data-slug-hash="57958a6c7d5c87fd062a8f165b0b5774" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Bend It Like Trapti - a SVG logo ">
 
-  <span>See the Pen <a href="https://codepen.io/tripti1410/pen/57958a6c7d5c87fd062a8f165b0b5774">
+<span>See the Pen <a href="https://codepen.io/tripti1410/pen/57958a6c7d5c87fd062a8f165b0b5774">
 
-  Bend It Like Trapti - a SVG logo </a> by tripti (<a href="https://codepen.io/tripti1410">@tripti1410</a>)
+Bend It Like Trapti - a SVG logo </a> by tripti (<a href="https://codepen.io/tripti1410">@tripti1410</a>)
 
-  on <a href="https://codepen.io">CodePen</a>.</span>
+on <a href="https://codepen.io">CodePen</a>.</span>
 
 </p>
 

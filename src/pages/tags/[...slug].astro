@@ -1,4 +1,7 @@
 ---
+import PageLayout from "$src/layouts/PageLayout.astro"
+import { toLocaleString } from "$src/js/dateUtils.js"
+
 export async function getStaticPaths() {
   const posts = Astro.fetchContent("../../../gatsby/blog/*.md")
   const tags = posts
@@ -19,5 +22,14 @@ export async function getStaticPaths() {
 const { slug, posts } = Astro.props
 ---
 
-<div>{slug}</div>
-<div>{posts?.map((post) => <h2>{post.title}</h2>)}</div>
+<PageLayout title={slug}>
+  <h2>#{slug}</h2>
+  <ul class="tag-posts-listing">
+    {posts?.map((post) => (
+      <li>
+        <span>{toLocaleString(post.date)}</span>
+        <a href={`${post.path}`}>{post.title}</a>
+      </li>
+    ))}
+  </ul>
+</PageLayout>

@@ -3,6 +3,8 @@ path: /blog/why-svg
 slug: why-svg
 date: 2019-11-17T21:03:17.517Z
 title: Why SVG?
+tags:
+  - SVG
 ---
 ![cover image indicating why SVG text](/assets/still-jpg-1000x420-.jpg)
 

@@ -45,9 +45,9 @@ const { post } = Astro.props
       <div class="blog-post__details">
         <span>{toLocaleString(post.date)}</span>
       </div>
-      <div>
-        {post.tags?.map((tag) => <span>{tag}</span>)}
-      </div>
+      <ul class="blog-post__tags">
+        {post.tags?.map((tag) => <li><a href={`/tags/${tag}`}>{tag}</a></li>)}
+      </ul>
       <div class="blog-post__content">
         {post.astro.html}
       </div>

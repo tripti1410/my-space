@@ -3,6 +3,8 @@ path: /blog/my-journey-of-becoming-a-bookworm
 slug: my-journey-of-becoming-a-bookworm
 date: 2020-12-28T13:30:15.306Z
 title: My Journey of becoming a bookworm
+tags:
+  - journal
 ---
 
 I was a person who used to find reading, a boring hobby. And here I am. I read 15 books this year(tech+ non-tech), and few books are half read. I read many articles around various topics. You can check what I read [here](https://www.goodreads.com/?ref=nav_home).
