@@ -7,7 +7,10 @@ import Footer from "$src/components/footer.jsx"
 import { toLocaleString } from "$src/js/dateUtils.js"
 
 export async function getStaticPaths({ paginate, rss }) {
-  const posts = Astro.fetchContent("../../../gatsby/blog/*.md")
+  const posts = Astro.fetchContent("../../../gatsby/blog/*.md").sort(
+    (post1, post2) =>
+      new Date(post2.date).valueOf() - new Date(post1.date).valueOf()
+  )
   const pages = posts.map((post) => {
     return {
       params: { slug: post.slug },
@@ -46,7 +49,11 @@ const { post } = Astro.props
         <span>{toLocaleString(post.date)}</span>
       </div>
       <ul class="blog-post__tags">
-        {post.tags?.map((tag) => <li><a href={`/tags/${tag}`}>{tag}</a></li>)}
+        {post.tags?.map((tag) => (
+          <li>
+            <a href={`/tags/${tag}`}>{tag}</a>
+          </li>
+        ))}
       </ul>
       <div class="blog-post__content">
         {post.astro.html}
