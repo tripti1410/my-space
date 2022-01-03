@@ -11,6 +11,15 @@ const pageTitle = (title === undefined || title.trim() === "") ?
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148013867-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-148013867-1');
+		</script>
 		<title>{pageTitle}</title>
 		<meta name="description" content="Freelance Frontend Web UI/UX Engineer - India" />
 		<meta name="keywords" content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India" />
