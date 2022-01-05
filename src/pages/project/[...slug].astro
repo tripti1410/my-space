@@ -1,0 +1,44 @@
+---
+import PostLayout from "$src/layouts/PostLayout.astro"
+
+import Header from "$src/components/header/header.jsx"
+import Footer from "$src/components/footer.jsx"
+
+import { toLocaleString } from "$src/js/dateUtils.js"
+
+export async function getStaticPaths({ paginate, rss }) {
+  const posts = Astro.fetchContent("../../../gatsby/project/*.md").sort(
+    (post1, post2) =>
+      new Date(post2.date).valueOf() - new Date(post1.date).valueOf()
+  )
+  const pages = posts.map((post) => {
+    return {
+      params: { slug: post.slug },
+      props: { post },
+    }
+  })
+
+  return pages
+}
+
+const { slug } = Astro.request.params
+const { post } = Astro.props
+---
+
+<PostLayout title={post.title}>
+  <div class="wrapper">
+    <Header />
+    <main>
+      <article class="project-post">
+        <h2 itemprop="title" class="project-post__title">{post.title}</h2>
+        <div class="project-post__metadata">
+          <time datetime={post.date}>{toLocaleString(post.date)}</time>
+        </div>
+        <div class="project-post__content">
+          {post.astro.html}
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </div>
+</PostLayout>
