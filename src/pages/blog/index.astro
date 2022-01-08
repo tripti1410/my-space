@@ -1,0 +1,59 @@
+---
+import PageLayout from "$src/layouts/PageLayout.astro"
+import { toLocaleString } from "$src/js/dateUtils.js"
+
+const posts = Astro.fetchContent("../../../gatsby/blog/*.md").sort(
+  (post1, post2) =>
+    new Date(post2.date).valueOf() - new Date(post1.date).valueOf()
+)
+const tags = posts
+  .map((post) => post.tags)
+  .filter((tags) => tags)
+  .flat()
+const uniquetags = [...new Set(tags)]
+---
+
+<PageLayout title="Blog">
+  <div class="wrapper">
+    <div class="blog-listing-page">
+      <p>
+        I write about my expeirnces being a developer, freelancer and life in
+        general.
+      </p>
+      <ul class="blog-list">
+        {posts.map((post) => (
+          <li>
+            <h2 itemprop="title" class="blog-post__title">
+              <a href={post.path}>{post.title}</a>
+            </h2>
+            <div class="blog-post__details">
+              <time
+                itemprop="dateCreated pubdate datePublished"
+                datetime={post.date}
+              >
+                {toLocaleString(post.date)}
+              </time>
+            </div>
+          </li>
+        ))}
+      </ul>
+
+      <aside>
+        <ul>
+          {uniquetags.map((tag) => (
+            <li>
+              <a href={`/tags/${tag}`}>
+                #{tag} (
+                {
+                  posts.filter((post) => post.tags?.find((t) => t === tag))
+                    .length
+                }
+                )
+              </a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+  </div>
+</PageLayout>

@@ -311,3 +311,29 @@ strong {
   font-size: var(--fs-s);
   margin-bottom: 4rem;
 }
+/* Blog listing page */
+
+.blog-listing-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.blog-listing-page p {
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
+}
+.blog-listing-page ul {
+  list-style: none;
+}
+.blog-list li {
+  margin-bottom: 3rem;
+}
+.blog-list h2 {
+  font-size: var(--fs-xxl);
+}
+
+@media (min-width: 768px) {
+  .blog-listing-page {
+    grid-template-columns: 3fr 1fr;
+  }
+}
