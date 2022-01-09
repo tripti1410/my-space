@@ -2,7 +2,7 @@
 path: /project/lifesci-project-details
 slug: lifesci-project-details
 date: 2019-11-03T17:46:24.033Z
-title: "Lifesci Communications"
+title: "LifeSci Communications"
 tags:
   - project
 ---
@@ -15,7 +15,7 @@ tags:
 
 _This video highlights few pages of the project. Homepage followed by contact page, who we are, what we do, and a header which is common across other pages._
 
-Lifesci communications - [website](https://lifescicommunications.com)
+LifeSci Communications - [website](https://lifescicommunications.com)
 
 **Tech: HTML, CSS, SVG, Greensock, Wordpress, Elementor**
 
