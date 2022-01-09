@@ -29,7 +29,7 @@ The Art director used to provide the design files in .ai format. I used to analy
 **Few Interesting part of the project:**
 
 1. Pages were divided into multiple sections and there was SVG line across the page along with graphics and text, aligning the line (line was not straight) for reach section making it responsive was challenging.
-2. Created Marquee with GSAP as we do not wanted to use plugin.
+2. Created Marquee with GSAP as we do not wanted to use plugin due to performance reasons.
 3. Join us page had complex animation and responsive layout to make.
 
 Payment was done on hourly basis.
