@@ -5,9 +5,11 @@ import AboutSection from "$src/components/about-section/about-section.jsx"
 import WritingSection from "$src/components/writing-section/writing-section.jsx"
 import PopularWorkSection from "$src/components/popular-work-section/popular-work-section.jsx"
 import Testimonial from "$src/components/testimonial-section/testimonial.jsx"
+import WorkSection from "$src/components/work-section/work-section.jsx"
 
 import BLOGS from "$src/data/blogs.js"
 import POPULAR_WORK from "$src/data/popular-work.js"
+
 
 let popularWork = POPULAR_WORK
 ---
@@ -16,6 +18,7 @@ let popularWork = POPULAR_WORK
   <main id="main" class="home-content">
     <AboutSection profileImg="/assets/profile.[hash].jpg" />
     <Testimonial />
+    <WorkSection />
     <WritingSection blogs={BLOGS} />
     <PopularWorkSection {popularWork} />
   </main>

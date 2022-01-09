@@ -1,0 +1,27 @@
+.home-work-container {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+.section-title {
+  grid-column: 1/-1;
+}
+.home-work-container .work {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1.5fr 1fr;
+}
+.home-work-container .work-preview {
+  aspect-ratio: 1;
+  overflow: scroll;
+  border: 5px solid var(--mono-2);
+}
+.home-work-container p {
+	font-size: var(--fs-l);
+}
+.home-work-container a {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: var(--mono-2);
+}
