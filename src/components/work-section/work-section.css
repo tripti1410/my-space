@@ -1,7 +1,8 @@
 .home-work-container {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .section-title {
   grid-column: 1/-1;
@@ -15,11 +16,11 @@
 .home-work-container .work-preview {
   aspect-ratio: 3/4;
   overflow: scroll;
-  border: 5px solid var(--mono-2);
+  border: 2px solid var(--mono-2);
 }
 
 .home-work-container a {
   font-size: var(--fs-l);
-	text-decoration-line: underline;
-	text-decoration-color: var(--mono-2);
+  text-decoration-line: underline;
+  text-decoration-color: var(--mono-2);
 }
