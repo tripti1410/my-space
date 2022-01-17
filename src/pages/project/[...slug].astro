@@ -5,11 +5,11 @@ import Header from "$src/components/header/header.jsx"
 import Footer from "$src/components/footer.jsx"
 
 import { toLocaleString } from "$src/js/dateUtils.js"
+import * as blog from "$src/js/posts.js"
 
 export async function getStaticPaths({ paginate, rss }) {
-  const posts = Astro.fetchContent("../../../gatsby/project/*.md").sort(
-    (post1, post2) =>
-      new Date(post2.date).valueOf() - new Date(post1.date).valueOf()
+  const posts = blog.sortedPosts(
+    Astro.fetchContent("../../content/project/*.md")
   )
   const pages = posts.map((post) => {
     return {
