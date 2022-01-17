@@ -1,12 +1,9 @@
 ---
 import PageLayout from "$src/layouts/PageLayout.astro"
+import * as blog from "$src/js/posts.js"
 
-const posts = Astro.fetchContent("../../../gatsby/blog/*.md")
-const tags = posts
-  .map((post) => post.tags)
-  .filter((tags) => tags)
-  .flat()
-const uniquetags = [...new Set(tags)]
+const posts = blog.sortedPosts(Astro.fetchContent("../../content/posts/*.md"))
+const uniquetags = blog.uniqueTags(posts)
 ---
 
 <PageLayout title="Tags">
