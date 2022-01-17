@@ -3,7 +3,7 @@ import PageLayout from "$src/layouts/PageLayout.astro"
 import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
 
-const posts = blog.sortedPosts(Astro.fetchContent("../../../gatsby/blog/*.md"))
+const posts = blog.sortedPosts(Astro.fetchContent("../../content/posts/*.md"))
 const uniquetags = blog.uniqueTags(posts)
 ---
 
