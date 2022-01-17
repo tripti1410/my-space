@@ -1,16 +1,10 @@
 ---
 import PageLayout from "$src/layouts/PageLayout.astro"
 import { toLocaleString } from "$src/js/dateUtils.js"
+import * as blog from "$src/js/posts.js"
 
-const posts = Astro.fetchContent("../../../gatsby/blog/*.md").sort(
-  (post1, post2) =>
-    new Date(post2.date).valueOf() - new Date(post1.date).valueOf()
-)
-const tags = posts
-  .map((post) => post.tags)
-  .filter((tags) => tags)
-  .flat()
-const uniquetags = [...new Set(tags)]
+const posts = blog.sortedPosts(Astro.fetchContent("../../../gatsby/blog/*.md"))
+const uniquetags = blog.uniqueTags(posts)
 ---
 
 <PageLayout title="Blog">
