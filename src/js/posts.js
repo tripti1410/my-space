@@ -1,7 +1,6 @@
 export async function blogPosts(Astro, fetchContent, opts) {
   const baseDir = opts?.projectRootDir || "../.."
-  const blogPostsGlob = `${baseDir}gatsby/blog/*.md`
-  // console.log("glob", blogPostsGlob)
+  const blogPostsGlob = `${baseDir}src/content/posts/*.md`
   const posts = Astro.fetchContent(blogPostsGlob).sort(
     (post1, post2) =>
       new Date(post2.date).valueOf() - new Date(post1.date).valueOf()

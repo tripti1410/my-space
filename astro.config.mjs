@@ -11,7 +11,6 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     resolve: {
       alias: {
         $src: fileURLToPath(new URL("./src", import.meta.url)),
-        $blog: fileURLToPath(new URL("./gatsby/blog", import.meta.url)),
       },
     },
   },
