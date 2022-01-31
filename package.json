@@ -5,11 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "gatsby-build": "npm --prefix gatsby/ run build",
-    "gatsby-develop": "npm --prefix gatsby/ run develop",
     "format": "prettier --write --plugin-search-dir=. .",
-    "gatsby-start": "npm --prefix gatsby/ run develop",
-    "gatsby-serve": "npm --prefix gatsby/ run serve",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
@@ -17,7 +13,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^0.22.3",
+    "astro": "^0.22.13",
     "lazysizes": "^5.3.2",
     "posthtml": "^0.16.5",
     "posthtml-hash": "^1.2.2",

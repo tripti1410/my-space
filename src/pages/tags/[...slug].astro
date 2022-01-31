@@ -1,14 +1,11 @@
 ---
 import PageLayout from "$src/layouts/PageLayout.astro"
 import { toLocaleString } from "$src/js/dateUtils.js"
+import * as blog from "$src/js/posts.js"
 
 export async function getStaticPaths() {
-  const posts = Astro.fetchContent("../../../gatsby/blog/*.md")
-  const tags = posts
-    .map((post) => post.tags)
-    .filter((tags) => tags)
-    .flat()
-  const uniquetags = [...new Set(tags)]
+  const posts = blog.sortedPosts(Astro.fetchContent("../../content/posts/*.md"))
+  const uniquetags = blog.uniqueTags(posts)
 
   return uniquetags.map((tag) => ({
     params: { slug: tag },
