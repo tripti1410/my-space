@@ -20,7 +20,7 @@ const AboutSection = ({ profileImg }) => {
         SVG, animations and Web
       </h1>
       <p className="content">
-        I am a freelance frontend engineer. I can help you with creating and
+        I am a freelance Creative frontend engineer based in India. I can help you with creating and
         optimizing SVGs, creating web animations, responsive layouts, websites,
         webapps and many more.
       </p>
