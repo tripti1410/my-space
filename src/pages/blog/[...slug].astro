@@ -58,8 +58,8 @@ const { post } = Astro.props
             </li>
           ))}
         </ul>
-        <div class="blog-post__content">
-          {post.astro.html}
+        <div set:html={post.astro.html} class="blog-post__content">
+          
         </div>
       </article>
     </main>
