@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write --plugin-search-dir=. .",
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
+    "dev": "astro dev --experimental-static-build",
+    "start": "astro dev --experimental-static-build",
+    "build": "astro build --experimental-static-build",
     "postbuild": "node postbuild.cjs",
     "preview": "astro preview"
   },

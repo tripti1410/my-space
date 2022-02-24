@@ -7,11 +7,4 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
     sitemap: true,
     site: "https://www.iamtrapti.com/",
   },
-  vite: {
-    resolve: {
-      alias: {
-        $src: fileURLToPath(new URL("./src", import.meta.url)),
-      },
-    },
-  },
 })

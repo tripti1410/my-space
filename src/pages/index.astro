@@ -10,7 +10,7 @@ import WorkSection from "$src/components/work-section/work-section.jsx"
 import BLOGS from "$src/data/blogs.js"
 import POPULAR_WORK from "$src/data/popular-work.js"
 
-
+const jsSrc = (await import("../js/lazysizes.min.js?url")).default
 let popularWork = POPULAR_WORK
 ---
 
@@ -23,6 +23,5 @@ let popularWork = POPULAR_WORK
     <PopularWorkSection {popularWork} />
   </main>
 
-  <script type="module" src={Astro.resolve("../js/lazysizes.min.js")} defer
-  ></script>
+  <script type="module" defer src={jsSrc}></script>
 </PageLayout>
