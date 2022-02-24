@@ -34,8 +34,7 @@ const { post } = Astro.props
         <div class="project-post__metadata">
           <time datetime={post.date}>{toLocaleString(post.date)}</time>
         </div>
-        <div class="project-post__content">
-          {post.astro.html}
+        <div set:html={post.astro.html} class="project-post__content">
         </div>
       </article>
     </main>
