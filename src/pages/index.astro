@@ -10,13 +10,15 @@ import WorkSection from "$src/components/work-section/work-section.jsx"
 import BLOGS from "$src/data/blogs.js"
 import POPULAR_WORK from "$src/data/popular-work.js"
 
+import profileImg from "$src/images/profile.jpg"
+
 const jsSrc = (await import("../js/lazysizes.min.js?url")).default
 let popularWork = POPULAR_WORK
 ---
 
 <PageLayout title="Home">
   <main id="main" class="home-content">
-    <AboutSection profileImg="/assets/profile.[hash].jpg" />
+    <AboutSection {profileImg} />
     <Testimonial />
     <WorkSection />
     <WritingSection blogs={BLOGS} />
