@@ -9,7 +9,6 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "postbuild": "node postbuild.cjs",
     "preview": "astro preview"
   },
   "dependencies": {
