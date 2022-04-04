@@ -1,10 +1,10 @@
-import { fileURLToPath } from "node:url"
+import { defineConfig } from "astro/config"
+import react from "@astrojs/react"
+import sitemap from "@astrojs/sitemap"
 
-// @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
-  // renderers: [],
-  buildOptions: {
-    sitemap: true,
-    site: "https://www.iamtrapti.com/",
-  },
+// https://astro.build/config
+export default defineConfig({
+  // your configuration options here...
+  integrations: [react(), sitemap()],
+  site: "https://www.iamtrapti.com/",
 })

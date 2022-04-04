@@ -4,14 +4,15 @@ import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
 
 export async function getStaticPaths() {
-  const posts = blog.sortedPosts(Astro.fetchContent("../../content/posts/*.md"))
+  const allPosts = await Astro.glob("../../content/posts/*.md")
+  const posts = blog.sortedPosts(allPosts)
   const uniquetags = blog.uniqueTags(posts)
 
   return uniquetags.map((tag) => ({
     params: { slug: tag },
     props: {
       slug: tag,
-      posts: posts.filter((post) => post.tags?.find((t) => t === tag)),
+      posts: posts.filter((post) => post.frontmatter.tags?.find((t) => t === tag)),
     },
   }))
 }
@@ -24,8 +25,8 @@ const { slug, posts } = Astro.props
   <ul class="tag-posts-listing">
     {posts?.map((post) => (
       <li>
-        <span>{toLocaleString(post.date)}</span>
-        <a href={`${post.path}`}>{post.title}</a>
+        <span>{toLocaleString(post.frontmatter.date)}</span>
+        <a href={`${post.frontmatter.path}`}>{post.frontmatter.title}</a>
       </li>
     ))}
   </ul>

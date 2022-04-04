@@ -2,7 +2,8 @@
 import PageLayout from "$src/layouts/PageLayout.astro"
 import * as blog from "$src/js/posts.js"
 
-const posts = blog.sortedPosts(Astro.fetchContent("../../content/posts/*.md"))
+const allPosts = await Astro.glob("../../content/posts/*.md")
+const posts = blog.sortedPosts(allPosts)
 const uniquetags = blog.uniqueTags(posts)
 ---
 
@@ -11,10 +12,15 @@ const uniquetags = blog.uniqueTags(posts)
     <ul>
       {uniquetags.map((tag) => (
         <li>
-        <a href={`/tags/${tag}`}>
-          {tag} (
-          {posts.filter((post) => post.tags?.find((t) => t === tag)).length})
-        </a>
+          <a href={`/tags/${tag}`}>
+            {tag} (
+            {
+              posts.filter((post) =>
+                post.frontmatter.tags?.find((t) => t === tag)
+              ).length
+            }
+            )
+          </a>
         </li>
       ))}
     </ul>

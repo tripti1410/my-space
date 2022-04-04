@@ -8,10 +8,11 @@ import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
 
 export async function getStaticPaths({ paginate, rss }) {
-  const posts = blog.sortedPosts(Astro.fetchContent("../../content/posts/*.md"))
+  const allPosts = await Astro.glob("../../content/posts/*.md")
+  const posts = blog.sortedPosts(allPosts)
   const pages = posts.map((post) => {
     return {
-      params: { slug: post.slug },
+      params: { slug: post.frontmatter.slug },
       props: { post },
     }
   })
@@ -23,10 +24,10 @@ export async function getStaticPaths({ paginate, rss }) {
     customData: `<language>en-us</language>`,
     // The list of items for your RSS feed, sorted.
     items: posts.map((item) => ({
-      title: item.title,
+      title: item.frontmatter.title,
       // description: item.description,
-      link: item.path,
-      pubDate: item.date,
+      link: item.frontmatter.path,
+      pubDate: item.frontmatter.date,
     })),
     // file is written to "/rss.xml"
   })
@@ -34,32 +35,39 @@ export async function getStaticPaths({ paginate, rss }) {
   return pages
 }
 
-const { slug } = Astro.request.params
+const { slug } = Astro.params
 const { post } = Astro.props
 ---
 
-<PostLayout title={post.title}>
+<PostLayout title={post.frontmatter.title}>
   <div class="wrapper">
     <Header />
     <main>
-      <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
-        <h2 itemprop="title" class="blog-post__title">{post.title}</h2>
+      <article
+        class="blog-post"
+        itemscope
+        itemtype="http://schema.org/BlogPosting"
+      >
+        <h2 itemprop="title" class="blog-post__title">
+          {post.frontmatter.title}
+        </h2>
         <div class="blog-post__details">
           <time
             itemprop="dateCreated pubdate datePublished"
-            datetime={post.date}>{toLocaleString(post.date)}</time
+            datetime={post.frontmatter.date}
+            >{toLocaleString(post.frontmatter.date)}</time
           >
         </div>
 
         <ul class="blog-post__tags">
-          {post.tags?.map((tag) => (
+          {post.frontmatter.tags?.map((tag) => (
             <li>
               <a href={`/tags/${tag}`}>{tag}</a>
             </li>
           ))}
         </ul>
-        <div set:html={post.astro.html} class="blog-post__content">
-          
+        <div class="blog-post__content">
+          <post.Content></post.Content>
         </div>
       </article>
     </main>

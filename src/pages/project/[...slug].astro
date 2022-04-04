@@ -8,12 +8,11 @@ import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
 
 export async function getStaticPaths({ paginate, rss }) {
-  const posts = blog.sortedPosts(
-    Astro.fetchContent("../../content/project/*.md")
-  )
+  const allPosts = await Astro.glob("../../content/project/*.md")
+  const posts = blog.sortedPosts(allPosts)
   const pages = posts.map((post) => {
     return {
-      params: { slug: post.slug },
+      params: { slug: post.frontmatter.slug },
       props: { post },
     }
   })
@@ -21,20 +20,25 @@ export async function getStaticPaths({ paginate, rss }) {
   return pages
 }
 
-const { slug } = Astro.request.params
+const { slug } = Astro.params
 const { post } = Astro.props
 ---
 
-<PostLayout title={post.title}>
+<PostLayout title={post.frontmatter.title}>
   <div class="wrapper">
     <Header />
     <main>
       <article class="project-post">
-        <h2 itemprop="title" class="project-post__title">{post.title}</h2>
+        <h2 itemprop="title" class="project-post__title">
+          {post.frontmatter.title}
+        </h2>
         <div class="project-post__metadata">
-          <time datetime={post.date}>{toLocaleString(post.date)}</time>
+          <time datetime={post.frontmatter.date}
+            >{toLocaleString(post.frontmatter.date)}</time
+          >
         </div>
-        <div set:html={post.astro.html} class="project-post__content">
+        <div class="project-post__content">
+          <post.Content></post.Content>
         </div>
       </article>
     </main>
