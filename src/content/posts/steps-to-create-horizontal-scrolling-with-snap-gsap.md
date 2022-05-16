@@ -4,7 +4,7 @@ slug: steps-to-create-horizontal-scrolling-with-snap-gsap
 date: 2022-05-16T09:00:00.0Z
 title: "Steps to create: Horizontal snapping sections using GSAP"
 tags:
-  -
+  - GSAP
 ---
 
 Steps to create: Horizontal snapping sections (simple) using GSAP
