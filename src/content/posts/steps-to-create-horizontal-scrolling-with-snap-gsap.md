@@ -10,7 +10,13 @@ tags:
 Steps to create: Horizontal snapping sections (simple) using GSAP
 This pen is created by Greensock. And below are the written steps on how to go about creating this.
 
-https://codepen.io/GreenSock/embed/YzygYvM?editors=1010
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzygYvM" data-user="GreenSock" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/GreenSock/pen/YzygYvM">
+  Horizontal snapping sections (simple) - ScrollTrigger</a> by GreenSock (<a href="https://codepen.io/GreenSock">@GreenSock</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 
 
 1. Create a container in which there are 6 sections(panel).
