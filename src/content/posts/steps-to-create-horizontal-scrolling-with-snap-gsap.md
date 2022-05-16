@@ -4,11 +4,13 @@ slug: steps-to-create-horizontal-scrolling-with-snap-gsap
 date: 2022-05-16T09:00:00.0Z
 title: "Steps to create: Horizontal snapping sections using GSAP"
 tags:
+  - how-to
   - GSAP
+  - ScrollTrigger
 ---
+As part of the answering question in the forum, I am writing this blog to help me and other people. 
 
-Steps to create: Horizontal snapping sections (simple) using GSAP.
-This pen is created by Greensock. And below are the written steps on how to go about creating this.
+Horizontal snapping sections (simple) using GSAP. This pen is created by Greensock. Below are the written steps on how to go about creating this with the explanation of what each property does.
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzygYvM" data-user="GreenSock" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/GreenSock/pen/YzygYvM">
