@@ -23,6 +23,12 @@
 
   --footerHeight: 12rem;
   --headerHeight: 10rem;
+
+    --clr-1: hsl(45, 100%, 92%);
+  --clr-2: hsl(355, 100%, 68%);
+  --clr-3: hsl(42, 100%, 50%);
+  --clr-4: hsl(359, 100%, 83%);
+  --clr-9: hsl(273, 100%, 22%);
 }
 
 html {

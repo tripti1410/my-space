@@ -12,7 +12,7 @@ const uniquetags = blog.uniqueTags(posts)
   <div class="wrapper">
     <div class="blog-listing-page">
       <p>
-        I write about my expeirnces being a developer, freelancer and life in
+        I write about my experiences being a developer, freelancer and life in
         general.
       </p>
       <ul class="blog-list">
@@ -40,8 +40,9 @@ const uniquetags = blog.uniqueTags(posts)
               <a href={`/tags/${tag}`}>
                 #{tag} (
                 {
-                  posts.filter((post) => post.frontmatter.tags?.find((t) => t === tag))
-                    .length
+                  posts.filter((post) =>
+                    post.frontmatter.tags?.find((t) => t === tag)
+                  ).length
                 }
                 )
               </a>

@@ -1,7 +1,7 @@
 .home-work-container {
   grid-column: 1/-1;
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .section-title {
@@ -23,4 +23,32 @@
   font-size: var(--fs-l);
   text-decoration-line: underline;
   text-decoration-color: var(--mono-2);
+}
+
+.home-work-container__project {
+  position: relative;
+  padding: 56.25% 1.6rem 1.6rem 1.6rem;
+  background-color: white;
+  border: 1px solid var(--gray-3);
+  border-radius: 5px;
+}
+.home-work-container__project iframe {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 56.25%;
+}
+.home-work-container__project .project-description {
+  margin-top: 3rem;
+}
+.home-work-container__project .tech {
+  display: flex;
+  margin-top: 1.5rem;
+  list-style: none;
+  color: var(--mono-1);
+}
+.home-work-container__project .tech span {
+  padding-right: 1rem;
+  font-weight: bold;
 }
