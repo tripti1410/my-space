@@ -24,7 +24,7 @@
   --footerHeight: 12rem;
   --headerHeight: 10rem;
 
-    --clr-1: hsl(45, 100%, 92%);
+  --clr-1: hsl(45, 100%, 92%);
   --clr-2: hsl(355, 100%, 68%);
   --clr-3: hsl(42, 100%, 50%);
   --clr-4: hsl(359, 100%, 83%);
@@ -162,16 +162,12 @@ strong {
 
 .social-links {
   list-style: none;
-  position: fixed;
-  writing-mode: vertical-rl;
-  top: 11rem;
-  right: 2rem;
   color: var(--black);
+  display: flex;
 }
 
 .social-links li {
-  display: inline;
-  padding: 0.8rem 0;
+  padding: 1.6rem;
 }
 
 @media (min-width: 768px) {

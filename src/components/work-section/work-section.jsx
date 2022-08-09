@@ -68,7 +68,7 @@ const WorkSection = () => {
             &nbsp;
             <a href="https://github.com/tripti1410/space-tourism">Github</a>
           </p>
-          <p class="tech">
+          <p className="tech">
             <span> Tech: </span>
             Astro, CSS
           </p>
