@@ -1,9 +1,9 @@
 /* Header */
 .header {
   display: grid;
-  grid-template-columns: 2fr 0.5fr;
+  grid-template-columns: 1fr;
   margin-bottom: 2.4rem;
-  height: var(--headerHeight);
+  /* height: var(--headerHeight); */
 }
 
 .logo {
@@ -23,8 +23,13 @@
 .navigation .menu {
   list-style: none;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  /* flex-direction: column;
+  justify-content: flex-end; */
+}
+.navigation .menu-item {
+  margin-right: 1rem;
+  border-bottom: 3px solid;
+  font-size: var(--fs-m);
 }
 
 @media (min-width: 768px) {
@@ -35,7 +40,7 @@
     grid-column: 1 / span 3;
   }
   .navigation {
-    grid-column: 8/-1;
+    grid-column: 7/-1;
   }
   .navigation .menu {
     list-style: none;
@@ -46,8 +51,8 @@
   .navigation .menu-item {
     display: inline;
     margin-right: 1.6rem;
-    border-bottom: 5px solid;
-    font-size: var(--fs-xl);
+    border-bottom: 3px solid;
+    font-size: var(--fs-l);
     font-weight: bold;
     transition: all 2s ease-in-out;
   }

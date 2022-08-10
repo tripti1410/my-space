@@ -64,9 +64,9 @@ const WorkSection = () => {
             This is the complete sample project. As of now, this does not have
             any animations. I created this project to try out Astro and to
             experiment with new CSS properties & structure. &nbsp;
-            <a href="https://space-tourism-trapti.netlify.app">Live site</a>
+            <a href="https://space-tourism-trapti.netlify.app">Live site link</a>
             &nbsp;
-            <a href="https://github.com/tripti1410/space-tourism">Github</a>
+            <a href="https://github.com/tripti1410/space-tourism">Check in Github</a>
           </p>
           <p className="tech">
             <span> Tech: </span>
@@ -90,7 +90,7 @@ const WorkSection = () => {
             of the codesandbox GSAP challenge. It's a replica of a famous{" "}
             <a href="https://www.lemonade.com/giveback-2019">lemonade</a>.
             &nbsp;
-            <a href="https://b2mg4r.csb.app">Live site</a>
+            <a href="https://b2mg4r.csb.app">Live site link</a>
           </p>
           <p className="tech">
             <span> Tech: </span>
@@ -113,7 +113,7 @@ const WorkSection = () => {
           <p>
             Apple’s screen saver “hello” looks pretty. I recreated this in
             Codepen, they featured it in their spark collection. &nbsp;
-            <a href="https://codepen.io/tripti1410/pen/pordWpZ">Codepen</a>
+            <a href="https://codepen.io/tripti1410/pen/pordWpZ">Check in Codepen</a>
           </p>
           <p className="tech">
             <span> Tech: </span>
@@ -134,7 +134,7 @@ const WorkSection = () => {
           <p>
             This is the Flip animation using GreenSock’s flip plugin I did this
             as part of the Codepen challenge. The community loved it.&nbsp;
-            <a href="https://codepen.io/tripti1410/pen/jOGZPbp">Codepen</a>
+            <a href="https://codepen.io/tripti1410/pen/jOGZPbp">Check in Codepen</a>
           </p>
           <p className="tech">
             <span> Tech: </span>

@@ -39,10 +39,16 @@ const Header = () => {
           </text>
         </svg>
       </a>
-      <nav className="navigation">
+      <nav className="navigation flex-center">
         <ul className="menu">
           <li className="menu-item">
-            <a href="/about">About</a>
+            <a href="/about">About me</a>
+          </li>
+          <li className="menu-item">
+            <a href="/blog">Blogs</a>
+          </li>
+          <li className="menu-item">
+            <a href="#hire-me">Hire me</a>
           </li>
           <li className="menu-item">
             <a href="/projects">Projects</a>
