@@ -17,11 +17,11 @@
   font-size: var(--fs-l);
   padding-left: 0;
 }
-.home-about-container .content:nth-child(2) {
+/* .home-about-container .content:nth-child(2) {
   font-size: var(--fs-xxl);
   font-weight: bold;
   color: initial;
-}
+} */
 
 .about-heading {
   font-size: var(--fs-jumbo);
@@ -36,7 +36,9 @@
 @media (min-width: 768px) {
   .home-about-container {
     display: grid;
-    grid-template-columns: 30rem minmax(24ch, 1fr);
+    grid-template-columns: 40rem minmax(24ch, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
     grid-column-gap: 2.4rem;
     padding: 0;
   }
