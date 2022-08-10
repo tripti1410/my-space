@@ -5,7 +5,7 @@ import "./writing-section.css"
 const WritingSection = ({ blogs }) => {
   return (
     <section className="home-writing-container">
-      <h2 className="section-title">Writing</h2>
+      <h2 className="section-title">I write stuff I know about:</h2>
       <ul className="blogs">
         {blogs.map((blog) => (
           <li className="blog" key={blog.id}>

@@ -6,6 +6,7 @@ import WritingSection from "$src/components/writing-section/writing-section.jsx"
 import PopularWorkSection from "$src/components/popular-work-section/popular-work-section.jsx"
 import Testimonial from "$src/components/testimonial-section/testimonial.jsx"
 import WorkSection from "$src/components/work-section/work-section.jsx"
+import ServicesSection from "$src/components/services-section/services-section.jsx"
 
 import BLOGS from "$src/data/blogs.js"
 import POPULAR_WORK from "$src/data/popular-work.js"
@@ -19,8 +20,9 @@ let popularWork = POPULAR_WORK
 <PageLayout title="Home">
   <main id="main" class="home-content">
     <AboutSection {profileImg} />
-    <Testimonial />
+    <ServicesSection />
     <WorkSection />
+    <Testimonial />
     <WritingSection blogs={BLOGS} />
     <PopularWorkSection {popularWork} />
   </main>

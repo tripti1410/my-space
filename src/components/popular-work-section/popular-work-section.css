@@ -6,17 +6,6 @@
   grid-gap: 1.6rem;
 }
 
-.popular-pens-title {
-  grid-column: 1/-1;
-  display: flex;
-  align-items: center;
-}
-
-.popular-pens-title  span {
-  font-size: var(--fs-m);
-  line-height: 1;
-  padding-left: 0.8rem;
-}
 .go-to-codepen {
   padding: 0.4rem 0;
   border: 1px solid var(--mono-1);
@@ -41,7 +30,7 @@
 }
 .popular-pens .popular-pen:hover {
   background-color: #fdefd3;
-  box-shadow: 2px 2px 8px 3px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.1);
 }
 .popular-pens .popular-pen figure {
   justify-self: center;
@@ -70,11 +59,11 @@
   right: 0;
   bottom: 0;
   height: 49.6rem;
-  background-color: rgba(0,0,0,0.65);
+  background-color: rgba(0, 0, 0, 0.65);
   transition: all 0.4s ease-in-out 0s;
 }
 
-.popular-pen-description  {
+.popular-pen-description {
   transform: translate(0, 0%);
   transition: all 0.4s ease-in-out;
   min-height: 15rem;

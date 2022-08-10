@@ -1,0 +1,14 @@
+.home-services-container {
+  grid-column: 1/-1;
+  padding: 0 1.2rem;
+}
+.home-services-container ul {
+  padding-left: 4rem;
+}
+.home-services-container h3 {
+  font-size: var(--fs-xxl);
+}
+
+.home-services-container .button {
+  margin-left: 1rem;
+}
