@@ -17,12 +17,24 @@
   padding-top: 0.8rem;
   color: var(--mono-1);
 }
-.testimonial-title {
+
+.testimonial-section .section-title {
   grid-column: 1/-1;
 }
-
 @media (min-width: 768px) {
   .testimonial-section {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #testimonial-svg {
+    max-width: 320px;
+    grid-column: 1 / span 3;
+    justify-self: center;
+    align-self: center;
+  }
+  .testimonial-section .wide {
+    grid-column: span 3 /-1;
+  }
+  .testimonial-section blockquote {
+    grid-column: span 2;
   }
 }

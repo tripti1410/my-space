@@ -1,34 +1,64 @@
 ---
-import "../styles/site.css";
+import "../styles/site.css"
 
-const {title} = Astro.props;
-const pageTitle = (title === undefined || title.trim() === "") ?
-	"Trapti Rahangdale - Freelance Frontend Engineer" :
-	`${title} | Trapti Rahangdale - Freelance Frontend Engineer`;
+const { title } = Astro.props
+const pageTitle =
+  title === undefined || title.trim() === ""
+    ? "Trapti Rahangdale - Freelance Frontend Engineer"
+    : `${title} | Trapti Rahangdale - Freelance Frontend Engineer`
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148013867-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-148013867-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-			gtag('config', 'UA-148013867-1');
-		</script>
-		<title>{pageTitle}</title>
-		<meta name="description" content="Freelance Frontend Web UI/UX Engineer - India" />
-		<meta name="keywords" content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans%7CNoto+Serif" media="all">
-		<link rel="alternate" title="Articles RSS Feed" type="application/rss+xml" href="https://www.iamtrapti.com/rss.xml">
-		<link rel="icon" href="/favicon-32x32.png" type="image/png">
-		<link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png">
-	</head>
-	<body>
-		<slot></slot>
-	</body>
+      gtag("config", "UA-148013867-1")
+    </script>
+    <title>{pageTitle}</title>
+    <meta
+      name="description"
+      content="Freelance Frontend Web UI/UX Engineer - India"
+    />
+    <meta
+      name="keywords"
+      content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans%7CNoto+Serif"
+      media="all"
+    />
+    <link
+      rel="alternate"
+      title="Articles RSS Feed"
+      type="application/rss+xml"
+      href="https://www.iamtrapti.com/rss.xml"
+    />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"
+    />
+  </head>
+  <body>
+    <slot />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+    ></script>
+  </body>
 </html>
