@@ -6,6 +6,7 @@ const BLOGS = [
     subtitle:
       "An innovative application of SVG masking to achieve this affect in matter of minutes.",
     publication: "CSS-TRICKS",
+    type: "popular",
   },
   {
     id: 302,
@@ -13,6 +14,7 @@ const BLOGS = [
     title: "Thinking in CSS Grid",
     subtitle: "Two dimensional and outside-in. What does it mean ?",
     publication: "Medium - Statuscode",
+    type: "popular",
   },
   {
     id: 499,

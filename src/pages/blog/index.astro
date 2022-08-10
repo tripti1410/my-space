@@ -2,10 +2,12 @@
 import PageLayout from "$src/layouts/PageLayout.astro"
 import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
+import BLOGS from "$src/data/blogs.js"
 
 const allPosts = await Astro.glob("../../content/posts/*.md")
 const posts = blog.sortedPosts(allPosts)
 const uniquetags = blog.uniqueTags(posts)
+const popularBlogs = BLOGS.filter((blog) => blog.type === "popular")
 ---
 
 <PageLayout title="Blog">
@@ -15,6 +17,22 @@ const uniquetags = blog.uniqueTags(posts)
         I write about my experiences being a developer, freelancer and life in
         general.
       </p>
+      <h2>Popular blogs</h2>
+      <ul class="blogs">
+        {popularBlogs.map((blog) => (
+          <li class="blog">
+            <a href={blog.slug} rel="noopener noreferrer">
+              <h3 class="blog__title">{blog.title}</h3>
+              {blog.publication && (
+                <span class="blog__badge">Published at {blog.publication}</span>
+              )}
+              <p class="blog__subtitle">{blog.subtitle}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <h2>Latest blogs</h2>
+      <div class="latest-blog">
       <ul class="blog-list">
         {posts.map((post) => (
           <li>
@@ -50,6 +68,7 @@ const uniquetags = blog.uniqueTags(posts)
           ))}
         </ul>
       </aside>
+      </div>
     </div>
   </div>
 </PageLayout>
