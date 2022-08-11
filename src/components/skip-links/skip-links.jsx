@@ -3,12 +3,10 @@ import "./skip-links.css"
 
 const SkipLinks = () => {
   return (
-    <ul className="skip-links">
-      <li>
-        <a href="#main">Skip to main content</a>
-      </li>
-    </ul>
+    <div className="skip-links">
+      <a href="#main">Skip to main content</a>
+    </div>
   )
 }
 
-export default SkipLinks;
+export default SkipLinks

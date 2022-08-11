@@ -4,7 +4,12 @@ const SocialLinks = () => {
   return (
     <ul className="social-links">
       <li>
-        <a href="https://twitter.com/imtraptir" name="twitter" target="_blank">
+        <a
+          href="https://twitter.com/imtraptir"
+          name="twitter"
+          target="_blank"
+          className="flex-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -22,7 +27,12 @@ const SocialLinks = () => {
         </a>
       </li>
       <li>
-        <a href="https://github.com/tripti1410" name="github" target="_blank">
+        <a
+          href="https://github.com/tripti1410"
+          name="github"
+          target="_blank"
+          className="flex-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -40,7 +50,12 @@ const SocialLinks = () => {
         </a>
       </li>
       <li>
-        <a href="https://codepen.io/tripti1410/" name="codepen" target="_blank">
+        <a
+          href="https://codepen.io/tripti1410/"
+          name="codepen"
+          target="_blank"
+          className="flex-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -62,6 +77,7 @@ const SocialLinks = () => {
           href="https://www.linkedin.com/in/imtraptir"
           name="linkedin"
           target="_blank"
+          className="flex-center"
         >
           <svg
             width="32"
@@ -84,6 +100,7 @@ const SocialLinks = () => {
           href="https://join.skype.com/invite/J3zfRqrfweAw"
           name="skype"
           target="_blank"
+          className="flex-center"
         >
           <svg
             width="32"

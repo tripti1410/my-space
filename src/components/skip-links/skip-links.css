@@ -1,24 +1,18 @@
 .skip-links {
-  list-style: none;
   position: absolute;
   left: 0;
   padding: 1.6rem;
-}
-
-.skip-links li {
-  text-decoration: none;
-  font-size: var(--fs-xl);
-  display: flex;
   max-width: 11rem;
+  font-size: var(--fs-xl);
 }
 
-.skip-links li a {
+.skip-links a {
   line-height: 1.2;
   opacity: 0;
   color: var(--gray-1);
   background-color: var(--background-color);
 }
 
-.skip-links li a:focus {
+.skip-links a:focus {
   opacity: 1;
 }

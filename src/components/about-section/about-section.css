@@ -30,7 +30,7 @@
 }
 .about-heading .heart {
   width: 40px;
-  fill: var(--mono-1);
+  fill: var(--clr-2);
 }
 .cta-container {
   margin: 3rem 1.6rem;
