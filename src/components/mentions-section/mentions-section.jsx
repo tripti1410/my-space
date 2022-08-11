@@ -5,7 +5,7 @@ import "./mentions-section.css"
 const MentionsSection = () => {
   return (
     <section className="home-mentions-container">
-      <h2 className="section-title">appreciation I got on Social media:</h2>
+      <h2 className="section-title">recognition on social media:</h2>
       <div className="mentions">
         <div>
           <blockquote

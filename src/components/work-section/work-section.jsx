@@ -16,14 +16,17 @@ const WorkSection = () => {
         </div>
         <div className="project-description">
           <p>
-            I created this complete website for a client which has modern layout
-            & line animations on scroll throughout the website. More about this
-            project &nbsp;
-            <a href="/project/lifesci-project-details/">here</a>.
+            I built the website for{" "}
+            <a href="https://lifescicommunications.com">
+              LifeSci Communications
+            </a>
+            . It has a complex, modern layout, and every page has different line
+            animations on scroll.{" "}
+            <a href="/project/lifesci-project-details/">Project details.</a>
           </p>
           <p className="tech">
             <span> Tech: </span>
-            Wordpress, Elementor, Greensock
+            WordPress, Elementor, Greensock
           </p>
         </div>
       </div>
@@ -40,10 +43,14 @@ const WorkSection = () => {
         </div>
         <div className="project-description">
           <p>
-            At &nbsp;
-            <a href="https://www.equivalent.design">Equivalent Design</a> I'm
-            responsible for creating all the animations, this is one of them.
-            Making SVG WCAG compliant, clean and performant.
+            At <a href="https://www.equivalent.design">Equivalent Design</a>,
+            I’m responsible for creating all the accessible SVG animations. I
+            clean the SVGs, make them performant & WCAG compliant. e.g., in the
+            animation for Sam, the guide dog above, I added support for{" "}
+            <strong>
+              reduced motion, light & dark mode, high contrast mode, reader app,
+              etc.
+            </strong>
           </p>
           <p className="tech">
             <span> Tech: </span>
@@ -64,9 +71,13 @@ const WorkSection = () => {
             This is the complete sample project. As of now, this does not have
             any animations. I created this project to try out Astro and to
             experiment with new CSS properties & structure. &nbsp;
-            <a href="https://space-tourism-trapti.netlify.app">Live site link</a>
+            <a href="https://space-tourism-trapti.netlify.app">
+              Live site link
+            </a>
             &nbsp;
-            <a href="https://github.com/tripti1410/space-tourism">Check in Github</a>
+            <a href="https://github.com/tripti1410/space-tourism">
+              Check in Github
+            </a>
           </p>
           <p className="tech">
             <span> Tech: </span>
@@ -113,7 +124,9 @@ const WorkSection = () => {
           <p>
             Apple’s screen saver “hello” looks pretty. I recreated this in
             Codepen, they featured it in their spark collection. &nbsp;
-            <a href="https://codepen.io/tripti1410/pen/pordWpZ">Check in Codepen</a>
+            <a href="https://codepen.io/tripti1410/pen/pordWpZ">
+              Check in Codepen
+            </a>
           </p>
           <p className="tech">
             <span> Tech: </span>
@@ -134,7 +147,9 @@ const WorkSection = () => {
           <p>
             This is the Flip animation using GreenSock’s flip plugin I did this
             as part of the Codepen challenge. The community loved it.&nbsp;
-            <a href="https://codepen.io/tripti1410/pen/jOGZPbp">Check in Codepen</a>
+            <a href="https://codepen.io/tripti1410/pen/jOGZPbp">
+              Check in Codepen
+            </a>
           </p>
           <p className="tech">
             <span> Tech: </span>

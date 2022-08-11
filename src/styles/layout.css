@@ -1,0 +1,13 @@
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.with-sidebar .sidebar {
+  flex-grow: 1;
+}
+.with-sidebar > *:not(.sidebar) {
+  flex-basis: 0px;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}

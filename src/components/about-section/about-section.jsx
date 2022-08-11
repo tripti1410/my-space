@@ -21,24 +21,23 @@ const AboutSection = ({ profileImg }) => {
           SVG, animations and Web
         </h1>
         <p className="content">
-          I am a freelance Creative frontend engineer based in India. I can help
-          you with creating and optimizing SVGs, creating web animations,
-          responsive layouts, websites, webapps and many more.
+          I am a freelance Creative Frontend Engineer based in India. I can help
+          you with creating & optimizing SVGs, creating web animations,
+          responsive layouts, websites, web applications & much more.
         </p>
         <p className="content">
           I emphasize on <strong>accessibility</strong> and{" "}
           <strong>performance</strong> in my work.
         </p>
-        <p className="content">
-          I blog on these topics and I am available as a guest author.
-        </p>
-        <p className="content">
-          Learn more &nbsp;
+
+        <p className="cta-container">
+          <a href="#hire-me" className="button clr-2">
+            Hire me
+          </a>
+          Learn more&nbsp;
           <a href="/about" className="link">
             about me.
           </a>
-          {/* or
-        <a href="mailto:hello@trapti.dev">hire me.</a> */}
         </p>
       </div>
     </section>

@@ -32,7 +32,12 @@
   width: 40px;
   fill: var(--mono-1);
 }
-
+.cta-container {
+  margin: 3rem 1.6rem;
+}
+.cta-container .button {
+  margin-right: 1.6rem;
+}
 @media (min-width: 768px) {
   .home-about-container {
     display: grid;

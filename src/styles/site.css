@@ -119,6 +119,9 @@ strong {
   color: black;
   background-color: var(--clr-2);
 }
+.clr-1 {
+  background-color: var(--clr-1);
+}
 .stack > * + * {
   margin-block-start: var(--space-m, 2rem);
 }
@@ -145,7 +148,7 @@ strong {
   align-items: center;
   justify-content: center;
   min-height: var(--footerHeight);
-  margin: 2rem 0;
+  margin: 7rem 0 2rem;
 }
 .footer > * {
   justify-self: center;
