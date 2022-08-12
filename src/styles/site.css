@@ -15,8 +15,8 @@
   --fs-l: 1.8rem;
   --fs-xl: 2rem;
   --fs-xxl: 2.4rem;
-  /* --fs-xxxl: 3.6rem; */
-  --fs-jumbo: 3.8rem;
+  --fs-xxxl: 3.8rem;
+  --fs-jumbo: 5rem;
   /* Line height */
   --lh-5: 1.5;
   --lh-8: 1.8;
@@ -34,7 +34,8 @@
 @media (min-width: 768px) {
   :root {
     --fs-xxl: 3.2rem;
-    --fs-jumbo: 6rem;
+    --fs-xxxl: 6rem;
+    --fs-jumbo: 8rem;
   }
 }
 
@@ -58,9 +59,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Sans", sans-serif;
   margin: 0;
   color: var(--black);
+}
+h1,
+h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif;
 }
 a {
   text-decoration: none;
@@ -186,7 +196,7 @@ strong {
   margin-bottom: 3.2rem;
   letter-spacing: 1px;
   text-align: center;
-  font-size: var(--fs-jumbo);
+  font-size: var(--fs-xxxl);
   margin-bottom: 2rem;
   font-weight: bold;
 }
