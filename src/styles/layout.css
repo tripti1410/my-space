@@ -11,3 +11,17 @@
   flex-grow: 999;
   min-inline-size: 50%;
 }
+
+.flowy-layout {
+ display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap:  var(--space-l);
+}
+.flowy-layout > *:not(.button) {
+ flex-basis: 0px;
+ flex-grow: 999;
+ min-inline-size: 300px;
+ max-inline-size: 50%;
+}

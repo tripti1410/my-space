@@ -68,15 +68,30 @@ const WorkSection = () => {
 
         <div className="project-description">
           <p>
-            This is the complete sample project. As of now, this does not have
-            any animations. I created this project to try out Astro and to
-            experiment with new CSS properties & structure. &nbsp;
-            <a href="https://space-tourism-trapti.netlify.app">
-              Live site link
+            I wanted to get familiar with{" "}
+            <a href="https://astro.build" target="_blank">
+              Astro
             </a>
-            &nbsp;
-            <a href="https://github.com/tripti1410/space-tourism">
-              Check in Github
+            . So I used Frontend Mentor’s
+            <a
+              href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3"
+              target="_blank"
+            >
+              {" "}
+              challenge
+            </a>{" "}
+            design and created this in Plain HTML, CSS and JavaScript.
+          </p>
+          <p>
+            <a href="https://space-tourism-trapti.netlify.app" target="_blank">
+              Demo
+            </a>{" "}
+            /{" "}
+            <a
+              href="https://github.com/tripti1410/space-tourism"
+              target="_blank"
+            >
+              Source code
             </a>
           </p>
           <p className="tech">
@@ -98,10 +113,20 @@ const WorkSection = () => {
         <div className="project-description">
           <p>
             Line animation on scroll with graphics between them. This was part
-            of the codesandbox GSAP challenge. It's a replica of a famous{" "}
-            <a href="https://www.lemonade.com/giveback-2019">lemonade</a>.
-            &nbsp;
-            <a href="https://b2mg4r.csb.app">Live site link</a>
+            of the CodeSandbox GSAP challenge. It's a replica of the famous{" "}
+            <a href="https://www.lemonade.com/giveback-2019" target="_blank">
+              Lemonade website
+            </a>
+            .
+          </p>
+          <p>
+            <a href="https://b2mg4r.csb.app" target="_blank">
+              Demo
+            </a>{" "}
+            /{" "}
+            <a href="https://codesandbox.io/s/b2mg4r" target="_blank">
+              Source code
+            </a>
           </p>
           <p className="tech">
             <span> Tech: </span>
@@ -122,10 +147,19 @@ const WorkSection = () => {
 
         <div className="project-description">
           <p>
-            Apple’s screen saver “hello” looks pretty. I recreated this in
-            Codepen, they featured it in their spark collection. &nbsp;
-            <a href="https://codepen.io/tripti1410/pen/pordWpZ">
-              Check in Codepen
+            I recreated in CodePen Apple’s beautiful "hello" screen saver.
+            CodePen featured it in their Spark collection.
+          </p>
+          <p>
+            <a
+              href="https://codepen.io/tripti1410/full/pordWpZ"
+              target="_blank"
+            >
+              Demo
+            </a>{" "}
+            /{" "}
+            <a href="https://codepen.io/tripti1410/pen/pordWpZ" target="_blank">
+              Source code
             </a>
           </p>
           <p className="tech">
@@ -145,11 +179,20 @@ const WorkSection = () => {
         </div>
         <div className="project-description">
           <p>
-            This is the Flip animation using GreenSock’s flip plugin I did this
-            as part of the Codepen challenge. The community loved it.&nbsp;
-            <a href="https://codepen.io/tripti1410/pen/jOGZPbp">
-              Check in Codepen
-            </a>
+            I used GreenSock’s{" "}
+            <a
+              href="https://greensock.com/docs/v3/Plugins/Flip/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              FLIP plugin
+            </a>{" "}
+            to create this animation as part of the CodePen challenge. The
+            community loved it.
+          </p>
+          <p>
+            <a href="https://codepen.io/tripti1410/full/jOGZPbp">Demo</a> /{" "}
+            <a href="https://codepen.io/tripti1410/pen/jOGZPbp">Source code</a>
           </p>
           <p className="tech">
             <span> Tech: </span>

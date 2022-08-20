@@ -41,7 +41,7 @@
 @media (min-width: 768px) {
   .home-about-container {
     display: grid;
-    grid-template-columns: 40rem minmax(24ch, 1fr);
+    grid-template-columns: 35rem minmax(24ch, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
     grid-column-gap: 2.4rem;

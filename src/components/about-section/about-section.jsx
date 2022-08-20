@@ -5,7 +5,7 @@ const AboutSection = ({ profileImg }) => {
   return (
     <section className="home-about-container">
       <figure className="image-container">
-        <img src={profileImg} alt="Trapti rahangdale" />
+        <img src={profileImg} alt="Trapti rahangdale" width="100%" />
       </figure>
       <div class="home-intro">
         <h1 className="about-heading">
