@@ -1,5 +1,6 @@
 import React from "react"
 import "./work-section.css"
+import spaceTourismImg from "$src/images/space-tourism.jpg"
 
 const WorkSection = () => {
   return (
@@ -60,10 +61,7 @@ const WorkSection = () => {
       </div>
       <div className="home-work-container__project">
         <div className="project-preview">
-          <img
-            src="https://www.iamtrapti.com/assets/space-tourism-home-page.png"
-            alt="website homepage design"
-          />
+          <img src={spaceTourismImg} alt="website homepage design" />
         </div>
 
         <div className="project-description">

@@ -54,7 +54,7 @@
     border-bottom: 3px solid;
     font-size: var(--fs-l);
     font-weight: bold;
-    transition: all 2s ease-in-out;
+    /* transition: all 2s ease-in-out; */
   }
   .navigation .menu-item a:hover {
     color: var(--mono-1);
