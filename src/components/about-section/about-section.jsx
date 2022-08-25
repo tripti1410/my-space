@@ -4,8 +4,13 @@ import React from "react"
 const AboutSection = ({ profileImg }) => {
   return (
     <section className="home-about-container">
-      <figure className="image-container">
-        <img src={profileImg} alt="Trapti rahangdale" width="100%" />
+      <figure className="home-profile-container">
+        <img
+          src={profileImg}
+          class="home-profile-image"
+          alt="Trapti rahangdale"
+          width="100%"
+        />
       </figure>
       <div class="home-intro">
         <h1 className="about-heading">

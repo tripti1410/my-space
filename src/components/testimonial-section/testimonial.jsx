@@ -4,7 +4,7 @@ import "./testimonial.css"
 const Testimonial = () => {
   return (
     <div className="testimonial-section">
-      <h2 className="section-title">what my clients have to say:</h2>
+      <h2 className="section-title" id="home-testimonial-title">what my clients have to say:</h2>
       <svg
         id="testimonial-svg"
         width="100%"

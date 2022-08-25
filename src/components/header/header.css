@@ -2,7 +2,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4rem;
   /* height: var(--headerHeight); */
 }
 

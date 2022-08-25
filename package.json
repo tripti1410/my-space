@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "astro": "^0.26.1",
+    "gsap": "file:gsap-bonus.tgz",
     "lazysizes": "^5.3.2",
     "posthtml": "^0.16.5",
     "posthtml-hash": "^1.2.2"

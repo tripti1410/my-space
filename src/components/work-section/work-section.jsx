@@ -5,7 +5,7 @@ import spaceTourismImg from "$src/images/space-tourism.jpg"
 const WorkSection = () => {
   return (
     <section className="home-work-container">
-      <h2 className="section-title">work I do for clients; and lab:</h2>
+      <h2 className="section-title" id="home-work-title">work I do for clients; and lab:</h2>
       <div className="home-work-container__project">
         <div className="project-preview">
           <iframe

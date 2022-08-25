@@ -4,9 +4,11 @@ import React from "react"
 const ServicesSection = () => {
   return (
     <section id="hire-me" className="home-services-container">
-      <h2 className="section-title">you can use my contribution to create:</h2>
+      <h2 className="section-title" id="home-service-title">
+        you can use my contribution to create:
+      </h2>
 
-      <div>
+      <div className="service">
         <h3> Websites User Interface </h3>
 
         <p>
@@ -30,7 +32,7 @@ const ServicesSection = () => {
         </p>
       </div>
 
-      <div>
+      <div className="service">
         <h3> Animations using GSAP / CSS</h3>
         <p>
           I can help you engage your users on your websites. Convey your story
@@ -807,7 +809,7 @@ const ServicesSection = () => {
           <path d="M63.11 113.36v.07c-.06-.05-.11-.1-.17-.14a.422.422 0 0 0-.2-.08c-.08 0-.14.04-.2.05v.02c.19.06-.09.05.03.1-.21-.07-.05.07-.15.06-.08-.01.01-.07-.09-.06-.07 0 0 .06.06.12 0 0-.01.03-.03.02-.17-.04 0-.04-.05-.06-.03-.01-.07 0-.1-.01h.04c0-.02-.04-.05-.06-.07-.02.03-.1.04-.08.08.01.05.17.16.07.19-.08.02-.05-.09-.11-.06.11.08-.1.06.08.17 0 0 .01.03 0 .03-.11-.01-.36-.14-.1.11s0-.08.09 0c.09.07.12.13.1.18a.311.311 0 0 1-.06-.04c-.01-.02 0-.03-.01-.04l-.12-.09c.1.14-.1.09-.07.19.01.04.05.08.07.13l-.14-.16-.15-.13s-.02.04-.02.07c0 .01.03.04.04.06.16-.05.12.12.19.17 0 .05.08.15-.03.12.02.04.06.09.06.1 0 .03-.03.06-.06.07-.04.02-.02.13-.08.13l.41.4h.08c.12-.05.25-.06.33-.17.24-.37.54-.73.69-1.27.06-.2.09-.3 0-.31h-.01c-.16-.06-.23-.02-.24.07Z" />
         </svg>
 
-        <h3 class="">
+        <h3>
           sounds fun? let's chat!
           <a
             class="button clr-2"

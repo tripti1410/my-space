@@ -1,5 +1,11 @@
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin"
+import { SplitText } from "gsap/SplitText"
+
+gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, SplitText)
+
 window.addEventListener("load", (event) => {
-  console.log("page is fully loaded")
   if (gsap) {
     let testimonial_tl = gsap.timeline({
       scrollTrigger: {
@@ -72,6 +78,7 @@ window.addEventListener("load", (event) => {
     })
     mms_tl
       //Throwing hand
+      .from(".mms-title", { y: 80, ease: "sine.out" })
       .to(
         "#mms-elbow-L",
         {
@@ -248,5 +255,23 @@ window.addEventListener("load", (event) => {
         { rotation: -3, repeat: 6, yoyo: true },
         0
       )
+    // about section
+    
+
+    // heading2.forEach((item, i) => {
+    //   ScrollTrigger.create({
+    //     trigger: item,
+    //     start: "top bottom",
+    //     end: "bottom top",
+    //     toggleClass: "inView",
+    //     animation: gsap.from(sectionTitle.chars, {
+    //       ease: "elastic.out(1, 0.5)",
+    //       stagger: 0.1,
+    //       y: 80,
+    //       autoAlpha: 0,
+    //       duration: 0.8,
+    //     }),
+    //   })
+    // })
   }
 })

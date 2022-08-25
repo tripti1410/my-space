@@ -426,3 +426,11 @@ strong {
     grid-template-columns: 3fr 1fr;
   }
 }
+
+/* Common for text animations */
+.split-parent {
+  overflow: hidden;
+}
+.split-child {
+  display: inline-block;
+}
