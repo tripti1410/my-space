@@ -5,11 +5,11 @@ const AboutSection = ({ profileImgWebP, profileImgJPG }) => {
   return (
     <section className="home-about-container">
       <picture className="home-profile-container">
-        <source srcset={profileImgWebP} />
+        <source srcset={profileImgWebP} alt="Trapti rahangdale portrait" />
         <img
           src={profileImgJPG}
           className="home-profile-image"
-          alt="Trapti rahangdale"
+          alt="Trapti rahangdale portrait"
           width="100%"
         />
       </picture>

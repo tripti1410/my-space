@@ -1,11 +1,14 @@
 import React from "react"
 import "./work-section.css"
 import spaceTourismImg from "$src/images/space-tourism.jpg"
+import spaceTourismImgWebp from "$src/images/space-tourism.webp"
 
 const WorkSection = () => {
   return (
     <section className="home-work-container">
-      <h2 className="section-title" id="home-work-title">work I do for clients; and lab:</h2>
+      <h2 className="section-title" id="home-work-title">
+        work I do for clients; and lab:
+      </h2>
       <div className="home-work-container__project">
         <div className="project-preview">
           <iframe
@@ -61,7 +64,15 @@ const WorkSection = () => {
       </div>
       <div className="home-work-container__project">
         <div className="project-preview">
-          <img src={spaceTourismImg} alt="website homepage design" />
+          <picture>
+            <source srcset={spaceTourismImgWebp} />
+            <img
+              src={spaceTourismImg}
+              alt="space tourism website image"
+              width="100%"
+            />
+          </picture>
+          <img src={spaceTourismImg} alt="space tourism website image" />
         </div>
 
         <div className="project-description">

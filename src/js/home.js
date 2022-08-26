@@ -112,9 +112,9 @@ function serviceSection() {
       autoAlpha: 0,
       duration: 0.1,
     })
-    .from(".service", { autoAlpha: 0 })
-    .from("#mascot-svg", { autoAlpha: 0 })
-    .to(letsChatText.chars, { opacity: 1, stagger: 0.05 })
+    .from(".service", { autoAlpha: 0 }, "-=0.5")
+    .from("#mascot-svg", { autoAlpha: 0, duration: 0.3 })
+    .to(letsChatText.chars, { opacity: 1, stagger: 0.05, duration: 0.3 })
   return serviceSection_tl
 }
 function testimonialSection() {
@@ -196,17 +196,11 @@ function recognitionSection() {
   })
   gsap.set(recognitionHeading.chars, {
     filter: "blur(0px) brightness(1)",
-    rotation: 10,
-    x: 10,
-    y: 10,
+    rotation: 10
   })
   recognitionSection_tl.to(recognitionHeading.chars, {
     filter: "blur(30px) brightness(10)",
     rotation: 0,
-    duration: 0.5,
-    ease: "sine.out",
-    x: 0,
-    y: 0,
     clearProps: "filter",
     stagger: {
       each: 0.01,
@@ -244,7 +238,7 @@ function mmsSection() {
   })
   mms_tl
     //Throwing hand
-    .from(".mms-title", { y: 80, ease: "sine.out" })
+    //.from(".mms-title", { y: 80, ease: "sine.out" })
     .to(
       "#mms-elbow-L",
       {
