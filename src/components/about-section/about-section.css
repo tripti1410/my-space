@@ -17,11 +17,6 @@
   font-size: var(--fs-l);
   padding-left: 0;
 }
-/* .home-about-container .content:nth-child(2) {
-  font-size: var(--fs-xxl);
-  font-weight: bold;
-  color: initial;
-} */
 
 .about-heading {
   font-size: var(--fs-jumbo);

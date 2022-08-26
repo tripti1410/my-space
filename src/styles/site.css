@@ -42,10 +42,39 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url(./Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  src: url(./Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: "Noto Serif", serif;
+  src: url(./Graphik-Font-Family/GraphikBlack.otf);
+}
+@font-face {
+  font-family: "Noto Serif", serif;
+  src: url(./Graphik-Font-Family/GraphikBold.otf);
+}
+@font-face {
+  font-family: "Noto Serif", serif;
+  src: url(./Graphik-Font-Family/GraphikExtralight.otf);
+}
+@font-face {
+  font-family: "Noto Serif", serif;
+  src: url(./Graphik-Font-Family/GraphikRegular.otf);
+}
+@font-face {
+  font-family: "Noto Serif", serif;
+  src: url(./Graphik-Font-Family/GraphikMedium.otf);
+}
+
 body {
   font-family: "Noto Serif", serif;
   font-size: var(--fs-l);
-  font-weight: normal;
+  font-weight: 400;
   line-height: var(--lh-8);
   margin: 0;
   background-color: var(--background-color);
@@ -139,6 +168,7 @@ strong {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* Footer */
@@ -161,7 +191,7 @@ strong {
 }
 .footer .footer-link {
   font-size: var(--fs-l);
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: underline;
   text-align: center;
 }
@@ -200,7 +230,7 @@ strong {
 .link {
   border-bottom: 1px solid var(--mono-1);
   color: var(--mono-1);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .social-links {
@@ -286,7 +316,7 @@ strong {
   padding: 0.4rem 1.6rem;
   border-radius: 0.4rem;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-right: 1rem;
 }
 
@@ -434,5 +464,3 @@ strong {
 .split-child {
   display: inline-block;
 }
-
-
