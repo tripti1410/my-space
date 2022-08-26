@@ -1,0 +1,7 @@
+.header,
+.home-about-container,
+.home-work-container {
+	visibility: hidden;
+	opacity: 0;
+}
+

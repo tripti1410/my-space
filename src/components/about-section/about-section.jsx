@@ -7,12 +7,12 @@ const AboutSection = ({ profileImg }) => {
       <figure className="home-profile-container">
         <img
           src={profileImg}
-          class="home-profile-image"
+          className="home-profile-image"
           alt="Trapti rahangdale"
           width="100%"
         />
       </figure>
-      <div class="home-intro">
+      <div className="home-intro">
         <h1 className="about-heading">
           Hi, I'm Trapti. I<span class="visually-hidden">love</span>
           <svg
