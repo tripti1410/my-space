@@ -13,7 +13,8 @@ import MmsSection from "$src/components/mms-section/mms-section.jsx"
 import BLOGS from "$src/data/blogs.js"
 import POPULAR_WORK from "$src/data/popular-work.js"
 
-import profileImg from "$src/images/profile.jpg"
+import profileImgJPG from "$src/images/profile.jpg"
+import profileImgWebP from "$src/images/profile.webp"
 
 const jsSrc = (await import("../js/lazysizes.min.js?url")).default
 let popularWork = POPULAR_WORK
@@ -21,7 +22,7 @@ let popularWork = POPULAR_WORK
 
 <PageLayout title="Home">
   <div id="main" class="home-content">
-    <AboutSection {profileImg} />
+    <AboutSection {profileImgWebP} {profileImgJPG} />
     <WorkSection />
     <ServicesSection />
     <Testimonial />

@@ -1,17 +1,18 @@
 import "./about-section.css"
 import React from "react"
 
-const AboutSection = ({ profileImg }) => {
+const AboutSection = ({ profileImgWebP, profileImgJPG }) => {
   return (
     <section className="home-about-container">
-      <figure className="home-profile-container">
+      <picture className="home-profile-container">
+        <source srcset={profileImgWebP} />
         <img
-          src={profileImg}
+          src={profileImgJPG}
           className="home-profile-image"
           alt="Trapti rahangdale"
           width="100%"
         />
-      </figure>
+      </picture>
       <div className="home-intro">
         <h1 className="about-heading">
           Hi, I'm Trapti. I<span class="visually-hidden">love</span>
@@ -36,8 +37,7 @@ const AboutSection = ({ profileImg }) => {
           responsive layouts, websites, web applications & much more.
         </p>
         <p className="content">
-          I emphasize on <strong>accessibility</strong> and{" "}
-          <strong>performance</strong> in my work.
+          I emphasize on accessibility and performance in my work.
         </p>
 
         <p className="cta-container">

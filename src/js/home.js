@@ -27,18 +27,18 @@ function aboutSection() {
     type: "lines",
     linesClass: "split-parent",
   })
-  gsap.to(profileImage, {
-    y: () => profileImage.offsetHeight - profileImageContainer.offsetHeight,
-    ease: "none",
-    scrollTrigger: {
-      trigger: profileImageContainer,
-      start: "15% 19%",
-      end: "center top",
-      scrub: true,
-      fastScrollEnd: true
-      // markers: true,
-    },
-  })
+  // gsap.to(profileImage, {
+  //   y: () => profileImage.offsetHeight - profileImageContainer.offsetHeight,
+  //   ease: "none",
+  //   scrollTrigger: {
+  //     trigger: profileImageContainer,
+  //     start: "15% 19%",
+  //     end: "center top",
+  //     scrub: true,
+  //     fastScrollEnd: true
+  //     // markers: true,
+  //   },
+  // })
   aboutSection_tl
     .set(".home-about-container", { autoAlpha: 1 })
     .from(profileImage, { yPercent: 100, duration: 1 })
