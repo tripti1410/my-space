@@ -17,21 +17,6 @@ export async function getStaticPaths({ paginate, rss }) {
     }
   })
 
-  rss({
-    // The RSS Feed title, description, and custom metadata.
-    title: "Trapti Rahangdale's blog",
-    description: "My experiences",
-    customData: `<language>en-us</language>`,
-    // The list of items for your RSS feed, sorted.
-    items: posts.map((item) => ({
-      title: item.frontmatter.title,
-      // description: item.description,
-      link: item.frontmatter.path,
-      pubDate: item.frontmatter.date,
-    })),
-    // file is written to "/rss.xml"
-  })
-
   return pages
 }
 
