@@ -1,18 +1,19 @@
 ---
-path: /blog/trip-to-varkala-kerala
+path: /blog/trip-to-varkala-kerala/
 slug: trip-to-varkala-kerala
 date: 2019-08-14T18:51:07.758Z
 title: "Trip to Varkala - a cliff side beach in Kerala"
 tags:
 	- travel
 ---
+
 ![Varkala - a cliff beach](/assets/collage-cover.jpg "Varkala - a cliff beach")
 
 2 years back, some of our friends visited Varkala and they gave us good reviews. From that time it was in our wish list. Hah! And we made it in August first week. And believe me it's Amazing!. Beauty of this beach is that it's a cliff beach as the name suggests. Entire cliff is full of restaurants shops and hotels facing towards the beach, at restaurants you can sit and feel the cool breeze coming in. Most of the restaurants are roof top or has steps pattern in it which makes it easy to sit anywhere inside the restaurant and you will be feeling cool breeze coming in. It is a great place to sit have tea/coffee read books spend quality time with each other, it's just amazing. And going near beach having fun at water has its own charm. So if you are on beach or at cliff you will enjoy both the places.
 
 August is part of the rainy season, but we were lucky travelling on the weekend that had very little rain. We reached Varkala on Saturday early morning around 7am, took flight from Bangalore to Kochi and then a train from Kochi to Varkala. I will talk about the travel details later on the post. We booked a place called [Mad About Coco](https://madaboutcocovarkala.com/) for our stay. Reception desk staffed from 8am onwards so we relaxed for an hour at a café - Nomad. We later found out that the café has breakfast tie-up with the lodging. Tea felt even more refreshing with sea view and cool breeze in the morning.
 
-Then we checked in to our room. After freshen up came for breakfast at Nomad, where we had our complimentary breakfast and it was decent.  By the time we finished our breakfast it was 11.30 am.
+Then we checked in to our room. After freshen up came for breakfast at Nomad, where we had our complimentary breakfast and it was decent. By the time we finished our breakfast it was 11.30 am.
 
 ![Nomad restaurant](/assets/at-nomad.jpg "Nomad restaurant breakfast time")
 

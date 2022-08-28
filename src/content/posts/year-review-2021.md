@@ -1,5 +1,5 @@
 ---
-path: /blog/year-review-2021
+path: /blog/year-review-2021/
 slug: year-review-2021
 date: 2022-01-01T18:57:25Z
 title: "Year review 2021"

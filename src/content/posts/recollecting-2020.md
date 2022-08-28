@@ -1,5 +1,5 @@
 ---
-path: /blog/recollecting-2020
+path: /blog/recollecting-2020/
 slug: recollecting-2020
 date: 2020-12-29T18:06:47.076Z
 title: Recollecting 2020

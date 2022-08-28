@@ -1,5 +1,5 @@
 ---
-path: /blog/my-journey-of-becoming-a-bookworm
+path: /blog/my-journey-of-becoming-a-bookworm/
 slug: my-journey-of-becoming-a-bookworm
 date: 2020-12-28T13:30:15.306Z
 title: My Journey of becoming a bookworm
@@ -31,7 +31,7 @@ It was early 2020, when I visited my close friend who are family as well. They a
 
 **Question:** I do not find time to read?
 
-**Answer:** Once you start reading and liking it. You will figure out the timings. You might start to avoid talking to people or watching web series and save your time for reading. This will happen over the time. 
+**Answer:** Once you start reading and liking it. You will figure out the timings. You might start to avoid talking to people or watching web series and save your time for reading. This will happen over the time.
 
 (She was so true😁).
 
@@ -69,7 +69,7 @@ After this I started buying books from various genres like romance novels, motiv
 
 I tried Audible also. While I am going for a walk I read books in Audible.
 
-So this is the story of mine, how I started and the how the interest built up. You need put some efforts in order to figure out what type of books keeps you engaging. Explore various mediums and figure out what suits you. 
+So this is the story of mine, how I started and the how the interest built up. You need put some efforts in order to figure out what type of books keeps you engaging. Explore various mediums and figure out what suits you.
 
 ## Medium to read
 
