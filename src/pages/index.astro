@@ -3,7 +3,6 @@ import PageLayout from "$src/layouts/PageLayout.astro"
 
 import AboutSection from "$src/components/about-section/about-section.astro"
 import WritingSection from "$src/components/writing-section/writing-section.astro"
-import PopularWorkSection from "$src/components/popular-work-section/popular-work-section.jsx"
 import Testimonial from "$src/components/testimonial-section/testimonial-section.astro"
 import WorkSection from "$src/components/work-section/work-section.astro"
 import ServicesSection from "$src/components/services-section/services-section.astro"
@@ -11,13 +10,11 @@ import MentionsSection from "$src/components/mentions-section/mentions-section.a
 import MmsSection from "$src/components/mms-section/mms-section.astro"
 
 import BLOGS from "$src/data/blogs.js"
-import POPULAR_WORK from "$src/data/popular-work.js"
 
 import profileImgJPG from "$src/images/profile.jpg"
 import profileImgWebP from "$src/images/profile.webp"
 
 const jsSrc = (await import("../js/lazysizes.min.js?url")).default
-let popularWork = POPULAR_WORK
 ---
 
 <PageLayout title="Home">
@@ -29,7 +26,6 @@ let popularWork = POPULAR_WORK
     <WritingSection blogs={BLOGS} />
     <MentionsSection />
     <MmsSection />
-    <!-- <PopularWorkSection {popularWork} /> -->
   </div>
 
   <script type="module" defer src={jsSrc}></script>
