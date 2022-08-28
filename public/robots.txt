@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.iamtrapti.com/sitemap.xml
+Sitemap: https://www.iamtrapti.com/sitemap-index.xml
