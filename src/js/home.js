@@ -1,4 +1,3 @@
-import MmsSection from "$src/components/mms-section/mms-section"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { SplitText } from "gsap/SplitText"
