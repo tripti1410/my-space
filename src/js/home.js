@@ -229,11 +229,11 @@ function mmsSection() {
   let mms_tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#mms-svg",
-      // markers: true,
+      markers: true,
       start: "center center",
       end: "center center",
       toggleActions: "play none play restart",
-      fastScrollEnd: true,
+      // fastScrollEnd: true,
     },
   })
   mms_tl
