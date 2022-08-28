@@ -7,7 +7,7 @@ import Footer from "$src/components/footer.jsx"
 import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
 
-export async function getStaticPaths({ paginate, rss }) {
+export async function getStaticPaths() {
   const allPosts = await Astro.glob("../../content/posts/*.md")
   const posts = blog.sortedPosts(allPosts)
   const pages = posts.map((post) => {
