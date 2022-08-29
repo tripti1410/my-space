@@ -6,3 +6,17 @@
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: 2rem;
 }
+.home-mentions-container .tweet-card {
+  padding: 1.6rem;
+  border: 1px solid var(--gray-3);
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: none;
+}
+.home-mentions-container .tweet-author-name {
+  font-family: "Ubuntu", sans-serif;
+}
+.home-mentions-container .tweet-body a {
+  font-weight: bold;
+  text-decoration: underline;
+}
