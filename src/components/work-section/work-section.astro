@@ -2,20 +2,49 @@
 import "./work-section.css"
 import spaceTourismImg from "$src/images/space-tourism.jpg"
 import spaceTourismImgWebp from "$src/images/space-tourism.webp"
+import WorkPreview from "./project-preview.jsx"
+const projects = [
+  {
+    dataSrc: "https://player.vimeo.com/video/662273613",
+    dataTitle: "",
+    dataVendor: "vimeo",
+  },
+  {
+    dataSrc: "https://player.vimeo.com/video/719851870",
+    dataTitle: "",
+    dataVendor: "vimeo",
+  },
+  {
+    dataSrc: "https://player.vimeo.com/video/714005277",
+    dataTitle: "",
+    dataVendor: "vimeo",
+  },
+  {
+    dataSrc: "https://player.vimeo.com/video/714007197",
+    dataTitle: "",
+    dataVendor: "vimeo",
+  },
+  {
+    dataSrc: "https://player.vimeo.com/video/714007197",
+    dataTitle: "",
+    dataVendor: "vimeo",
+  },
+  {
+    dataSrc: "https://player.vimeo.com/video/711617783",
+    dataTitle: "",
+    dataVendor: "vimeo",
+  },
+]
 ---
 
 <section class="home-work-container">
   <h2 class="section-title" id="home-work-title">
     work I do for clients; and lab:
   </h2>
+  <!-- {projects.map(project =>  <WorkPreview  {project} client:load />)} -->
+
   <div class="home-work-container__project">
-    <div class="project-preview">
-      <iframe
-        src="https://player.vimeo.com/video/662273613?h=90472dee0f&autoplay=1&loop=1&byline=0&portrait=0"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+    <WorkPreview project={projects[0]} client:load />
     <div class="project-description">
       <p>
         I built the website for{" "}
@@ -31,15 +60,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp"
     </div>
   </div>
   <div class="home-work-container__project">
-    <div class="project-preview">
-      <iframe
-        src="https://player.vimeo.com/video/719851870?h=72cdec4639&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
-        width="100%"
-        height="100%"></iframe>
-    </div>
+    <WorkPreview project={projects[1]} client:load />
     <div class="project-description">
       <p>
         At <a href="https://www.equivalent.design">Equivalent Design</a>, I’m
@@ -54,6 +75,38 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp"
       <p class="tech">
         <span> Tech: </span>
         SVG, Greensock
+      </p>
+    </div>
+  </div>
+  <div class="home-work-container__project">
+    <WorkPreview project={projects[2]} client:load />
+
+    <div class="project-description">
+      <p>
+        I wanted to get familiar with{" "}
+        <a href="https://astro.build" target="_blank"> Astro </a>
+        . So I used Frontend Mentor’s
+        <a
+          href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3"
+          target="_blank"
+        >
+          {" "}
+          challenge
+        </a>{" "}
+        design and created this in Plain HTML, CSS and JavaScript.
+      </p>
+      <p>
+        <a href="https://space-tourism-trapti.netlify.app" target="_blank">
+          Demo
+        </a>{" "}
+        /{" "}
+        <a href="https://github.com/tripti1410/space-tourism" target="_blank">
+          Source code
+        </a>
+      </p>
+      <p class="tech">
+        <span> Tech: </span>
+        Astro, CSS
       </p>
     </div>
   </div>
@@ -99,46 +152,9 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp"
       </p>
     </div>
   </div>
-  <div class="home-work-container__project">
-    <div class="project-preview">
-      <iframe
-        src="https://player.vimeo.com/video/714005277?h=20e99bbd17&autoplay=1&loop=1&byline=0&portrait=0"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
-
-    <div class="project-description">
-      <p>
-        Line animation on scroll with graphics between them. This was part of
-        the CodeSandbox GSAP challenge. It's a replica of the famous{" "}
-        <a href="https://www.lemonade.com/giveback-2019" target="_blank">
-          Lemonade website
-        </a>
-        .
-      </p>
-      <p>
-        <a href="https://b2mg4r.csb.app" target="_blank"> Demo </a>{" "}
-        /{" "}
-        <a href="https://codesandbox.io/s/b2mg4r" target="_blank">
-          Source code
-        </a>
-      </p>
-      <p class="tech">
-        <span> Tech: </span>
-        SVG, Greensock
-      </p>
-    </div>
-  </div>
 
   <div class="home-work-container__project">
-    <div class="project-preview">
-      <iframe
-        src="https://player.vimeo.com/video/714007197?h=c17a384189&autoplay=1&loop=1&byline=0&portrait=0"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+    <WorkPreview project={projects[4]} client:load />
 
     <div class="project-description">
       <p>
@@ -161,13 +177,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp"
     </div>
   </div>
   <div class="home-work-container__project">
-    <div class="project-preview">
-      <iframe
-        src="https://player.vimeo.com/video/711617783?h=8828a5904d&autoplay=1&loop=1&byline=0&portrait=0"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+    <WorkPreview project={projects[5]} client:load />
     <div class="project-description">
       <p>
         I used GreenSock’s{" "}
