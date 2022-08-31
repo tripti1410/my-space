@@ -25,11 +25,6 @@ const projects = [
     dataVendor: "vimeo",
   },
   {
-    dataSrc: "https://player.vimeo.com/video/714007197",
-    dataTitle: "",
-    dataVendor: "vimeo",
-  },
-  {
     dataSrc: "https://player.vimeo.com/video/711617783",
     dataTitle: "",
     dataVendor: "vimeo",
@@ -41,9 +36,8 @@ const projects = [
   <h2 class="section-title" id="home-work-title">
     work I do for clients; and lab:
   </h2>
-  <!-- {projects.map(project =>  <WorkPreview  {project} client:load />)} -->
 
-  <!-- <div class="home-work-container__project">
+  <div class="home-work-container__project">
     <WorkPreview project={projects[0]} client:load />
     <div class="project-description">
       <p>
@@ -58,8 +52,8 @@ const projects = [
         WordPress, Elementor, Greensock
       </p>
     </div>
-  </div> -->
-  <!-- <div class="home-work-container__project">
+  </div>
+  <div class="home-work-container__project">
     <WorkPreview project={projects[1]} client:load />
     <div class="project-description">
       <p>
@@ -77,8 +71,8 @@ const projects = [
         SVG, Greensock
       </p>
     </div>
-  </div> -->
-  <!-- <div class="home-work-container__project">
+  </div>
+  <div class="home-work-container__project">
     <WorkPreview project={projects[2]} client:load />
 
     <div class="project-description">
@@ -109,7 +103,7 @@ const projects = [
         Astro, CSS
       </p>
     </div>
-  </div> -->
+  </div>
   <div class="home-work-container__project">
     <div class="project-preview">
       <picture>
@@ -153,8 +147,8 @@ const projects = [
     </div>
   </div>
 
-  <!-- <div class="home-work-container__project">
-    <WorkPreview project={projects[4]} client:load />
+  <div class="home-work-container__project">
+    <WorkPreview project={projects[3]} client:load />
 
     <div class="project-description">
       <p>
@@ -175,9 +169,9 @@ const projects = [
         SVG, Greensock
       </p>
     </div>
-  </div> -->
-  <!-- <div class="home-work-container__project">
-    <WorkPreview project={projects[5]} client:load />
+  </div>
+  <div class="home-work-container__project">
+    <WorkPreview project={projects[4]} client:load />
     <div class="project-description">
       <p>
         I used GreenSock’s{" "}
@@ -200,5 +194,5 @@ const projects = [
         Greensock, FLIP plugin
       </p>
     </div>
-  </div> -->
+  </div>
 </section>

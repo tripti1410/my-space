@@ -1,13 +1,14 @@
 // import lazyframe from "lazyframe"
 import React, { useEffect } from "react"
 
-
-
-const WorkPreview = ({project}) => {
+const WorkPreview = ({ project }) => {
   useEffect(() => {
-    lazyframe(".lazyframe")
+    lazyframe(".lazyframe", {
+      lazyload: true,
+      autoplay: false,
+    })
   })
-	return (
+  return (
     <div>
       <div className="project-preview">
         <div
@@ -15,9 +16,9 @@ const WorkPreview = ({project}) => {
           data-vendor={project.dataVendor}
           data-title={project.dataTitle}
           data-src={project.dataSrc}
-          data-ratio="1:1"
-          data-initinview="true"
-          data-autoplay="false"
+          data-ratio="16:9"
+          //data-initinview="true"
+          // data-autoplay="false"
         ></div>
       </div>
     </div>
