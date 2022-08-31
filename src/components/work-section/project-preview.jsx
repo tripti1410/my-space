@@ -20,7 +20,11 @@ const WorkPreview = ({ project }) => {
           //data-initinview="true"
           // data-autoplay="false"
         ></div> */}
-        <lite-vimeo videoid={project.dataSrc}></lite-vimeo>
+        <lite-vimeo
+          // shadow="false"
+          videoid={project.dataSrc}
+          autoload
+        ></lite-vimeo>
       </div>
     </div>
   )
