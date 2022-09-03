@@ -121,7 +121,7 @@ function testimonialSection() {
   const testimonialSection_tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".testimonial-section",
-      markers: true,
+      // markers: true,
       start: "top 50%",
       fastScrollEnd: true,
       toggleActions: "play none play restart",
