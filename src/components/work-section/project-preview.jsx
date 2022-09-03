@@ -1,6 +1,3 @@
-// import lazyframe from "lazyframe"
-import React, { useEffect } from "react"
-
 const WorkPreview = ({ project }) => {
   // useEffect(() => {
   //   lazyframe(".lazyframe", {
