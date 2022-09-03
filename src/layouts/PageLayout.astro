@@ -13,13 +13,12 @@ const { title } = Astro.props
 
 <BaseLayout {title}>
   <div class="wrapper">
-    <SkipLinks />
     <Header />
     <main><slot /></main>
     <Footer />
   </div>
   <!-- <script src={`${lazyframeScriptUrl}`}></script> -->
-  
+
   <script src="$src/js/home.js"></script>
   <script src="$src/js/animations.js"></script>
 </BaseLayout>

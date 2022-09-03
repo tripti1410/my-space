@@ -66,3 +66,22 @@
     border-bottom-color: var(--mono-1);
   }
 }
+/* skip links */
+.skip-links {
+  position: absolute;
+  left: 0;
+  padding: 1.6rem;
+  max-width: 11rem;
+  font-size: var(--fs-xl);
+}
+
+.skip-links a {
+  line-height: 1.2;
+  opacity: 0;
+  color: var(--gray-1);
+  background-color: var(--background-color);
+}
+
+.skip-links a:focus {
+  opacity: 1;
+}
