@@ -92,7 +92,7 @@ function serviceSection() {
     scrollTrigger: {
       trigger: "#hire-me",
       // markers: true,
-      start: "top 50%",
+      start: "top 70%",
       fastScrollEnd: true,
     },
   })
