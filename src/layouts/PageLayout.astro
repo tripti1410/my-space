@@ -1,12 +1,7 @@
 ---
-import React from "react"
 import BaseLayout from "$src/layouts/BaseLayout.astro"
-
-import SkipLinks from "$src/components/skip-links/skip-links.astro"
 import Header from "$src/components/header/header.astro"
 import Footer from "$src/components/footer.astro"
-// import "lazyframe/dist/lazyframe.css"
-// import lazyframeScriptUrl from "lazyframe/dist/lazyframe.min.js?url"
 
 const { title } = Astro.props
 ---
@@ -17,8 +12,5 @@ const { title } = Astro.props
     <main><slot /></main>
     <Footer />
   </div>
-  <!-- <script src={`${lazyframeScriptUrl}`}></script> -->
-
   <script src="$src/js/home.js"></script>
-  <script src="$src/js/animations.js"></script>
 </BaseLayout>

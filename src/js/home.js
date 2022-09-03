@@ -1,7 +1,8 @@
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { SplitText } from "gsap/SplitText"
-gsap.registerPlugin(ScrollTrigger, SplitText)
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin"
+gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin)
 
 function aboutSection() {
   const profileImageContainer = document.querySelector(
@@ -112,7 +113,7 @@ function serviceSection() {
       duration: 0.1,
     })
     .from(".service", { autoAlpha: 0 }, "-=0.5")
-    .from("#mascot-svg", { autoAlpha: 0, duration: 0.3 })
+    //.from("#mascot-svg", { autoAlpha: 0, duration: 0.3 })
     .to(letsChatText.chars, { opacity: 1, stagger: 0.05, duration: 0.3 })
   return serviceSection_tl
 }
@@ -120,13 +121,19 @@ function testimonialSection() {
   const testimonialSection_tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".testimonial-section",
-      // markers: true,
+      markers: true,
       start: "top 50%",
       fastScrollEnd: true,
+      toggleActions: "play none play restart",
     },
   })
   const testimonialHeading = new SplitText("#home-testimonial-title", {
     type: "chars",
+  })
+  gsap.set("#tg-mouth-after", { drawSVG: "0% 30%" })
+  gsap.set(["#tg-filled-star", "#tg-filled-side-star"], {
+    transformOrigin: "50% 50%",
+    scale: 0.8,
   })
   testimonialSection_tl
     .from(testimonialHeading.chars, {
@@ -141,6 +148,32 @@ function testimonialSection() {
       yPercent: 20,
       ease: "power4.out",
     })
+    .fromTo(
+      "#tg-filled-star",
+      { scale: 1.3, transformOrigin: "50% 50%" },
+      {
+        scale: 1,
+        transformOrigin: "50% 50%",
+        fill: "#ffbb43",
+        ease: "power4.out",
+      }
+    )
+    .to("#tg-blank-star", { stroke: "#ffbb43", duration: 0.1 }, "<")
+    .fromTo(
+      "#tg-filled-side-star",
+      { scale: 1.3, transformOrigin: "50% 50%" },
+      {
+        scale: 1,
+        transformOrigin: "50% 50%",
+        fill: "#ffa522",
+        ease: "power4.out",
+      },
+      "<"
+    )
+    .to("#tg-blank-side-star", { stroke: "#ffa522", duration: 0.1 }, "<")
+    .to("#tg-eyeball-R", { x: 1, ease: "back" })
+    .to("#tg-eyeball-L", { x: 1, ease: "back" }, "<")
+    .to("#tg-mouth-after", { drawSVG: "0% 100%" }, "<")
   return testimonialSection_tl
 }
 function articlesSection() {
@@ -195,7 +228,7 @@ function recognitionSection() {
   })
   gsap.set(recognitionHeading.chars, {
     filter: "blur(0px) brightness(1)",
-    rotation: 10
+    rotation: 10,
   })
   recognitionSection_tl.to(recognitionHeading.chars, {
     filter: "blur(30px) brightness(10)",
@@ -417,12 +450,25 @@ function mmsSection() {
   return mms_tl
 }
 window.addEventListener("load", (event) => {
-  gsap.to(".header", { autoAlpha: 1, ease: "sine.out", duration: 0.1 })
-  aboutSection()
-  workSection()
-  serviceSection()
-  testimonialSection()
-  articlesSection()
-  recognitionSection()
-  mmsSection()
+  let mm = gsap.matchMedia(),
+    breakPoint = 800
+  mm.add(
+    {
+      isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
+    },
+    (context) => {
+      let { isDesktop } = context.conditions
+
+      gsap.to(".header", { autoAlpha: 1, ease: "sine.out", duration: 0.1 })
+      aboutSection()
+      workSection()
+      serviceSection()
+      testimonialSection()
+      articlesSection()
+      recognitionSection()
+      mmsSection()
+
+      return () => {}
+    }
+  )
 })

@@ -1,7 +1,8 @@
-.header,
-.home-about-container,
-.home-work-container {
-	visibility: hidden;
-	opacity: 0;
+@media (min-width: 800px) and (prefers-reduced-motion: no-preference) {
+  .header,
+  .home-about-container,
+  .home-work-container {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
-
