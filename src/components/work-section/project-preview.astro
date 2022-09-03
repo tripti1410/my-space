@@ -1,20 +1,9 @@
 ---
-const {project} = Astro.props;
+const { project } = Astro.props
 ---
-    <div>
-      <div class="project-preview">
-        {/* <div
-          className="lazyframe"
-          data-vendor={project.dataVendor}
-          data-title={project.dataTitle}
-          data-src={project.dataSrc}
-          data-ratio="16:9"
-          //data-initinview="true"
-          // data-autoplay="false"
-        ></div> */}
-        <lite-vimeo
-          videoid={project.dataSrc}
-          autoload
-        ></lite-vimeo>
-      </div>
-    </div>
+
+<div>
+  <div class="project-preview">
+    <lite-vimeo videoid={project.dataSrc} autoload></lite-vimeo>
+  </div>
+</div>
