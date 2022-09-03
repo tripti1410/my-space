@@ -1,13 +1,8 @@
-const WorkPreview = ({ project }) => {
-  // useEffect(() => {
-  //   lazyframe(".lazyframe", {
-  //     lazyload: true,
-  //     autoplay: false,
-  //   })
-  // })
-  return (
+---
+const {project} = Astro.props;
+---
     <div>
-      <div className="project-preview">
+      <div class="project-preview">
         {/* <div
           className="lazyframe"
           data-vendor={project.dataVendor}
@@ -18,13 +13,8 @@ const WorkPreview = ({ project }) => {
           // data-autoplay="false"
         ></div> */}
         <lite-vimeo
-          // shadow="false"
           videoid={project.dataSrc}
           autoload
         ></lite-vimeo>
       </div>
     </div>
-  )
-}
-
-export default WorkPreview
