@@ -457,9 +457,6 @@ window.addEventListener("load", (event) => {
       isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
     },
     (context) => {
-      let { isDesktop } = context.conditions
-
-      gsap.to(".header", { autoAlpha: 1, ease: "sine.out", duration: 0.1 })
       aboutSection()
       workSection()
       serviceSection()
