@@ -3,7 +3,7 @@ import PageLayout from "$src/layouts/PageLayout.astro"
 import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
 import BLOGS from "$src/data/blogs.js"
-import "../../styles/blog-listing.css"
+import "./blog-listing.css"
 
 const allPosts = await Astro.glob("../../content/posts/*.md")
 const posts = blog.sortedPosts(allPosts)
