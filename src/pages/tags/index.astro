@@ -2,6 +2,7 @@
 import PageLayout from "$src/layouts/PageLayout.astro"
 import * as blog from "$src/js/posts.js"
 
+
 const allPosts = await Astro.glob("../../content/posts/*.md")
 const posts = blog.sortedPosts(allPosts)
 const uniquetags = blog.uniqueTags(posts)

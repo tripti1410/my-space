@@ -6,6 +6,7 @@ import Footer from "$src/components/footer.astro"
 
 import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
+import "./project.css";
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob("../../content/project/*.md")

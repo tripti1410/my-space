@@ -3,6 +3,7 @@ import PageLayout from "$src/layouts/PageLayout.astro"
 import { toLocaleString } from "$src/js/dateUtils.js"
 import * as blog from "$src/js/posts.js"
 import BLOGS from "$src/data/blogs.js"
+import "../../styles/blog-listing.css"
 
 const allPosts = await Astro.glob("../../content/posts/*.md")
 const posts = blog.sortedPosts(allPosts)
@@ -33,41 +34,41 @@ const popularBlogs = BLOGS.filter((blog) => blog.type === "popular")
       </ul>
       <h2>Latest blogs</h2>
       <div class="latest-blog">
-      <ul class="blog-list">
-        {posts.map((post) => (
-          <li>
-            <h2 itemprop="title" class="blog-post__title">
-              <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
-            </h2>
-            <div class="blog-post__details">
-              <time
-                itemprop="dateCreated pubdate datePublished"
-                datetime={post.frontmatter.date}
-              >
-                {toLocaleString(post.frontmatter.date)}
-              </time>
-            </div>
-          </li>
-        ))}
-      </ul>
-
-      <aside>
-        <ul>
-          {uniquetags.map((tag) => (
+        <ul class="blog-list">
+          {posts.map((post) => (
             <li>
-              <a href={`/tags/${tag}`}>
-                #{tag} (
-                {
-                  posts.filter((post) =>
-                    post.frontmatter.tags?.find((t) => t === tag)
-                  ).length
-                }
-                )
-              </a>
+              <h2 itemprop="title" class="blog-post__title">
+                <a href={post.frontmatter.path}>{post.frontmatter.title}</a>
+              </h2>
+              <div class="blog-post__details">
+                <time
+                  itemprop="dateCreated pubdate datePublished"
+                  datetime={post.frontmatter.date}
+                >
+                  {toLocaleString(post.frontmatter.date)}
+                </time>
+              </div>
             </li>
           ))}
         </ul>
-      </aside>
+
+        <aside>
+          <ul>
+            {uniquetags.map((tag) => (
+              <li>
+                <a href={`/tags/${tag}`}>
+                  #{tag} (
+                  {
+                    posts.filter((post) =>
+                      post.frontmatter.tags?.find((t) => t === tag)
+                    ).length
+                  }
+                  )
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
       </div>
     </div>
   </div>
