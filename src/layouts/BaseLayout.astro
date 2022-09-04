@@ -3,6 +3,7 @@ import "../styles/no-js.css"
 import "../styles/site.css"
 import "../styles/layout.css"
 import "../styles/accessibility.css"
+import profileImgWebP from "$src/images/profile.webp"
 
 const { title } = Astro.props
 const pageTitle =
@@ -54,7 +55,7 @@ const pageTitle =
       type="module"
       src="https://cdn.jsdelivr.net/npm/@slightlyoff/lite-vimeo@0.1.1/lite-vimeo.js"
     ></script>
-    <link rel="preload" as="image" href="src/images/profile.webp" />
+    <link rel="preload" as="image" href={profileImgWebP} />
   </head>
   <body>
     <slot />
