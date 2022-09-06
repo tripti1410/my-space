@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"license": "MIT",
 	"scripts": {
-		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. . '!package-lock\\.json'",
+		"format": "prettier --ignore-unkown --ignore-path .gitignore --plugin-search-dir=. --write .",
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
@@ -36,6 +36,6 @@
 		"url": "https://github.com/tripti1410/my-space/issues"
 	},
 	"lint-staged": {
-		"*": "prettier --ignore-unknown --ignore-path .gitignore --write --plugin-search-dir=. '!package-lock\\.json'"
+		"*": "prettier --ignore-unkown --ignore-path .gitignore --plugin-search-dir=. --write "
 	}
 }
