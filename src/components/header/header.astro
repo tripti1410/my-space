@@ -1,6 +1,6 @@
 ---
-import "./header.css"
-import SkipLinks from "$src/components/skip-links/skip-links.astro"
+import "./header.css";
+import SkipLinks from "$src/components/skip-links/skip-links.astro";
 ---
 
 <header class="header" role="banner">
@@ -20,18 +20,16 @@ import SkipLinks from "$src/components/skip-links/skip-links.astro"
 					d="M 0 60 C 140 90 190 0 290 50 "
 					stroke-width="3"
 					stroke="#f5b326"
-					fill="none"
-				/>
+					fill="none"></path>
 				<path
 					id="curve-path-2"
 					d="M 0 56 C 140 86 190 0 290 46 "
 					stroke-width="3"
 					stroke="#b4e6ff"
-					fill="none"
-				/>
+					fill="none"></path>
 			</defs>
-			<use href="#curve-path-1" />
-			<use href="#curve-path-2" />
+			<use href="#curve-path-1"></use>
+			<use href="#curve-path-2"></use>
 			<text font-size="3rem" x="0" y="0" class="name-text">
 				<textPath href="#curve-path-1">
 					<tspan dx="15">trapti</tspan>

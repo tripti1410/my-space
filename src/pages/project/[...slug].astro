@@ -1,48 +1,48 @@
 ---
-import PostLayout from "$src/layouts/PostLayout.astro"
+import PostLayout from "$src/layouts/PostLayout.astro";
 
-import Header from "$src/components/header/header.astro"
-import Footer from "$src/components/footer.astro"
+import Header from "$src/components/header/header.astro";
+import Footer from "$src/components/footer.astro";
 
-import { toLocaleString } from "$src/js/dateUtils.js"
-import * as blog from "$src/js/posts.js"
+import { toLocaleString } from "$src/js/dateUtils.js";
+import * as blog from "$src/js/posts.js";
 import "./project.css";
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob("../../content/project/*.md")
-  const posts = blog.sortedPosts(allPosts)
-  const pages = posts.map((post) => {
-    return {
-      params: { slug: post.frontmatter.slug },
-      props: { post },
-    }
-  })
+	const allPosts = await Astro.glob("../../content/project/*.md");
+	const posts = blog.sortedPosts(allPosts);
+	const pages = posts.map((post) => {
+		return {
+			params: { slug: post.frontmatter.slug },
+			props: { post },
+		};
+	});
 
-  return pages
+	return pages;
 }
 
-const { slug } = Astro.params
-const { post } = Astro.props
+const { slug } = Astro.params;
+const { post } = Astro.props;
 ---
 
 <PostLayout title={post.frontmatter.title}>
-  <div class="wrapper">
-    <Header />
-    <main>
-      <article class="project-post">
-        <h2 itemprop="title" class="project-post__title">
-          {post.frontmatter.title}
-        </h2>
-        <div class="project-post__metadata">
-          <time datetime={post.frontmatter.date}
-            >{toLocaleString(post.frontmatter.date)}</time
-          >
-        </div>
-        <div class="project-post__content">
-          <post.Content></post.Content>
-        </div>
-      </article>
-    </main>
-    <Footer />
-  </div>
+	<div class="wrapper">
+		<Header />
+		<main>
+			<article class="project-post">
+				<h2 itemprop="title" class="project-post__title">
+					{post.frontmatter.title}
+				</h2>
+				<div class="project-post__metadata">
+					<time datetime={post.frontmatter.date}
+						>{toLocaleString(post.frontmatter.date)}
+					</time>
+				</div>
+				<div class="project-post__content">
+					<post.Content />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</div>
 </PostLayout>

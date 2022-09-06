@@ -53,9 +53,9 @@ So while flying back from there to Bengaluru, in flight I started reading Deares
 
 Then it was around march and April pandemic time. From somewhere I got to know about One Indian girl by Chetan Bhagat. I bought this on kindle and started reading, I was so hooked up with this book, that I binge read it. This book kept me engaged. After this I was even more interested and I had time as well after doing all household work😔in this lockdown time. Then I bought and read
 
-* The Girl In Room 105 by [Chetan Bhagat](http://www.chetanbhagat.com/books/).
-* I too had a love story by [Ravindra Singh](http://www.chetanbhagat.com/books/)- I was crying while reading a few chapters.😞
-* Can love happen twice? by [Ravindra Singh.](http://www.chetanbhagat.com/books/) 
+- The Girl In Room 105 by [Chetan Bhagat](http://www.chetanbhagat.com/books/).
+- I too had a love story by [Ravindra Singh](http://www.chetanbhagat.com/books/)- I was crying while reading a few chapters.😞
+- Can love happen twice? by [Ravindra Singh.](http://www.chetanbhagat.com/books/)
 
 I almost read all these 4 books in continuation in Kindle. After reading these I had a question in my mind which I asked to my husband as he is also a bookworm.
 
@@ -89,15 +89,15 @@ Tracking what you are reading, read or wants to read is very helpful. I feel goo
 
 [This article](https://www.healthline.com/health/benefits-of-reading-books#takeaway) talks about it in detail, below is the brief from this article.
 
-* improves brain connectivity
-* increases your vocabulary and comprehension
-* empowers you to empathise with other people
-* aids in sleep readiness
-* reduces stress
-* lowers blood pressure and heart rate
-* fights depression symptoms
-* prevents cognitive decline as you age
-* contributes to a longer life
+- improves brain connectivity
+- increases your vocabulary and comprehension
+- empowers you to empathise with other people
+- aids in sleep readiness
+- reduces stress
+- lowers blood pressure and heart rate
+- fights depression symptoms
+- prevents cognitive decline as you age
+- contributes to a longer life
 
 And to conclude this, below is the action I took, and it is quoted by someone.
 

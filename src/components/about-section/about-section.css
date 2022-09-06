@@ -1,70 +1,70 @@
 .home-about-container {
-  grid-column: 1/-1;
-  padding: 0 1.2rem;
+	grid-column: 1/-1;
+	padding: 0 1.2rem;
 }
 
 .home-about-container .image-container {
-  grid-column: 1;
-  grid-row: span 6;
-  transition: all 0.2s ease-in-out;
+	grid-column: 1;
+	grid-row: span 6;
+	transition: all 0.2s ease-in-out;
 }
 .home-about-container .image-container:hover {
-  filter: drop-shadow(2px 4px 5px #5c5c5e);
+	filter: drop-shadow(2px 4px 5px #5c5c5e);
 }
 
 .home-about-container .content {
-  grid-column: 2/-2;
-  font-size: var(--fs-l);
-  padding-left: 0;
+	grid-column: 2/-2;
+	font-size: var(--fs-l);
+	padding-left: 0;
 }
 
 .about-heading {
-  font-size: var(--fs-jumbo);
-  line-height: 1.2;
-  margin-bottom: 0.8rem;
+	font-size: var(--fs-jumbo);
+	line-height: 1.2;
+	margin-bottom: 0.8rem;
 }
 .about-heading .heart {
-  width: 40px;
-  fill: var(--clr-2);
+	width: 40px;
+	fill: var(--clr-2);
 }
 .cta-container {
-  margin: 3rem 1.6rem;
+	margin: 3rem 1.6rem;
 }
 .cta-container .button {
-  margin-right: 1.6rem;
+	margin-right: 1.6rem;
 }
 @media (min-width: 768px) {
-  .home-about-container {
-    display: grid;
-    grid-template-columns: 35rem minmax(24ch, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
-    grid-column-gap: 2.4rem;
-    padding: 0;
-  }
-  .home-about-container .content {
-    grid-column: 3/-2;
-    padding-left: 1.6rem;
-    font-size: var(--fs-xl);
-  }
-  .about-heading {
-    padding-left: 1.6rem;
-  }
+	.home-about-container {
+		display: grid;
+		grid-template-columns: 35rem minmax(24ch, 1fr);
+		grid-template-rows: 1fr;
+		align-items: center;
+		grid-column-gap: 2.4rem;
+		padding: 0;
+	}
+	.home-about-container .content {
+		grid-column: 3/-2;
+		padding-left: 1.6rem;
+		font-size: var(--fs-xl);
+	}
+	.about-heading {
+		padding-left: 1.6rem;
+	}
 }
 .home-profile-container {
-  overflow: hidden;
-  width: 100%;
-  display: block;
+	overflow: hidden;
+	width: 100%;
+	display: block;
 }
 
 .home-profile-image {
-  /* position: absolute;
+	/* position: absolute;
   top: 50%;
   left: 0; */
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  transform-origin: center;
-  /* transform: translateY(-50%); */
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	transform-origin: center;
+	/* transform: translateY(-50%); */
 }

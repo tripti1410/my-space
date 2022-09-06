@@ -1,34 +1,38 @@
 ---
-import PageLayout from "$src/layouts/PageLayout.astro"
-import { toLocaleString } from "$src/js/dateUtils.js"
-import * as blog from "$src/js/posts.js"
-import "./tags.css"
+import PageLayout from "$src/layouts/PageLayout.astro";
+import { toLocaleString } from "$src/js/dateUtils.js";
+import * as blog from "$src/js/posts.js";
+import "./tags.css";
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob("../../content/posts/*.md")
-  const posts = blog.sortedPosts(allPosts)
-  const uniquetags = blog.uniqueTags(posts)
+	const allPosts = await Astro.glob("../../content/posts/*.md");
+	const posts = blog.sortedPosts(allPosts);
+	const uniquetags = blog.uniqueTags(posts);
 
-  return uniquetags.map((tag) => ({
-    params: { slug: tag },
-    props: {
-      slug: tag,
-      posts: posts.filter((post) => post.frontmatter.tags?.find((t) => t === tag)),
-    },
-  }))
+	return uniquetags.map((tag) => ({
+		params: { slug: tag },
+		props: {
+			slug: tag,
+			posts: posts.filter((post) =>
+				post.frontmatter.tags?.find((t) => t === tag)
+			),
+		},
+	}));
 }
 
-const { slug, posts } = Astro.props
+const { slug, posts } = Astro.props;
 ---
 
 <PageLayout title={`Tag - ${slug}`}>
-  <h2>#{slug}</h2>
-  <ul class="tag-posts-listing">
-    {posts?.map((post) => (
-      <li>
-        <span>{toLocaleString(post.frontmatter.date)}</span>
-        <a href={`${post.frontmatter.path}`}>{post.frontmatter.title}</a>
-      </li>
-    ))}
-  </ul>
+	<h2>#{slug}</h2>
+	<ul class="tag-posts-listing">
+		{
+			posts?.map((post) => (
+				<li>
+					<span>{toLocaleString(post.frontmatter.date)}</span>
+					<a href={`${post.frontmatter.path}`}>{post.frontmatter.title}</a>
+				</li>
+			))
+		}
+	</ul>
 </PageLayout>

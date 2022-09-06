@@ -1,31 +1,29 @@
 ---
-import PageLayout from "$src/layouts/PageLayout.astro"
+import PageLayout from "$src/layouts/PageLayout.astro";
 
-import AboutSection from "$src/components/about-section/about-section.astro"
-import WritingSection from "$src/components/writing-section/writing-section.astro"
-import Testimonial from "$src/components/testimonial-section/testimonial-section.astro"
-import WorkSection from "$src/components/work-section/work-section.astro"
-import ServicesSection from "$src/components/services-section/services-section.astro"
-import MentionsSection from "$src/components/mentions-section/mentions-section.astro"
-import MmsSection from "$src/components/mms-section/mms-section.astro"
+import AboutSection from "$src/components/about-section/about-section.astro";
+import WritingSection from "$src/components/writing-section/writing-section.astro";
+import Testimonial from "$src/components/testimonial-section/testimonial-section.astro";
+import WorkSection from "$src/components/work-section/work-section.astro";
+import ServicesSection from "$src/components/services-section/services-section.astro";
+import MentionsSection from "$src/components/mentions-section/mentions-section.astro";
+import MmsSection from "$src/components/mms-section/mms-section.astro";
 
-import BLOGS from "$src/data/blogs.js"
+import BLOGS from "$src/data/blogs.js";
 
-import profileImgJPG from "$src/images/profile.jpg"
-import profileImgWebP from "$src/images/profile.webp"
-
+import profileImgJPG from "$src/images/profile.jpg";
+import profileImgWebP from "$src/images/profile.webp";
 ---
 
 <PageLayout title="Home">
-  <div id="main" class="home-content">
-    <AboutSection {profileImgWebP} {profileImgJPG} />
+	<div id="main" class="home-content">
+		<AboutSection {profileImgWebP} {profileImgJPG} />
 
-    <ServicesSection />
-    <WorkSection />
-    <Testimonial />
-    <WritingSection blogs={BLOGS} />
-    <MentionsSection />
-    <MmsSection />
-  </div>
-
+		<ServicesSection />
+		<WorkSection />
+		<Testimonial />
+		<WritingSection blogs={BLOGS} />
+		<MentionsSection />
+		<MmsSection />
+	</div>
 </PageLayout>
