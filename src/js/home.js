@@ -72,9 +72,14 @@ function workSection() {
     ease: "none",
   })
   const projects = gsap.utils.toArray(".home-work-container__project")
-  let workSection_tl = gsap.timeline()
+  let workSection_tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".home-work-container",
+      start: "top 70%",
+      fastScrollEnd: true,
+    },
+  })
   workSection_tl
-    .set(".home-work-container", { autoAlpha: 1 })
     .from(workHeading.chars, {
       scale: scaleDistributor,
       x: distanceDistributor,
@@ -89,14 +94,7 @@ function workSection() {
   return workSection_tl
 }
 function serviceSection() {
-  const serviceSection_tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#hire-me",
-      // markers: true,
-      start: "top 70%",
-      fastScrollEnd: true,
-    },
-  })
+  const serviceSection_tl = gsap.timeline()
   const serviceHeading = new SplitText("#home-service-title", {
     type: "chars",
   })
@@ -105,6 +103,7 @@ function serviceSection() {
   })
   gsap.set(letsChatText.chars, { opacity: 0 })
   serviceSection_tl
+    .set(".home-services-container", { autoAlpha: 1 })
     .from(serviceHeading.chars, {
       rotate: 360,
       stagger: 0.05,
@@ -207,10 +206,10 @@ function articlesSection() {
           grid: [3, 3],
           from: "edges",
           ease: "power2.in",
-          amount: 0.5,
+          amount: 0.3,
         },
       },
-      "-=0.5"
+      "-=0.8"
     )
   return articlesSection_tl
 }
@@ -228,17 +227,17 @@ function recognitionSection() {
   })
   gsap.set(recognitionHeading.chars, {
     filter: "blur(0px) brightness(1)",
-    rotation: 10,
   })
-  recognitionSection_tl.to(recognitionHeading.chars, {
-    filter: "blur(30px) brightness(10)",
-    rotation: 0,
-    clearProps: "filter",
-    stagger: {
-      each: 0.01,
-      ease: "none",
-    },
-  })
+  recognitionSection_tl
+    .to(recognitionHeading.chars, {
+      filter: "blur(30px) brightness(10)",
+      clearProps: "filter",
+      stagger: {
+        each: 0.01,
+        ease: "none",
+      },
+    })
+    .from(recognitionHeading.chars, { rotation: 10, immediateRender: false }, 0)
   return recognitionSection_tl
 }
 function mmsSection() {
@@ -262,7 +261,7 @@ function mmsSection() {
     scrollTrigger: {
       trigger: "#mms-svg",
       // markers: true,
-      start: "center center",
+      start: "center 70%",
       end: "center center",
       toggleActions: "play none play restart",
       // fastScrollEnd: true,
@@ -458,8 +457,8 @@ window.addEventListener("load", (event) => {
     },
     (context) => {
       aboutSection()
-      workSection()
       serviceSection()
+      workSection()
       testimonialSection()
       articlesSection()
       recognitionSection()

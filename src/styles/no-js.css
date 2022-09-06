@@ -1,6 +1,6 @@
 @media (min-width: 800px) and (prefers-reduced-motion: no-preference) {
   .home-about-container,
-  .home-work-container {
+  .home-services-container {
     visibility: hidden;
     opacity: 0;
   }
