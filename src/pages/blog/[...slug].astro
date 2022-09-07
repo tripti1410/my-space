@@ -1,62 +1,64 @@
 ---
-import PostLayout from "$src/layouts/PostLayout.astro"
+import PostLayout from "$src/layouts/PostLayout.astro";
 
-import Header from "$src/components/header/header.astro"
-import Footer from "$src/components/footer.astro"
+import Header from "$src/components/header/header.astro";
+import Footer from "$src/components/footer.astro";
 
-import { toLocaleString } from "$src/js/dateUtils.js"
-import * as blog from "$src/js/posts.js"
-import "./blog-post-template.css"
+import { toLocaleString } from "$src/js/dateUtils.js";
+import * as blog from "$src/js/posts.js";
+import "./blog-post-template.css";
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob("../../content/posts/*.md")
-  const posts = blog.sortedPosts(allPosts)
-  const pages = posts.map((post) => {
-    return {
-      params: { slug: post.frontmatter.slug },
-      props: { post },
-    }
-  })
+	const allPosts = await Astro.glob("../../content/posts/*.md");
+	const posts = blog.sortedPosts(allPosts);
+	const pages = posts.map((post) => {
+		return {
+			params: { slug: post.frontmatter.slug },
+			props: { post },
+		};
+	});
 
-  return pages
+	return pages;
 }
 
-const { slug } = Astro.params
-const { post } = Astro.props
+const { slug } = Astro.params;
+const { post } = Astro.props;
 ---
 
 <PostLayout title={post.frontmatter.title}>
-  <div class="wrapper">
-    <Header />
-    <main>
-      <article
-        class="blog-post"
-        itemscope
-        itemtype="http://schema.org/BlogPosting"
-      >
-        <h2 itemprop="title" class="blog-post__title">
-          {post.frontmatter.title}
-        </h2>
-        <div class="blog-post__details">
-          <time
-            itemprop="dateCreated pubdate datePublished"
-            datetime={post.frontmatter.date}
-            >{toLocaleString(post.frontmatter.date)}</time
-          >
-        </div>
+	<div class="wrapper">
+		<Header />
+		<main>
+			<article
+				class="blog-post"
+				itemscope
+				itemtype="http://schema.org/BlogPosting"
+			>
+				<h2 itemprop="title" class="blog-post__title">
+					{post.frontmatter.title}
+				</h2>
+				<div class="blog-post__details">
+					<time
+						itemprop="dateCreated pubdate datePublished"
+						datetime={post.frontmatter.date}
+						>{toLocaleString(post.frontmatter.date)}
+					</time>
+				</div>
 
-        <ul class="blog-post__tags">
-          {post.frontmatter.tags?.map((tag) => (
-            <li>
-              <a href={`/tags/${tag}`}>{tag}</a>
-            </li>
-          ))}
-        </ul>
-        <div class="blog-post__content">
-          <post.Content></post.Content>
-        </div>
-      </article>
-    </main>
-    <Footer />
-  </div>
+				<ul class="blog-post__tags">
+					{
+						post.frontmatter.tags?.map((tag) => (
+							<li>
+								<a href={`/tags/${tag}`}>{tag}</a>
+							</li>
+						))
+					}
+				</ul>
+				<div class="blog-post__content">
+					<post.Content />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</div>
 </PostLayout>

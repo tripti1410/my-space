@@ -35,7 +35,7 @@ After seeing my work, In May I got offer from a US company to work with them for
 
 I dealt with mental health issues for around 2 months, came out of it with the support of family, friends and art.
 
-I **learned doodling** by joining a workshop by [Swetha Singh](https://www.instagram.com/doodleshoodle_/). And I loved it. I joined few more art classes, started painting. Because this gives me lot of joy. To explore more with digital tools and unleash my creativity my husband gifted me ***[iPad](https://www.apple.com/in/ipad/)* with pencil**. So I started exploring illustrator on iPad and started by digital art journey. I have separate [Instagram](https://www.instagram.com/triptiscreations/) for all my creations.
+I **learned doodling** by joining a workshop by [Swetha Singh](https://www.instagram.com/doodleshoodle_/). And I loved it. I joined few more art classes, started painting. Because this gives me lot of joy. To explore more with digital tools and unleash my creativity my husband gifted me **_[iPad](https://www.apple.com/in/ipad/)_ with pencil**. So I started exploring illustrator on iPad and started by digital art journey. I have separate [Instagram](https://www.instagram.com/triptiscreations/) for all my creations.
 
 ![ipad image](/assets/ipad-pencil.jpg "ipad image")
 

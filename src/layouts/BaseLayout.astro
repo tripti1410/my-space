@@ -1,24 +1,24 @@
 ---
-import "../styles/no-js.css"
-import "../styles/site.css"
-import "../styles/layout.css"
-import "../styles/accessibility.css"
-import profileImgWebP from "$src/images/profile.webp"
+import "../styles/no-js.css";
+import "../styles/site.css";
+import "../styles/layout.css";
+import "../styles/accessibility.css";
+import profileImgWebP from "$src/images/profile.webp";
 
-const { title } = Astro.props
+const { title } = Astro.props;
 const pageTitle =
-  title === undefined || title.trim() === ""
-    ? "Trapti Rahangdale - Freelance Frontend Engineer"
-    : `${title} | Trapti Rahangdale - Freelance Frontend Engineer`
+	title === undefined || title.trim() === ""
+		? "Trapti Rahangdale - Freelance Frontend Engineer"
+		: `${title} | Trapti Rahangdale - Freelance Frontend Engineer`;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-148013867-1"></script>
     <script>
@@ -30,29 +30,29 @@ const pageTitle =
 
       gtag("config", "UA-148013867-1")
     </script> -->
-    <title>{pageTitle}</title>
-    <meta
-      name="description"
-      content="Freelance Frontend Web UI/UX Engineer - India"
-    />
-    <meta
-      name="keywords"
-      content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India"
-    />
+		<title>{pageTitle}</title>
+		<meta
+			name="description"
+			content="Freelance Frontend Web UI/UX Engineer - India"
+		/>
+		<meta
+			name="keywords"
+			content="freelancer, frontend Engineer, UI Engineer, HTML, CSS, SVG, UI, UX, accessibility, javascript, greensock, illustrator, react, vue, animations, India"
+		/>
 
-    <link
-      rel="alternate"
-      title="Articles RSS Feed"
-      type="application/rss+xml"
-      href="https://www.iamtrapti.com/rss.xml"
-    />
-    <link rel="icon" href="/favicon-32x32.png" type="image/png" />
-    <!-- <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"
+		<link
+			rel="alternate"
+			title="Articles RSS Feed"
+			type="application/rss+xml"
+			href="https://www.iamtrapti.com/rss.xml"
+		/>
+		<link rel="icon" href="/favicon-32x32.png" type="image/png" />
+		<!-- <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"
     /> -->
 
-    <link rel="preload" as="image" href={profileImgWebP} />
-  </head>
-  <body>
-    <slot />
-  </body>
+		<link rel="preload" as="image" href={profileImgWebP} />
+	</head>
+	<body>
+		<slot />
+	</body>
 </html>

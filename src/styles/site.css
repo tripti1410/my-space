@@ -1,84 +1,84 @@
 :root {
-  /* Colors */
-  --background-color: #f8fcfe;
-  --mono-1: hsl(9, 65%, 45%);
-  --mono-2: #f5b326;
-  --accent-1: #b4e6ff;
-  --black: #19191a;
-  --gray-1: hsl(240, 5%, 30%);
-  /* --gray-2: #a2a2a3;  */
-  --gray-3: #e7e7e8;
+	/* Colors */
+	--background-color: #f8fcfe;
+	--mono-1: hsl(9, 65%, 45%);
+	--mono-2: #f5b326;
+	--accent-1: #b4e6ff;
+	--black: #19191a;
+	--gray-1: hsl(240, 5%, 30%);
+	/* --gray-2: #a2a2a3;  */
+	--gray-3: #e7e7e8;
 
-  /* Font sizes */
-  --fs-s: 1.4rem;
-  --fs-m: 1.6rem;
-  --fs-l: 1.8rem;
-  --fs-xl: 2rem;
-  --fs-xxl: 2.4rem;
-  /* --fs-xxxl: 3.6rem; */
-  --fs-jumbo: 3.8rem;
-  /* Line height */
-  --lh-5: 1.5;
-  --lh-8: 1.8;
+	/* Font sizes */
+	--fs-s: 1.4rem;
+	--fs-m: 1.6rem;
+	--fs-l: 1.8rem;
+	--fs-xl: 2rem;
+	--fs-xxl: 2.4rem;
+	/* --fs-xxxl: 3.6rem; */
+	--fs-jumbo: 3.8rem;
+	/* Line height */
+	--lh-5: 1.5;
+	--lh-8: 1.8;
 
-  --footerHeight: 12rem;
-  --headerHeight: 10rem;
+	--footerHeight: 12rem;
+	--headerHeight: 10rem;
 
-  --clr-1: hsl(45, 100%, 92%);
-  --clr-2: #ff5c69;
-  --clr-3: hsl(42, 100%, 50%);
-  --clr-4: hsl(359, 100%, 83%);
-  --clr-9: hsl(273, 100%, 22%);
+	--clr-1: hsl(45, 100%, 92%);
+	--clr-2: #ff5c69;
+	--clr-3: hsl(42, 100%, 50%);
+	--clr-4: hsl(359, 100%, 83%);
+	--clr-9: hsl(273, 100%, 22%);
 }
 
 @media (min-width: 768px) {
-  :root {
-    --fs-xxl: 3.2rem;
-    --fs-jumbo: 6rem;
-  }
+	:root {
+		--fs-xxl: 3.2rem;
+		--fs-jumbo: 6rem;
+	}
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 @font-face {
-  font-family: "Ubuntu", sans-serif;
-  src: url(./Ubuntu-Bold.ttf);
+	font-family: "Ubuntu", sans-serif;
+	src: url(./Ubuntu-Bold.ttf);
 }
 @font-face {
-  font-family: "Ubuntu", sans-serif;
-  src: url(./Ubuntu-Medium.ttf);
+	font-family: "Ubuntu", sans-serif;
+	src: url(./Ubuntu-Medium.ttf);
 }
 @font-face {
-  font-family: "Noto Serif", serif;
-  src: url(./Graphik-Font-Family/GraphikBlack.otf);
+	font-family: "Noto Serif", serif;
+	src: url(./Graphik-Font-Family/GraphikBlack.otf);
 }
 @font-face {
-  font-family: "Noto Serif", serif;
-  src: url(./Graphik-Font-Family/GraphikBold.otf);
+	font-family: "Noto Serif", serif;
+	src: url(./Graphik-Font-Family/GraphikBold.otf);
 }
 @font-face {
-  font-family: "Noto Serif", serif;
-  src: url(./Graphik-Font-Family/GraphikExtralight.otf);
+	font-family: "Noto Serif", serif;
+	src: url(./Graphik-Font-Family/GraphikExtralight.otf);
 }
 @font-face {
-  font-family: "Noto Serif", serif;
-  src: url(./Graphik-Font-Family/GraphikRegular.otf);
+	font-family: "Noto Serif", serif;
+	src: url(./Graphik-Font-Family/GraphikRegular.otf);
 }
 @font-face {
-  font-family: "Noto Serif", serif;
-  src: url(./Graphik-Font-Family/GraphikMedium.otf);
+	font-family: "Noto Serif", serif;
+	src: url(./Graphik-Font-Family/GraphikMedium.otf);
 }
 
 body {
-  font-family: "Noto Serif", serif;
-  font-size: var(--fs-l);
-  font-weight: 400;
-  line-height: var(--lh-8);
-  margin: 0;
-  background-color: var(--background-color);
-  color: var(--gray-1);
+	font-family: "Noto Serif", serif;
+	font-size: var(--fs-l);
+	font-weight: 400;
+	line-height: var(--lh-8);
+	margin: 0;
+	background-color: var(--background-color);
+	color: var(--gray-1);
 }
 
 h1,
@@ -87,166 +87,166 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Ubuntu", sans-serif;
-  margin: 0;
-  color: var(--black);
+	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+	color: var(--black);
 }
 a {
-  text-decoration: none;
-  color: initial;
+	text-decoration: none;
+	color: initial;
 }
 p,
 figure {
-  margin: 0;
+	margin: 0;
 }
 ul,
 ol,
 blockquote {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 ul {
-  list-style-image: url("../images/bullet.svg");
+	list-style-image: url("../images/bullet.svg");
 }
 ul li::marker {
-  color: var(--clr-2);
-  font-size: 1.5em;
+	color: var(--clr-2);
+	font-size: 1.5em;
 }
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 main {
-  min-height: calc(100vh - (var(--headerHeight) + 7rem + var(--footerHeight)));
+	min-height: calc(100vh - (var(--headerHeight) + 7rem + var(--footerHeight)));
 }
 strong {
-  color: var(--black);
+	color: var(--black);
 }
 .wrapper {
-  padding: 0 1.2rem;
+	padding: 0 1.2rem;
 }
 .hightlight {
-  position: relative;
+	position: relative;
 }
 .hightlight::before {
-  content: "";
-  position: absolute;
-  width: 98%;
-  height: 50%;
-  background-color: var(--mono-2);
-  bottom: 0;
-  z-index: -1;
-  opacity: 0.5;
-  left: -1%;
+	content: "";
+	position: absolute;
+	width: 98%;
+	height: 50%;
+	background-color: var(--mono-2);
+	bottom: 0;
+	z-index: -1;
+	opacity: 0.5;
+	left: -1%;
 }
 @media (min-width: 768px) {
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto 1.6rem;
-  }
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto 1.6rem;
+	}
 }
 .clr-2 {
-  color: black;
-  background-color: var(--clr-2);
+	color: black;
+	background-color: var(--clr-2);
 }
 .clr-1 {
-  background-color: var(--clr-1);
+	background-color: var(--clr-1);
 }
 .stack > * + * {
-  margin-block-start: var(--space-m, 2rem);
+	margin-block-start: var(--space-m, 2rem);
 }
 .flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .button {
-  padding: 1rem 2.5rem;
-  font-size: var(--fs-l);
-  outline: none;
-  border: none;
-  border-radius: 15px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: "Ubuntu", sans-serif;
+	padding: 1rem 2.5rem;
+	font-size: var(--fs-l);
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Ubuntu", sans-serif;
 }
 
 /* Footer */
 
 .footer {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  min-height: var(--footerHeight);
-  margin: 7rem 0 2rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	min-height: var(--footerHeight);
+	margin: 7rem 0 2rem;
 }
 .footer > * {
-  justify-self: center;
+	justify-self: center;
 }
 .footer .copyright-text {
-  text-align: center;
+	text-align: center;
 }
 .footer .site-info {
-  font-size: var(--fs-s);
+	font-size: var(--fs-s);
 }
 .footer .footer-link {
-  font-size: var(--fs-l);
-  font-weight: 600;
-  text-decoration: underline;
-  text-align: center;
+	font-size: var(--fs-l);
+	font-weight: 600;
+	text-decoration: underline;
+	text-align: center;
 }
 
 /* Main Home */
 .home-content {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-row-gap: 8rem;
-  margin-bottom: 2.4rem;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-row-gap: 8rem;
+	margin-bottom: 2.4rem;
 }
 
 .layout-pens {
-  grid-column: 1 / -1;
-  padding: 0 1.2rem;
+	grid-column: 1 / -1;
+	padding: 0 1.2rem;
 }
 .layout-pens .popular-pen {
-  grid-column: 1/-1;
+	grid-column: 1/-1;
 }
 
 .section-title {
-  margin-bottom: 3.2rem;
-  letter-spacing: 1px;
-  text-align: center;
-  font-size: var(--fs-jumbo);
-  margin-bottom: 2rem;
-  font-weight: bold;
+	margin-bottom: 3.2rem;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: var(--fs-jumbo);
+	margin-bottom: 2rem;
+	font-weight: bold;
 }
 
 .highlight {
-  padding-bottom: 0.2rem;
-  padding-left: 0.4rem;
-  border-bottom: 0.3rem solid var(--accent-1);
-  /* background: url("../images/underline.svg") no-repeat center bottom; */
+	padding-bottom: 0.2rem;
+	padding-left: 0.4rem;
+	border-bottom: 0.3rem solid var(--accent-1);
+	/* background: url("../images/underline.svg") no-repeat center bottom; */
 }
 .link {
-  border-bottom: 1px solid var(--mono-1);
-  color: var(--mono-1);
-  font-weight: 600;
+	border-bottom: 1px solid var(--mono-1);
+	color: var(--mono-1);
+	font-weight: 600;
 }
 
 .social-links {
-  list-style: none;
-  color: var(--black);
-  display: flex;
+	list-style: none;
+	color: var(--black);
+	display: flex;
 }
 
 .social-links li {
-  padding: 1.6rem;
+	padding: 1.6rem;
 }
 
 /* Common for text animations */
 .split-parent {
-  overflow: hidden;
+	overflow: hidden;
 }
 .split-child {
-  display: inline-block;
+	display: inline-block;
 }

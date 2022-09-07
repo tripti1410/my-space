@@ -1,53 +1,53 @@
 .home-writing-container {
-  grid-column: 1 / -1;
-  display: grid;
+	grid-column: 1 / -1;
+	display: grid;
 }
 
 .home-writing-container .blogs {
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1.6rem;
-  list-style: none;
+	grid-column: 1/-1;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1.6rem;
+	list-style: none;
 }
 
 .home-writing-container .blog a {
-  padding: 1.6rem;
-  border: 1px solid var(--gray-3);
-  border-radius: 5px;
-  background-color: white;
-  position: relative;
-  display: block;
-  height: calc(100% - 3.2rem);
+	padding: 1.6rem;
+	border: 1px solid var(--gray-3);
+	border-radius: 5px;
+	background-color: white;
+	position: relative;
+	display: block;
+	height: calc(100% - 3.2rem);
 }
 
 .home-writing-container .blog:hover {
-  background-color: #fdefd3;
-  box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.1);
+	background-color: #fdefd3;
+	box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.1);
 }
 
 .home-writing-container .blog__title {
-  color: initial;
-  cursor: pointer;
+	color: initial;
+	cursor: pointer;
 }
 
 .home-writing-container .blog__subtitle {
-  color: var(--gray-1);
-  cursor: pointer;
+	color: var(--gray-1);
+	cursor: pointer;
 }
 
 .home-writing-container .blog__badge {
-  background-color: var(--accent-1);
-  padding: 0.4rem 1.6rem;
-  border-radius: 0.4rem;
-  position: absolute;
-  top: -1rem;
-  font-size: 1.2rem;
+	background-color: var(--accent-1);
+	padding: 0.4rem 1.6rem;
+	border-radius: 0.4rem;
+	position: absolute;
+	top: -1rem;
+	font-size: 1.2rem;
 }
 
 @media (min-width: 768px) {
-  .home-writing-container {
-    grid-template-columns: repeat(12, 1fr);
-    padding: 0;
-  }
+	.home-writing-container {
+		grid-template-columns: repeat(12, 1fr);
+		padding: 0;
+	}
 }

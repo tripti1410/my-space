@@ -1,24 +1,26 @@
 ---
-import "./writing-section.css"
+import "./writing-section.css";
 
-const { blogs } = Astro.props
+const { blogs } = Astro.props;
 ---
 
 <section class="home-writing-container">
-  <h2 class="section-title" id="home-writing-title">
-    articles I have written:
-  </h2>
-  <ul class="blogs">
-    {blogs.map((blog) => (
-      <li class="blog">
-        <a href={blog.slug} rel="noopener noreferrer">
-          <h3 class="blog__title">{blog.title}</h3>
-          {blog.publication && (
-            <span class="blog__badge">{blog.publication}</span>
-          )}
-          <p class="blog__subtitle">{blog.subtitle}</p>
-        </a>
-      </li>
-    ))}
-  </ul>
+	<h2 class="section-title" id="home-writing-title">
+		articles I have written:
+	</h2>
+	<ul class="blogs">
+		{
+			blogs.map((blog) => (
+				<li class="blog">
+					<a href={blog.slug} rel="noopener noreferrer">
+						<h3 class="blog__title">{blog.title}</h3>
+						{blog.publication && (
+							<span class="blog__badge">{blog.publication}</span>
+						)}
+						<p class="blog__subtitle">{blog.subtitle}</p>
+					</a>
+				</li>
+			))
+		}
+	</ul>
 </section>
