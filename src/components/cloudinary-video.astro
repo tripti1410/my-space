@@ -17,12 +17,16 @@ const mp4Url = cloudinary.url(publicId, {
 	secure: true,
 	transformation: [{ fetch_format: "mp4", video_codec: "h264", format: "" }],
 });
+const posterUrl = cloudinary.url(`${publicId}.jpg`, {
+	secure: true,
+	resource_type: "video",
+});
 
 const props = Object.assign({}, Astro.props);
 delete props.publicId;
 ---
 
-<video {...props}>
+<video poster={posterUrl} {...props}>
 	<source src={hevcUrl} type="video/mp4; codecs='hvc1'" />
 	<source src={webmUrl} type="video/webm" />
 	<source src={mp4Url} type="video/mp4" />
