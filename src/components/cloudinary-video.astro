@@ -1,0 +1,29 @@
+---
+import { v2 as cloudinary } from "cloudinary";
+
+const { publicId } = Astro.props;
+const webmUrl = cloudinary.url(publicId, {
+	resource_type: "video",
+	secure: true,
+	transformation: [{ fetch_format: "webm", video_codec: "vp9", format: "" }],
+});
+const hevcUrl = cloudinary.url(publicId, {
+	resource_type: "video",
+	secure: true,
+	transformation: [{ fetch_format: "mp4", video_codec: "h265", format: "" }],
+});
+const mp4Url = cloudinary.url(publicId, {
+	resource_type: "video",
+	secure: true,
+	transformation: [{ fetch_format: "mp4", video_codec: "h264", format: "" }],
+});
+
+const props = Object.assign({}, Astro.props);
+delete props.publicId;
+---
+
+<video {...props}>
+	<source src={hevcUrl} type="video/mp4; codecs='hvc1'" />
+	<source src={webmUrl} type="video/webm" />
+	<source src={mp4Url} type="video/mp4" />
+</video>
