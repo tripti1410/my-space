@@ -4,6 +4,7 @@
 	"description": "Personal site for Trapti Rahangdale",
 	"version": "0.1.0",
 	"license": "MIT",
+	"type": "module",
 	"scripts": {
 		"format": "prettier --ignore-unknown --ignore-path .gitignore --plugin-search-dir=. --write .",
 		"dev": "astro dev",
@@ -23,6 +24,8 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"cloudinary": "^1.31.0",
+		"dotenv": "^16.0.2",
 		"husky": "^8.0.1",
 		"lint-staged": "^13.0.3",
 		"prettier": "^2.5.0",

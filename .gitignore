@@ -1,5 +1,10 @@
+# temporarily ignoring unused logos
+src/images/logos/
+
 # astro
 /dist
+
+# ------------------------
 
 # Logs
 logs
@@ -71,5 +76,3 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# temporarily ignoring unused logos
-src/images/logos/

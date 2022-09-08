@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -euxo pipefail
+
+node --require dotenv/config lib/upload-large-video.js "$@"
