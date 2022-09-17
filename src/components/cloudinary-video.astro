@@ -26,7 +26,7 @@ const props = Object.assign({}, Astro.props);
 delete props.publicId;
 ---
 
-<video poster={posterUrl} {...props}>
+<video preload="none" poster={posterUrl} {...props}>
 	<source src={hevcUrl} type="video/mp4; codecs='hvc1'" />
 	<source src={webmUrl} type="video/webm" />
 	<source src={mp4Url} type="video/mp4" />
