@@ -1,26 +1,16 @@
 ---
-import { v2 as cloudinary } from "cloudinary";
+import {
+	webmVideo,
+	hevcVideo,
+	mp4Video,
+	thumnail,
+} from "$src/js/cloudinary.js";
 
 const { publicId } = Astro.props;
-const webmUrl = cloudinary.url(publicId, {
-	resource_type: "video",
-	secure: true,
-	transformation: [{ fetch_format: "webm", video_codec: "vp9", format: "" }],
-});
-const hevcUrl = cloudinary.url(publicId, {
-	resource_type: "video",
-	secure: true,
-	transformation: [{ fetch_format: "mp4", video_codec: "h265", format: "" }],
-});
-const mp4Url = cloudinary.url(publicId, {
-	resource_type: "video",
-	secure: true,
-	transformation: [{ fetch_format: "mp4", video_codec: "h264", format: "" }],
-});
-const posterUrl = cloudinary.url(`${publicId}.jpg`, {
-	secure: true,
-	resource_type: "video",
-});
+const webmUrl = webmVideo(publicId);
+const hevcUrl = hevcVideo(publicId);
+const mp4Url = mp4Video(publicId);
+const posterUrl = thumnail(publicId);
 
 const props = Object.assign({}, Astro.props);
 delete props.publicId;
