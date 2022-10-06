@@ -27,18 +27,6 @@ function aboutSection() {
 		type: "lines",
 		linesClass: "split-parent",
 	});
-	// gsap.to(profileImage, {
-	//   y: () => profileImage.offsetHeight - profileImageContainer.offsetHeight,
-	//   ease: "none",
-	//   scrollTrigger: {
-	//     trigger: profileImageContainer,
-	//     start: "15% 19%",
-	//     end: "center top",
-	//     scrub: true,
-	//     fastScrollEnd: true
-	//     // markers: true,
-	//   },
-	// })
 	aboutSection_tl
 		.set(".home-about-container", { autoAlpha: 1 })
 		.from(profileImage, { yPercent: 100, duration: 1 })
@@ -71,28 +59,32 @@ function workSection() {
 		amount: 400,
 		ease: "none",
 	});
-	const projects = gsap.utils.toArray(".home-work-container__project");
-	let workSection_tl = gsap.timeline();
-	workSection_tl
-
-		.from(workHeading.chars, {
-			scale: scaleDistributor,
-			x: distanceDistributor,
-			opacity: 0,
-			stagger: {
-				each: 0.01,
-				from: "center",
-			},
-			duration: 2,
-		})
-		.from(projects, { autoAlpha: 0, yPercent: 30, stagger: 0.04 });
+	let workSection_tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: "#home-work-title",
+			// markers: { startColor: "red", endColor: "red", fontSize: "20px" },
+			start: "top 85%",
+			end: "bottom 70%",
+			toggleActions: "play none play restart",
+		},
+	});
+	workSection_tl.from(workHeading.chars, {
+		scale: scaleDistributor,
+		x: distanceDistributor,
+		opacity: 0,
+		stagger: {
+			each: 0.01,
+			from: "center",
+		},
+		duration: 1,
+	});
 	return workSection_tl;
 }
 function serviceSection() {
 	const serviceSection_tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: "#hire-me",
-			// markers: true,
+			// markers: { startColor: "black", endColor: "black", fontSize: "12px" },
 			start: "top 70%",
 			fastScrollEnd: true,
 		},
@@ -104,7 +96,7 @@ function serviceSection() {
 		type: "chars",
 	});
 	gsap.set(letsChatText.chars, { opacity: 0 });
-  serviceSection_tl
+	serviceSection_tl
 		.set(".home-services-container", { autoAlpha: 1 })
 		.from(serviceHeading.chars, {
 			rotate: 360,
@@ -113,7 +105,7 @@ function serviceSection() {
 			autoAlpha: 0,
 			duration: 0.1,
 		})
-		.from(".service", { autoAlpha: 0 }, "-=0.5")
+
 		//.from("#mascot-svg", { autoAlpha: 0, duration: 0.3 })
 		.to(letsChatText.chars, { opacity: 1, stagger: 0.05, duration: 0.3 });
 	return serviceSection_tl;
@@ -142,12 +134,6 @@ function testimonialSection() {
 			ease: "back",
 			autoAlpha: 0,
 			yPercent: 100,
-		})
-		.from(gsap.utils.toArray(".testimonial-section > blockquote"), {
-			autoAlpha: 0,
-			stagger: 0.01,
-			yPercent: 20,
-			ease: "power4.out",
 		})
 		.fromTo(
 			"#tg-filled-star",
@@ -183,36 +169,20 @@ function articlesSection() {
 			trigger: ".home-writing-container",
 			// markers: true,
 			start: "top 50%",
-			fastScrollEnd: true,
+			end: "top 40%",
+			toggleActions: "play none play restart",
 		},
 	});
 	const articleHeading = new SplitText("#home-writing-title", {
 		type: "chars",
 	});
-	const articles = gsap.utils.toArray(".home-writing-container .blog");
-	gsap.set(articles, { autoAlpha: 0, scale: 0 });
-	articlesSection_tl
-		.from(articleHeading.chars, {
-			stagger: 0.05,
-			ease: "back",
-			autoAlpha: 0,
-			rotation: gsap.utils.random(0, -360, 40),
-		})
-		.to(
-			articles,
-			{
-				autoAlpha: 1,
-				scale: 1,
-				ease: "sine.out",
-				stagger: {
-					grid: [3, 3],
-					from: "edges",
-					ease: "power2.in",
-					amount: 0.5,
-				},
-			},
-			"-=0.8"
-		);
+
+	articlesSection_tl.from(articleHeading.chars, {
+		stagger: 0.05,
+		ease: "back",
+		autoAlpha: 0,
+		rotation: gsap.utils.random(0, -360, 40),
+	});
 	return articlesSection_tl;
 }
 function recognitionSection() {
@@ -221,7 +191,7 @@ function recognitionSection() {
 			trigger: ".home-mentions-container",
 			// markers: true,
 			start: "top 50%",
-			fastScrollEnd: true,
+			toggleActions: "play none play restart",
 		},
 	});
 	const recognitionHeading = new SplitText("#home-recognition-title", {
@@ -229,11 +199,10 @@ function recognitionSection() {
 	});
 	gsap.set(recognitionHeading.chars, {
 		filter: "blur(0px) brightness(1)",
-		rotation: 10,
 	});
 	recognitionSection_tl.to(recognitionHeading.chars, {
 		filter: "blur(30px) brightness(10)",
-		rotation: 0,
+
 		clearProps: "filter",
 		stagger: {
 			each: 0.01,
@@ -266,7 +235,6 @@ function mmsSection() {
 			start: "center 70%",
 			end: "center 70%",
 			toggleActions: "play none play restart",
-			// fastScrollEnd: true,
 		},
 	});
 	mms_tl
@@ -458,8 +426,8 @@ window.addEventListener("load", (event) => {
 			isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
 		},
 		(context) => {
-      aboutSection();
-      serviceSection();
+			aboutSection();
+			serviceSection();
 			workSection();
 			testimonialSection();
 			articlesSection();
