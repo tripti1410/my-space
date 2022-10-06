@@ -15,7 +15,7 @@
 .testimonial-section blockquote footer {
 	font-style: italic;
 	padding-top: 0.8rem;
-	color: var(--mono-1);
+	font-weight: 500;
 }
 
 .testimonial-section .section-title {

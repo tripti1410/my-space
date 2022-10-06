@@ -1,11 +1,11 @@
 ---
 import "./about-section.css";
-
+import mascot from "$src/images/mascot.svg";
 const { profileImgWebP, profileImgJPG } = Astro.props;
 ---
 
 <section class="home-about-container">
-	<picture class="home-profile-container">
+	<!-- <picture class="home-profile-container">
 		<source srcset={profileImgWebP} />
 		<img
 			src={profileImgJPG}
@@ -14,39 +14,33 @@ const { profileImgWebP, profileImgJPG } = Astro.props;
 			width="280px"
 			width="300px"
 		/>
-	</picture>
-	<div class="home-intro">
+	</picture> -->
+	<img
+		src={mascot}
+		alt="girl holding a coffee cup"
+		width="300px"
+		height="300px"
+		loading="lazy"
+		class="mascot"
+	/>
+	<div class="home-intro clr-2">
 		<h1 class="about-heading">
-			Hi, I'm Trapti. I<span class="visually-hidden">love</span>
-			<svg
-				aria-hidden="true"
-				role="img"
-				class="heart"
-				width="40px"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 25.1 25"
-				aria-labelledby="heart-shape"
-			>
-				<title id="heart-shape">love</title>
-				<path
-					d="M25,8.8C25.2,2,16.8-1.9,12.2,3.1h0c-7-6-16.1,4.5-10.6,11.3h0l.6.7,10,10.7L22.9,14.4h-.1A7.9,7.9,0,0,0,25,8.8Z"
-				></path>
-			</svg>
-			SVG, animations and Web
+			I create Accessible, Performant , Responsive, Interactive & Animated
+			websites with code.
 		</h1>
 
-		<p class="content">
+		<!-- <p class="content">
 			I am a freelance Creative Frontend Engineer based in India. I can help you
 			with creating & optimizing SVGs, creating web animations, responsive
 			layouts, websites, web applications & much more.
 		</p>
 		<p class="content">
 			I emphasize on accessibility and performance in my work.
-		</p>
+		</p> -->
 
-		<p class="cta-container">
-			<a href="#hire-me" class="button clr-2"> Hire me</a>
-			Learn more <a href="/about" class="link">about me.</a>
+		<p class="cta-container flex-center">
+			<a href="#hire-me" class="button clr-3"> Hire me</a>
+			<span>Learn more <a href="/about" class="link">about me.</a></span>
 		</p>
 	</div>
 </section>

@@ -11,19 +11,23 @@ import MmsSection from "$src/components/mms-section/mms-section.astro";
 
 import BLOGS from "$src/data/blogs.js";
 
-import profileImgJPG from "$src/images/profile.jpg";
-import profileImgWebP from "$src/images/profile.webp";
+// import profileImgJPG from "$src/images/profile.jpg";
+// import profileImgWebP from "$src/images/profile.webp";
 ---
 
 <PageLayout title="Home">
 	<div id="main" class="home-content">
-		<AboutSection {profileImgWebP} {profileImgJPG} />
+		<AboutSection />
 
-		<ServicesSection />
-		<WorkSection />
-		<Testimonial />
-		<WritingSection blogs={BLOGS} />
-		<MentionsSection />
-		<MmsSection />
+		<div class="clr-3 inner-region">
+			<ServicesSection />
+		</div>
+
+		<div class="clr-1 inner-region"><WorkSection /></div>
+		<div class="clr-4 inner-region"><Testimonial /></div>
+		<div class="clr-2 inner-region"><WritingSection blogs={BLOGS} /></div>
+		<div class="clr-3 inner-region"><MentionsSection /></div>
+		<div class="clr-1 inner-region"><MmsSection /></div>
+		<script src="$src/js/home.js"></script>
 	</div>
 </PageLayout>

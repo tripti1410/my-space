@@ -7,10 +7,9 @@ const { title } = Astro.props;
 ---
 
 <BaseLayout {title}>
-	<div class="wrapper">
+	<div class={title.toLowerCase().split(" ").join("-")}>
 		<Header />
 		<main><slot /></main>
 		<Footer />
 	</div>
-	<script src="$src/js/home.js"></script>
 </BaseLayout>

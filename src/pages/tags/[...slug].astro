@@ -24,6 +24,7 @@ const { slug, posts } = Astro.props;
 ---
 
 <PageLayout title={`Tag - ${slug}`}>
+	<div class="wrapper inner-region">
 	<h2>#{slug}</h2>
 	<ul class="tag-posts-listing">
 		{
@@ -35,4 +36,5 @@ const { slug, posts } = Astro.props;
 			))
 		}
 	</ul>
+	</div>
 </PageLayout>

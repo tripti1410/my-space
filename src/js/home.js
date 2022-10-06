@@ -5,10 +5,6 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin);
 
 function aboutSection() {
-	const profileImageContainer = document.querySelector(
-		".home-profile-container"
-	);
-	const profileImage = document.querySelector(".home-profile-image");
 	let aboutSection_tl = gsap.timeline();
 
 	const aboutHeadingChildSplit = new SplitText(".about-heading", {
@@ -19,17 +15,17 @@ function aboutSection() {
 		type: "lines",
 		linesClass: "split-parent",
 	});
-	const aboutContentChildSplit = new SplitText(".content", {
-		type: "lines",
-		linesClass: "split-child",
-	});
-	const aboutContentParentSplit = new SplitText(".content", {
-		type: "lines",
-		linesClass: "split-parent",
-	});
+	// const aboutContentChildSplit = new SplitText(".content", {
+	// 	type: "lines",
+	// 	linesClass: "split-child",
+	// });
+	// const aboutContentParentSplit = new SplitText(".content", {
+	// 	type: "lines",
+	// 	linesClass: "split-parent",
+	// });
 	aboutSection_tl
 		.set(".home-about-container", { autoAlpha: 1 })
-		.from(profileImage, { yPercent: 100, duration: 1 })
+		// .from(profileImage, { yPercent: 100, duration: 1 })
 		.from(
 			[aboutHeadingChildSplit.lines, aboutContentChildSplit.lines],
 			{
@@ -426,7 +422,7 @@ window.addEventListener("load", (event) => {
 			isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
 		},
 		(context) => {
-			aboutSection();
+			// aboutSection();
 			serviceSection();
 			workSection();
 			testimonialSection();

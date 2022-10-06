@@ -4,7 +4,7 @@ import "./writing-section.css";
 const { blogs } = Astro.props;
 ---
 
-<section class="home-writing-container">
+<section class="home-writing-container wrapper">
 	<h2 class="section-title" id="home-writing-title">
 		articles I have written:
 	</h2>
@@ -15,8 +15,12 @@ const { blogs } = Astro.props;
 					<a href={blog.slug} rel="noopener noreferrer">
 						<h3 class="blog__title">{blog.title}</h3>
 						{blog.publication && (
-							<span class="blog__badge">{blog.publication}</span>
+							<span class="blog__badge clr-4">{blog.publication}</span>
 						)}
+						{blog.publication && blog.type && (
+							<span class="blog__badge clr-3">{blog.publication}</span>
+						)}
+
 						<p class="blog__subtitle">{blog.subtitle}</p>
 					</a>
 				</li>

@@ -6,15 +6,6 @@
 	/* height: var(--headerHeight); */
 }
 
-.logo {
-	grid-column: 1;
-}
-
-.logo svg {
-	font-family: "Noto Sans", sans-serif;
-	font-size: 4rem;
-}
-
 .logo .name-text {
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -31,18 +22,29 @@
 	border-bottom: 3px solid;
 	font-size: var(--fs-m);
 	font-family: "Ubuntu", sans-serif;
-	font-weight: medium;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.header div {
+	justify-self: center;
+}
+.logo {
+	display: block;
+}
+.navigation .menu-item a:hover {
+	color: var(--clr-3);
 }
 
+.navigation .menu-item:hover {
+	border-bottom-color: var(--clr-3);
+}
 @media (min-width: 768px) {
 	.header {
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: 1fr 2fr;
+		margin-bottom: 0;
 	}
-	.logo {
-		grid-column: 1 / span 3;
-	}
-	.navigation {
-		grid-column: 7/-1;
+	.home .navigation {
+		background-color: var(--clr-2);
 	}
 	.navigation .menu {
 		list-style: none;
@@ -54,16 +56,8 @@
 		display: inline;
 		margin-right: 1.6rem;
 		border-bottom: 3px solid;
-		font-size: var(--fs-l);
-		/* font-weight: 600; */
-		/* transition: all 2s ease-in-out; */
-	}
-	.navigation .menu-item a:hover {
-		color: var(--mono-1);
-	}
-
-	.navigation .menu-item:hover {
-		border-bottom-color: var(--mono-1);
+		font-size: var(--fs-xl);
+		transition: color 1s ease-out;
 	}
 }
 /* skip links */
