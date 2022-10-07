@@ -31,12 +31,18 @@
 .logo {
 	display: block;
 }
-.navigation .menu-item a:hover {
+.home .navigation .menu-item a:hover {
 	color: var(--clr-3);
+}
+.home .navigation .menu-item:hover {
+	border-bottom-color: var(--clr-3);
+}
+.navigation .menu-item a:hover {
+	color: var(--clr-2);
 }
 
 .navigation .menu-item:hover {
-	border-bottom-color: var(--clr-3);
+	border-bottom-color: var(--clr-2);
 }
 @media (min-width: 768px) {
 	.header {

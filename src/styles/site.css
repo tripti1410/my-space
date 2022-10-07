@@ -4,7 +4,6 @@
 	--mono-1: hsl(9, 65%, 45%);
 	--mono-2: #f5b326;
 	--accent-1: #b4e6ff;
-	--black: #19191a;
 	--gray-1: hsl(240, 5%, 30%);
 	/* --gray-2: #a2a2a3;  */
 	--gray-3: #e7e7e8;
@@ -217,12 +216,15 @@ main {
 
 .social-links {
 	list-style: none;
-	/* color: var(--black); */
-	display: flex;
 }
 
 .social-links li {
 	padding: 1.6rem;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .back-home-btn {
 	width: 30rem;
