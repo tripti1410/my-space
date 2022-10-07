@@ -1,6 +1,4 @@
 .home-services-container {
-	grid-column: 1/-1;
-	/* padding: 0 1.2rem; */
 	display: grid;
 	grid-gap: 2rem;
 }

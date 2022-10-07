@@ -20,17 +20,19 @@ import SkipLinks from "$src/components/skip-links/skip-links.astro";
 						id="curve-path-1"
 						d="M 0 60 C 140 90 190 0 290 50 "
 						stroke-width="3"
-						stroke="#f5b326"
+						stroke="#ffce5c"
 						fill="none"></path>
 					<path
 						id="curve-path-2"
 						d="M 0 56 C 140 86 190 0 290 46 "
 						stroke-width="3"
-						stroke="#b4e6ff"
+						stroke="#ff5e6c"
 						fill="none"></path>
 				</defs>
-				<use href="#curve-path-1"></use>
-				<use href="#curve-path-2"></use>
+				<use href="#curve-path-1" fill="currentColor" stroke="currentColor"
+				></use>
+				<use href="#curve-path-2" fill="currentColor" stroke="currentColor"
+				></use>
 				<text font-size="3rem" x="0" y="0" class="name-text">
 					<textPath href="#curve-path-1">
 						<tspan dx="15">trapti</tspan>

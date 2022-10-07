@@ -197,9 +197,9 @@ main {
 	margin-bottom: 3.2rem;
 	letter-spacing: 1px;
 	text-align: center;
-	font-size: clamp(3.2rem, calc(3rem + 1.8vw), var(--fs-jumbo));
+	font-size: clamp(3.2rem, calc(3rem + 1.7vw), var(--fs-jumbo));
 	line-height: var(--lh-2);
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 	font-weight: bold;
 }
 

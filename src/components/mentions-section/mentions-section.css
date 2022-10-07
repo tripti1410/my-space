@@ -1,6 +1,6 @@
-.home-mentions-container {
+/* .home-mentions-container {
 	grid-column: 1/-1;
-}
+} */
 .home-mentions-container .mentions {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -11,6 +11,7 @@
 	border: 1px solid var(--gray-3);
 	border-radius: 5px;
 	background-color: white;
+	color: var(--clr-11);
 	box-shadow: none;
 }
 .home-mentions-container .tweet-author-name {
@@ -24,6 +25,7 @@
 	border: 1px solid var(--gray-3);
 	border-radius: 5px;
 	background-color: white;
+	color: var(--clr-11);
 }
 .home-mentions-container .retweet-card .tweet-card:first-child {
 	border-bottom: none;
