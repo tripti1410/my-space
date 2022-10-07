@@ -11,7 +11,7 @@ I was a person who used to find reading, a boring hobby. And here I am. I read 1
 
 I am writing this post because my story of becoming a book lover might help others. It is a good habit to have. Research says there are many benefits of reading, I wrote about it at the end of this article. Many people want to read, but they couldn’t, I was one of them. I used to stay away from books and was more interested in audio and video. If my story can help or motivate one person also, it is worth writing for.
 
-> **“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.”**– George R.R. Martin
+> **“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.”** – George R.R. Martin
 
 Before 2017 I used to be the person who used to think reading books is a rocket science which I can not do it and I had no idea why people used to read non-tech books. I didn’t know the significance of reading books. I used to think I will sleep if I read.
 
@@ -109,4 +109,4 @@ So make a change today, and only you can do it.
 
 **Happy reading!!!!!!!!!!**
 
-Feel free to email me at reach.trapti@gmail.com if you wanna ask anything.
+Feel free to email me at hello@trapti.dev if you wanna ask anything.

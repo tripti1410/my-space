@@ -3,7 +3,7 @@
 	--background-color: #f8fcfe;
 	--mono-1: hsl(9, 65%, 45%);
 	--mono-2: #f5b326;
-	--accent-1: #b4e6ff;
+	--accent-1: #ff5e6c;
 	--gray-1: hsl(240, 5%, 30%);
 	/* --gray-2: #a2a2a3;  */
 	--gray-3: #e7e7e8;
@@ -130,7 +130,7 @@ main {
 	position: absolute;
 	width: 98%;
 	height: 50%;
-	background-color: var(--mono-2);
+	background-color: var(--clr-2);
 	bottom: 0;
 	z-index: -1;
 	opacity: 0.5;
@@ -205,7 +205,7 @@ main {
 .highlight {
 	padding-bottom: 0.2rem;
 	padding-left: 0.4rem;
-	border-bottom: 0.3rem solid var(--accent-1);
+	border-bottom: 0.3rem solid var(--clr-2);
 	/* background: url("../images/underline.svg") no-repeat center bottom; */
 }
 .link {

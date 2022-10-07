@@ -71,13 +71,9 @@ Then I made changes in my design and changed all letters to lowercase and showin
 
 In the code, I changed the SVG document and wrote entire text inside textPath element, and adjusted the position and font-size, to get the desired result.
 
-> **Tip1: -**
->
-> Avoid using tspan to segregate letters for styling purposes.
->
-> **Tip2: -**
->
-> textpath element works fine in HTML, but while writing in JSX use textPath otherwise it will not work.
+> **Tip1: -** Avoid using tspan to segregate letters for styling purposes.
+
+> **Tip2: -** Textpath element works fine in HTML, but while writing in JSX use textPath otherwise it will not work.
 
 ## Final result
 
