@@ -41,6 +41,7 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 @font-face {
@@ -166,6 +167,7 @@ main {
 .footer .site-info {
 	font-size: var(--fs-m);
 	padding: 0 1.2rem;
+	text-align: center;
 }
 .footer .footer-link {
 	font-size: var(--fs-l);
@@ -174,6 +176,11 @@ main {
 	text-align: center;
 }
 
+.back-to-top {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+}
 /* Main Home */
 .home-content {
 	display: grid;
@@ -216,10 +223,11 @@ main {
 
 .social-links {
 	list-style: none;
+	flex-wrap: wrap;
 }
 
 .social-links li {
-	padding: 1.6rem;
+	padding: 1rem;
 	width: 40px;
 	height: 40px;
 	display: flex;
