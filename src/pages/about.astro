@@ -1,19 +1,31 @@
 ---
 import PageLayout from "$src/layouts/PageLayout.astro";
-
 import "../styles/about.css";
+import profileImgJPG from "$src/images/profile.jpg";
+import profileImgWebP from "$src/images/profile.webp";
 ---
 
 <PageLayout title="About me">
 	<div class="about-page wrapper inner-region">
 		<h1 class="about-page-heading">Hey there! I'm Trapti</h1>
-		<p>
-			I am freelance Frontend Developer from India working since August 2015. I
-			have developed SaaS web apps as well as bespoke websites. I am passionate
-			about building a responsive, accessible, performant web for everyone. I
-			love SVG, animations and CSS grids the most, and I am excited to build web
-			interfaces of the future with these.
-		</p>
+		<div class="with-sidebar">
+			<picture class="sidebar">
+				<source srcset={profileImgWebP} />
+				<img
+					src={profileImgJPG}
+					class="home-profile-image"
+					alt="Trapti rahangdale portrait"
+					width="280px"
+				/>
+			</picture><p>
+				I am freelance Frontend Developer from India working since August 2015.
+				I have developed SaaS web apps as well as bespoke websites. I am
+				passionate about building a responsive, accessible, performant web for
+				everyone. I love SVG, animations and CSS grids the most, and I am
+				excited to build web interfaces of the future with these.
+			</p>
+		</div>
+
 		<h2 class="skills-title">Tools of the trade</h2>
 		<ul class="skills-list">
 			<li>HTML, CSS, Javascript, React, Redux, SVG</li>
