@@ -1,26 +1,15 @@
 .testimonial-section {
-	grid-column: 1/-1;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 1.6rem;
 }
 
-.testimonial-section blockquote {
-	background-color: white;
-	padding: 1.6rem;
-	border: 1px solid var(--gray-3);
-	border-radius: 5px;
-}
-
 .testimonial-section blockquote footer {
 	font-style: italic;
 	padding-top: 0.8rem;
-	font-weight: 500;
+	font-weight: var(--fw-200);
 }
 
-.testimonial-section .section-title {
-	grid-column: 1/-1;
-}
 @media (min-width: 768px) {
 	.testimonial-section {
 		grid-template-columns: repeat(6, 1fr);

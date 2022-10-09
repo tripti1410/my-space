@@ -38,16 +38,13 @@ It was early 2020, when I visited my close friend who are family as well. They a
 Then she took me to a book shop. After looking at many books, She bought three books for me. Below are the books with reason why we picked them.😀
 
 1. Me before you by [Jojomoyes](https://www.jojomoyes.com/books/me-before-you/)
-
-\-This book was suggested by the shopkeeper. He said people start with the romantic novel and this is the one😄. I am generally interested in romantic stories so I said yes.
+   \- This book was suggested by the shopkeeper. He said people start with the romantic novel and this is the one😄. I am generally interested in romantic stories so I said yes.
 
 2. Milk and honey by [Rupi kour](https://www.amazon.in/Milk-Honey-Rupi-Kaur/dp/144947425X)
-
-\-This book my friend suggested it was written in poetic form. I saw book cover is looking good, it had some pictures as well and I said yes.
+   \- This book my friend suggested it was written in poetic form. I saw book cover is looking good, it had some pictures as well and I said yes.
 
 3. Dearest George by [Alicia Souza](https://www.instagram.com/aliciasouza/)
-
-\-This book shopkeeper actually suggested to my friend, but she said she has already follow the author in Instagram and knows few things about it. But she told me you can buy this book because my husband’s name is Amith George and book is Dearest George😆. I laughed and said yes because this was a small and romantic comic type book.
+   \- This book shopkeeper actually suggested to my friend, but she said she has already follow the author in Instagram and knows few things about it. But she told me you can buy this book because my husband’s name is Amith George and book is Dearest George😆. I laughed and said yes because this was a small and romantic comic type book.
 
 So while flying back from there to Bengaluru, in flight I started reading Dearest George, I really enjoyed reading this. Because I had finished the fist one I was very interested in picking up the next. Then read Milk and honey, it took me 2-3 days, ok types book not very engaging for me. Since I do not want to break my interest, I read it. Next I picked up Me before you, read a few pages, but the size of the book(big book) and the paper quality was not very attractive😄. And I realised it matters to me. I gave up on this book, I thought I will read it later, still I didn’t.
 
@@ -71,7 +68,7 @@ I tried Audible also. While I am going for a walk I read books in Audible.
 
 So this is the story of mine, how I started and the how the interest built up. You need put some efforts in order to figure out what type of books keeps you engaging. Explore various mediums and figure out what suits you.
 
-## Medium to read
+### Medium to read
 
 As you must have noticed I have tried different ways of reading and for me all three works.
 
@@ -81,11 +78,11 @@ As you must have noticed I have tried different ways of reading and for me all t
 
 Also, if money is a problem you can try buying second hand books or rent books or collaborate with someone and exchange. The idea is to read more. Figure out book store who sells second hand books in your city. In Bengaluru I prefer [Blossom boom house](https://www.instagram.com/blossombookhouse/?hl=en).
 
-## Track your reading
+### Track your reading
 
 Tracking what you are reading, read or wants to read is very helpful. I feel good when I put an entry and see, ohh I finished these many books let me finished few more. You don’t have to remember which once you read. [Good read](https://www.goodreads.com/user/show/97302367-trapti-rahangdale) is an app I prefer to track my readings. Here you can follow people and see what they are reading. Rate and review the book also.
 
-## Benefits of reading
+### Benefits of reading
 
 [This article](https://www.healthline.com/health/benefits-of-reading-books#takeaway) talks about it in detail, below is the brief from this article.
 

@@ -1,0 +1,9 @@
+.footer {
+	min-height: var(--footerHeight);
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+}

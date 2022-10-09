@@ -4,7 +4,9 @@ import mascot from "$src/images/mascot.svg";
 const { profileImgWebP, profileImgJPG } = Astro.props;
 ---
 
-<section class="home-about-container">
+<section
+	class="home-about-container with-sidebar wrapper-two-col align-items-center"
+>
 	<!-- <picture class="home-profile-container">
 		<source srcset={profileImgWebP} />
 		<img
@@ -21,9 +23,9 @@ const { profileImgWebP, profileImgJPG } = Astro.props;
 		width="300px"
 		height="300px"
 		loading="lazy"
-		class="mascot"
+		class="mascot sidebar"
 	/>
-	<div class="home-intro clr-2">
+	<div class="home-intro clr-2 inner-region stack">
 		<h1 class="about-heading">
 			I create Accessible, Performant , Responsive, Interactive & Animated
 			websites with code.
@@ -39,7 +41,7 @@ const { profileImgWebP, profileImgJPG } = Astro.props;
 		</p> -->
 
 		<p class="cta-container flex-center">
-			<a href="#hire-me" class="button clr-3"> Hire me</a>
+			<a href="#hire-me" class="clr-3 button"> Hire me</a>
 			<span>Learn more <a href="/about" class="link">about me.</a></span>
 		</p>
 	</div>

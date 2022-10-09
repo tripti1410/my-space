@@ -7,8 +7,6 @@ tags:
   - SVG
 ---
 
-![cover image indicating why SVG text](/assets/still-jpg-1000x420-.jpg)
-
 Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics. There are various reasons why we should use this, some are listed below -
 
 1. [File size](https://www.sitepoint.com/gif-png-jpg-which-one-to-use/) of well optimised SVG is less than any other image format(ex. png, jpg etc.).
@@ -25,11 +23,7 @@ Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimen
 
 <p class="codepen" data-height="333" data-theme-id="default" data-default-tab="html,result" data-user="tripti1410" data-slug-hash="dBLEar" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="cycle loader: GSAP animation">
 
-<span>See the Pen <a href="https://codepen.io/tripti1410/pen/dBLEar">
-
-cycle loader: GSAP animation</a> by tripti (<a href="https://codepen.io/tripti1410">@tripti1410</a>)
-
-on <a href="https://codepen.io">CodePen</a>.</span>
+<span>See the Pen <a href="https://codepen.io/tripti1410/pen/dBLEar">cycle loader: GSAP animation</a> by tripti (<a href="https://codepen.io/tripti1410">@tripti1410</a>) on <a href="https://codepen.io">CodePen</a>.</span>
 
 </p>
 

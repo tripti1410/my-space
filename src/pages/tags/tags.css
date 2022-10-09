@@ -2,13 +2,11 @@
 	margin-top: 3rem;
 }
 .tag-posts-listing li {
-	display: grid;
 	margin-bottom: 2rem;
 }
-.tag-posts-listing li span {
-	font-size: var(--fs-s);
+.tag-posts-listing li time {
+	font-style: italic;
 }
 .tag-posts-listing li a {
-	font-size: var(--fs-xl);
 	text-decoration: underline;
 }

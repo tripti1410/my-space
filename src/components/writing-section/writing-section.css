@@ -1,47 +1,26 @@
-.home-writing-container {
-	display: grid;
-}
-
-.home-writing-container .blogs {
-	grid-column: 1/-1;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 1.6rem;
-	list-style: none;
-}
-
 .home-writing-container .blog a {
-	padding: 3.2rem 1.6rem;
-	border: 1px solid var(--gray-3);
-	border-radius: 5px;
-	background-color: white;
+	padding: 2rem 1.2rem;
 	position: relative;
-	display: block;
-	height: calc(100% - 8rem);
-}
-
-.home-writing-container .blog__title {
-	color: initial;
-	cursor: pointer;
-}
-
-.home-writing-container .blog__subtitle {
-	color: var(--gray-1);
 	cursor: pointer;
 }
 
 .home-writing-container .blog__badge {
-	/* background-color: var(--accent-1); */
 	padding: 0.4rem 1.6rem;
 	border-radius: 0.4rem;
 	position: absolute;
-	top: -1rem;
-	font-size: var(--fs-s);
+	top: -2rem;
+	font-size: var(--step--1);
 }
-
-@media (min-width: 768px) {
-	.home-writing-container {
-		grid-template-columns: repeat(12, 1fr);
-		padding: 0;
-	}
+/* .flowy-layout {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1.6rem;
 }
+.flowy-layout > *:not(.button) {
+	flex-basis: 0px;
+	flex-grow: 999;
+	min-inline-size: 280px;
+	max-inline-size: 50%;
+} */

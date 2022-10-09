@@ -14,7 +14,7 @@
 .about-page p {
 	grid-column: 1 / -1;
 	margin-bottom: 1.6rem;
-	font-size: var(--fs-xl);
+	/* font-size: var(--fs-xl); */
 }
 
 .about-page .skills-title {

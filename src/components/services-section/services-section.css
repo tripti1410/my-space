@@ -1,38 +1,13 @@
-.home-services-container {
-	display: grid;
-	grid-gap: 2rem;
+.service-ani-container {
+	width: 18.75rem;
+	height: 18.75rem;
+	background-color: var(--clr-11);
+	border: 4px solid white;
+	border-radius: 3px;
 }
-.home-services-container ul {
-	padding-left: 4rem;
+.home-services-container .service {
+	margin-bottom: 3rem;
 }
-.home-services-container h3 {
-	font-size: var(--fs-xxl);
-	line-height: 1.5;
-}
-
-.home-services-container .button {
-	margin-left: 1rem;
-}
-.home-services-container > div:not(.home-services-container__lets-chat) {
-	max-width: 55ch;
-	grid-column: span 2;
-}
-.home-services-container > div:nth-child(2) {
-	grid-row: 2 / span 2;
-}
-#mascot-svg {
-	max-width: 300px;
-}
-
-@media (min-width: 768px) {
-	.home-services-container {
-		display: grid;
-		grid-template-columns: 0.8fr 0.8fr 1fr 1fr;
-		grid-template-rows: max-content 0.9fr 0.5fr;
-	}
-	.home-services-container__lets-chat {
-		display: flex;
-		align-items: center;
-		grid-column: span 2 /-1;
-	}
+.home-services-container__lets-chat {
+	--space-m: 2rem;
 }

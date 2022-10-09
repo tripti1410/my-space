@@ -21,13 +21,13 @@ Around this lockdown time March and April, I did **binge reading**. From a perso
 
 I wrote blog posts.
 
-## [7 Concepts: Why Your SVG Is the Way It Is](https://soshace.com/7-concepts%e2%80%8awhy-your-svg-is-the-way-it-is/)
+### [7 Concepts: Why Your SVG Is the Way It Is](https://soshace.com/7-concepts%e2%80%8awhy-your-svg-is-the-way-it-is/)
 
-## [In Illustrator- Remove transformations from SVG while exporting](https://dev.to/imtraptir/in-illustrator-remove-transformations-from-svg-while-exporting-5050)
+### [In Illustrator- Remove transformations from SVG while exporting](https://dev.to/imtraptir/in-illustrator-remove-transformations-from-svg-while-exporting-5050)
 
 **Below article got published in CSS Tricks. Yay!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**
 
-## [How to Get Handwriting Animation With Irregular SVG Strokes](https://css-tricks.com/how-to-get-handwriting-animation-with-irregular-svg-strokes/)
+### [How to Get Handwriting Animation With Irregular SVG Strokes](https://css-tricks.com/how-to-get-handwriting-animation-with-irregular-svg-strokes/)
 
 I created many animations using [Greensock in Codepen](https://codepen.io/collection/DqPvMe), which are appreciated by the community.
 

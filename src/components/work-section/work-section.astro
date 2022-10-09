@@ -1,23 +1,25 @@
 ---
 import CloudinaryVideo from "$src/components/cloudinary-video.astro";
-import "./work-section.css";
 import spaceTourismImg from "$src/images/space-tourism.jpg";
 import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 ---
 
-<section id="home-work-lab" class="home-work-container wrapper">
+<section id="home-work-lab" class="autofit-grid wrapper">
 	<h2 class="section-title" id="home-work-title">
 		work I do for clients; and lab:
 	</h2>
-	<div class="home-work-container__project">
+	<div class="card stack">
 		<CloudinaryVideo publicId="lifesci-project" controls width="100%" />
-		<div class="project-description">
+		<div class="project-description stack">
 			<p>
 				I built the website for
-				<a href="https://lifescicommunications.com"> LifeSci Communications</a>.
-				It has a complex, modern layout, and every page has different line
+				<a href="https://lifescicommunications.com" class="link">
+					LifeSci Communications</a
+				>. It has a complex, modern layout, and every page has different line
 				animations on scroll.
-				<a href="/project/lifesci-project-details/">Project details.</a>
+				<a href="/project/lifesci-project-details/" class="link"
+					>Project details.</a
+				>
 			</p>
 			<p class="tech">
 				<span> Tech:</span>
@@ -25,7 +27,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			</p>
 		</div>
 	</div>
-	<div class="home-work-container__project">
+	<div class="card stack">
 		<!-- <video controls width="100%">
 			<source
 				src="https://res.cloudinary.com/dsn7z2gd2/video/upload/v1662277908/ED.mp4"
@@ -35,12 +37,13 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			Sorry, your browser doesn't support embedded videos.
 		</video> -->
 		<CloudinaryVideo publicId="ED" controls width="100%" />
-		<div class="project-description">
+		<div class="project-description stack">
 			<p>
-				At <a href="https://www.equivalent.design">Equivalent Design</a>, I’m
-				responsible for creating all the accessible SVG animations. I clean the
-				SVGs, make them performant & WCAG compliant. e.g., in the animation for
-				Sam, the guide dog above, I added support for
+				At <a href="https://www.equivalent.design" class="link"
+					>Equivalent Design</a
+				>, I’m responsible for creating all the accessible SVG animations. I
+				clean the SVGs, make them performant & WCAG compliant. e.g., in the
+				animation for Sam, the guide dog above, I added support for
 				<strong>
 					reduced motion, light & dark mode, high contrast mode, reader app,
 					etc.
@@ -52,7 +55,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			</p>
 		</div>
 	</div>
-	<div class="home-work-container__project">
+	<div class="card stack stack">
 		<!-- <WorkPreview project={projects[2]} /> -->
 		<!-- <video controls width="100%">
 			<source
@@ -66,19 +69,23 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			controls
 			width="100%"
 		/>
-		<div class="project-description">
+		<div class="project-description stack">
 			<p>
 				Line animation on scroll with graphics between them. This was part of
 				the CodeSandbox GSAP challenge. It's a replica of the famous
-				<a href="https://www.lemonade.com/giveback-2019" target="_blank">
+				<a
+					href="https://www.lemonade.com/giveback-2019"
+					class="link"
+					target="_blank"
+				>
 					Lemonade website
 				</a>
 				.
 			</p>
 			<p>
-				<a href="https://b2mg4r.csb.app" target="_blank"> Demo</a>
+				<a href="https://b2mg4r.csb.app" class="link" target="_blank"> Demo</a>
 				/
-				<a href="https://codesandbox.io/s/b2mg4r" target="_blank">
+				<a href="https://codesandbox.io/s/b2mg4r" class="link" target="_blank">
 					Source code
 				</a>
 			</p>
@@ -88,7 +95,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			</p>
 		</div>
 	</div>
-	<!-- <div class="home-work-container__project">
+	<!-- <div class="card stack">
     <div class="project-preview">
       <picture>
         <source srcset={spaceTourismImgWebp} />
@@ -101,7 +108,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
       <img src={spaceTourismImg} alt="space tourism website image" />
     </div>
 
-    <div class="project-description">
+    <div class="project-description stack">
       <p>
         I wanted to get familiar with
         <a href="https://astro.build" target="_blank"> Astro </a>
@@ -131,7 +138,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
     </div>
   </div> -->
 
-	<div class="home-work-container__project">
+	<div class="card stack">
 		<!-- <video controls width="100%">
 			<source
 				src="https://res.cloudinary.com/dsn7z2gd2/video/upload/v1662281268/apple%27s-hello-animation.mp4"
@@ -143,17 +150,25 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			controls
 			width="100%"
 		/>
-		<div class="project-description">
+		<div class="project-description stack">
 			<p>
 				I recreated in CodePen Apple’s beautiful "hello" screen saver. CodePen
 				featured it in their Spark collection.
 			</p>
 			<p>
-				<a href="https://codepen.io/tripti1410/full/pordWpZ" target="_blank">
+				<a
+					href="https://codepen.io/tripti1410/full/pordWpZ"
+					class="link"
+					target="_blank"
+				>
 					Demo
 				</a>
 				/
-				<a href="https://codepen.io/tripti1410/pen/pordWpZ" target="_blank">
+				<a
+					href="https://codepen.io/tripti1410/pen/pordWpZ"
+					class="link"
+					target="_blank"
+				>
 					Source code
 				</a>
 			</p>
@@ -163,7 +178,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			</p>
 		</div>
 	</div>
-	<div class="home-work-container__project">
+	<div class="card stack">
 		<!-- <video controls width="100%">
 			<source
 				src="https://res.cloudinary.com/dsn7z2gd2/video/upload/v1662281470/image-gallery-flip-animation-gsap.mp4"
@@ -175,7 +190,7 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 			controls
 			width="100%"
 		/>
-		<div class="project-description">
+		<div class="project-description stack">
 			<p>
 				I used GreenSock’s
 				<a
@@ -189,8 +204,12 @@ import spaceTourismImgWebp from "$src/images/space-tourism.webp";
 				loved it.
 			</p>
 			<p>
-				<a href="https://codepen.io/tripti1410/full/jOGZPbp">Demo</a> /
-				<a href="https://codepen.io/tripti1410/pen/jOGZPbp">Source code</a>
+				<a href="https://codepen.io/tripti1410/full/jOGZPbp" class="link"
+					>Demo</a
+				> /
+				<a href="https://codepen.io/tripti1410/pen/jOGZPbp" class="link"
+					>Source code</a
+				>
 			</p>
 			<p class="tech">
 				<span> Tech:</span>

@@ -31,6 +31,6 @@
 }
 .project-details-video-container + p {
 	padding: 0 2rem;
-	font-size: var(--fs-s);
+	/* font-size: var(--fs-s); */
 	margin-bottom: 4rem;
 }

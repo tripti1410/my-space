@@ -1,10 +1,5 @@
-.banner-section {
-	grid-column: 1/-1;
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-}
 .mms-title {
-	font-size: clamp(7rem, calc(5rem + 5.5vw), 12rem);
+	font-size: clamp(4.8rem, calc(4.8rem + 5vw), 11rem);
 	font-weight: 600;
 	line-height: 1.2;
 	width: 100%;
@@ -12,5 +7,7 @@
 	font-family: "Impact", serif;
 }
 #mms-svg {
-	max-width: 400px;
+	max-width: 450px;
+	justify-self: end;
+	align-self: center;
 }

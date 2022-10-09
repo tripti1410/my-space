@@ -51,7 +51,7 @@ We tried a different place, Cafe del Mar for dinner and to start with we ordered
 
 We got to know on Sunday that our Monday morning train got cancelled due to the flood like situation in Mumbai. Thankfully we got another train ticket which was in afternoon. As so much happened with this cancellation and all our hotel receptionist helped us staying for some more time and arranged a vehicle as well to go to the station. I must say people at Mad About Coco was very helpful though-out our stay. Yeah, Monday morning we had our breakfast at coffee temple, normal dosa and french toast tea and coffee. Came to room packed our bags straight to station. Unfortunately our train was delayed by 1 hour, and we had to wait and i must say its not easy as this place is very humid and station is also very small so not much facilities there. Finally boarded the train and reached Kochi station at 5.30pm. Went to our home stayed for the night and next day along with parents drove to Bangalore. It was raining a-lot and we had to stopped at few places, we left Kochi around 6am and reached Bangalore around 5pm.
 
-**Ways to reach Varkala**
+### Ways to reach varkala
 
 There is one nearby airport Trivandrum. One can take train or cab from here to Varkala. Cab from Trivandrum to Varkala will cost around 1500rs. There are lot of trains also which barely takes one hour to reach Varkala from Trivandrum. This is the recommended option.
 

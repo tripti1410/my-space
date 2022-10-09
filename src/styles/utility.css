@@ -1,0 +1,122 @@
+.wrapper {
+	padding: 0 1rem;
+}
+@media (min-width: 768px) {
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1200px) {
+	.wrapper {
+		padding: 0;
+	}
+}
+.wrapper-two-col {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.stack > * + * {
+	margin-block-start: var(--space-m, 1rem);
+}
+
+.with-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+.with-sidebar .sidebar {
+	flex-grow: 1;
+}
+.with-sidebar > *:not(.sidebar) {
+	flex-basis: 0px;
+	flex-grow: 999;
+	min-inline-size: 50%;
+}
+.autofit-grid {
+	display: grid;
+	grid-gap: 1.6rem;
+	grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+}
+.inner-region {
+	padding: 4rem 0;
+}
+@media (min-width: 768px) {
+	.inner-region {
+		padding: 6rem 0;
+	}
+}
+.flex {
+	display: flex;
+	gap: 1rem;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+/* .grid {
+	display: grid;
+	grid-gap: 1rem;
+} */
+.align-items-center {
+	align-items: center;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.no-list-style {
+	list-style: none;
+}
+.button {
+	padding: 0.8rem 2rem;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: "Ubuntu", sans-serif;
+	font-size: var(--step-1);
+	background-color: var(--clr-2);
+}
+
+.link {
+	border-bottom: 3px solid;
+	font-weight: var(--fw-200);
+	line-height: 1;
+	cursor: pointer;
+}
+.clr-1 {
+	background-color: var(--clr-1);
+}
+.clr-2 {
+	background-color: var(--clr-2);
+}
+.clr-3 {
+	background-color: var(--clr-3);
+}
+.clr-4 {
+	background-color: var(--clr-4);
+}
+.font-small {
+	font-size: var(--step--1);
+}
+.text-center {
+	text-align: center;
+}
+.max-width {
+	max-width: 60ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section-title {
+	text-align: center;
+	grid-column: 1/-1;
+	margin-bottom: 3rem;
+}
+.card {
+	background-color: white;
+	padding: 1rem;
+	border: 1px solid var(--gray-3);
+	border-radius: 5px;
+}

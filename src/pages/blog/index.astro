@@ -12,21 +12,21 @@ const popularBlogs = BLOGS.filter((blog) => blog.type === "popular");
 ---
 
 <PageLayout title="Blog">
-	<div class="wrapper">
-		<div class="blog-listing-page inner-region">
-			<p>
-				I write about my experiences being a developer, freelancer and life in
-				general.
-			</p>
+	<div class="blog-listing-page">
+		<p class="clr-3 text-center inner-region">
+			I write about my experiences being a developer, freelancer and life in
+			general.
+		</p>
+		<div class="wrapper stack inner-region">
 			<h2>Popular blogs</h2>
-			<ul class="blogs">
+			<ul class="blogs autofit-grid no-list-style">
 				{
 					popularBlogs.map((blog) => (
-						<li class="blog">
-							<a href={blog.slug} rel="noopener noreferrer">
+						<li class="blog card">
+							<a href={blog.slug} rel="noopener noreferrer" target="_blank">
 								<h3 class="blog__title">{blog.title}</h3>
 								{blog.publication && (
-									<span class="blog__badge">
+									<span class="blog__badge clr-2">
 										Published at {blog.publication}
 									</span>
 								)}
@@ -38,13 +38,13 @@ const popularBlogs = BLOGS.filter((blog) => blog.type === "popular");
 			</ul>
 			<h2>Latest blogs</h2>
 			<div class="latest-blog">
-				<ul class="blog-list">
+				<ul class="blog-list no-list-style stack">
 					{
 						posts.map((post) => (
 							<li>
-								<h2 itemprop="title" class="blog-post__title">
+								<h3 itemprop="title" class="blog-post__title">
 									<a href={post.frontmatter.path}>{post.frontmatter.title}</a>
-								</h2>
+								</h3>
 								<div class="blog-post__details">
 									<time
 										itemprop="dateCreated pubdate datePublished"
@@ -59,7 +59,7 @@ const popularBlogs = BLOGS.filter((blog) => blog.type === "popular");
 				</ul>
 
 				<aside>
-					<ul>
+					<ul class="no-list-style tag-list">
 						{
 							uniquetags.map((tag) => (
 								<li>
