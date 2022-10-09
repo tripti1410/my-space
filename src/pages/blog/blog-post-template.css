@@ -3,11 +3,6 @@
 	margin: 2rem auto;
 	max-width: 80ch;
 }
-/* .blog-post__content p,
-.blog-post__content ol,
-.blog-post__content ul {
-	margin-bottom: 1rem;
-} */
 
 .blog-post__content ol,
 .blog-post__content ul {
@@ -58,4 +53,5 @@
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 3rem;
 }

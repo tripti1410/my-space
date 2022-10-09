@@ -1,5 +1,6 @@
 .wrapper {
-	padding: 0 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 @media (min-width: 768px) {
 	.wrapper {
@@ -40,11 +41,13 @@
 	grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
 }
 .inner-region {
-	padding: 4rem 0;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 @media (min-width: 768px) {
 	.inner-region {
-		padding: 6rem 0;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
 	}
 }
 .flex {
