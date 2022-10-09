@@ -4,41 +4,6 @@ import { SplitText } from "gsap/SplitText";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin);
 
-function aboutSection() {
-	let aboutSection_tl = gsap.timeline();
-
-	const aboutHeadingChildSplit = new SplitText(".about-heading", {
-		type: "lines",
-		linesClass: "split-child",
-	});
-	const aboutHeadingParentSplit = new SplitText(".about-heading", {
-		type: "lines",
-		linesClass: "split-parent",
-	});
-	// const aboutContentChildSplit = new SplitText(".content", {
-	// 	type: "lines",
-	// 	linesClass: "split-child",
-	// });
-	// const aboutContentParentSplit = new SplitText(".content", {
-	// 	type: "lines",
-	// 	linesClass: "split-parent",
-	// });
-	aboutSection_tl
-		.set(".home-about-container", { autoAlpha: 1 })
-		// .from(profileImage, { yPercent: 100, duration: 1 })
-		.from(
-			[aboutHeadingChildSplit.lines, aboutContentChildSplit.lines],
-			{
-				duration: 1,
-				yPercent: 100,
-				ease: "power4.out",
-				stagger: 0.1,
-			},
-			0
-		);
-	return aboutSection_tl;
-}
-
 function workSection() {
 	const workHeading = new SplitText("#home-work-title", {
 		type: "chars",
@@ -88,7 +53,7 @@ function serviceSection() {
 	const serviceHeading = new SplitText("#home-service-title", {
 		type: "chars",
 	});
-	const letsChatText = new SplitText(".home-services-container__lets-chat h3", {
+	const letsChatText = new SplitText(".home-services-container__lets-chat h4", {
 		type: "chars",
 	});
 	gsap.set(letsChatText.chars, { opacity: 0 });
@@ -422,7 +387,6 @@ window.addEventListener("load", (event) => {
 			isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
 		},
 		(context) => {
-			// aboutSection();
 			serviceSection();
 			workSection();
 			testimonialSection();

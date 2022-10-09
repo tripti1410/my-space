@@ -1,10 +1,9 @@
 /* Header */
-.header {
-	height: var(--headerHeight);
-}
+
 .navigation .menu-item {
 	font-family: "Ubuntu", sans-serif;
 	transition: color 1s ease-out;
+	font-size: var(--step-1);
 }
 
 .home .navigation .menu-item a:hover {
