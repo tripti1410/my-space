@@ -84,44 +84,14 @@ function testimonialSection() {
 	const testimonialHeading = new SplitText("#home-testimonial-title", {
 		type: "chars",
 	});
-	gsap.set("#tg-mouth-after", { drawSVG: "0% 30%" });
-	gsap.set(["#tg-filled-star", "#tg-filled-side-star"], {
-		transformOrigin: "50% 50%",
-		scale: 0.8,
+
+	testimonialSection_tl.from(testimonialHeading.chars, {
+		stagger: 0.05,
+		ease: "back",
+		autoAlpha: 0,
+		yPercent: 100,
 	});
-	testimonialSection_tl
-		.from(testimonialHeading.chars, {
-			stagger: 0.05,
-			ease: "back",
-			autoAlpha: 0,
-			yPercent: 100,
-		})
-		.fromTo(
-			"#tg-filled-star",
-			{ scale: 1.3, transformOrigin: "50% 50%" },
-			{
-				scale: 1,
-				transformOrigin: "50% 50%",
-				fill: "#ffbb43",
-				ease: "power4.out",
-			}
-		)
-		.to("#tg-blank-star", { stroke: "#ffbb43", duration: 0.1 }, "<")
-		.fromTo(
-			"#tg-filled-side-star",
-			{ scale: 1.3, transformOrigin: "50% 50%" },
-			{
-				scale: 1,
-				transformOrigin: "50% 50%",
-				fill: "#ffa522",
-				ease: "power4.out",
-			},
-			"<"
-		)
-		.to("#tg-blank-side-star", { stroke: "#ffa522", duration: 0.1 }, "<")
-		.to("#tg-eyeball-R", { x: 1, ease: "back" })
-		.to("#tg-eyeball-L", { x: 1, ease: "back" }, "<")
-		.to("#tg-mouth-after", { drawSVG: "0% 100%" }, "<");
+
 	return testimonialSection_tl;
 }
 function articlesSection() {
@@ -163,7 +133,6 @@ function recognitionSection() {
 	});
 	recognitionSection_tl.to(recognitionHeading.chars, {
 		filter: "blur(30px) brightness(10)",
-
 		clearProps: "filter",
 		stagger: {
 			each: 0.01,
@@ -172,7 +141,7 @@ function recognitionSection() {
 	});
 	return recognitionSection_tl;
 }
-function mmsSection() {
+function mmsCharacterAnimation() {
 	let dustingHands = gsap.timeline({
 		repeat: 2,
 		yoyo: true,
@@ -379,22 +348,67 @@ function mmsSection() {
 		);
 	return mms_tl;
 }
+function testimonialCharacterAnimation() {
+	gsap.set("#tg-mouth-after", { drawSVG: "0% 30%" });
+	gsap.set(["#tg-filled-star", "#tg-filled-side-star"], {
+		transformOrigin: "50% 50%",
+		scale: 0.8,
+	});
+	let tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: "#testimonial-svg",
+			markers: true,
+			// start: "top 50%",
+			fastScrollEnd: true,
+			toggleActions: "play none play restart",
+		},
+	});
+	tl.fromTo(
+		"#tg-filled-star",
+		{ scale: 1.3, transformOrigin: "50% 50%" },
+		{
+			scale: 1,
+			transformOrigin: "50% 50%",
+			fill: "#ffbb43",
+			ease: "power4.out",
+		}
+	)
+		.to("#tg-blank-star", { stroke: "#ffbb43", duration: 0.1 }, "<")
+		.fromTo(
+			"#tg-filled-side-star",
+			{ scale: 1.3, transformOrigin: "50% 50%" },
+			{
+				scale: 1,
+				transformOrigin: "50% 50%",
+				fill: "#ffa522",
+				ease: "power4.out",
+			},
+			"<"
+		)
+		.to("#tg-blank-side-star", { stroke: "#ffa522", duration: 0.1 }, "<")
+		.to("#tg-eyeball-R", { x: 1, ease: "back" })
+		.to("#tg-eyeball-L", { x: 1, ease: "back" }, "<")
+		.to("#tg-mouth-after", { drawSVG: "0% 100%" }, "<");
+	return tl;
+}
 window.addEventListener("load", (event) => {
 	let mm = gsap.matchMedia(),
 		breakPoint = 800;
 	mm.add(
 		{
 			isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
+			isMobile: `(max-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
 		},
 		(context) => {
-			serviceSection();
-			workSection();
-			testimonialSection();
-			articlesSection();
-			recognitionSection();
-			mmsSection();
-
-			return () => {};
+			testimonialCharacterAnimation();
+			mmsCharacterAnimation();
+			if (!isMobile) {
+				serviceSection();
+				workSection();
+				articlesSection();
+				testimonialSection();
+				recognitionSection();
+			}
 		}
 	);
 });
