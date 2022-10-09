@@ -357,10 +357,9 @@ function testimonialCharacterAnimation() {
 	let tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: "#testimonial-svg",
-			markers: true,
-			// start: "top 50%",
-			fastScrollEnd: true,
-			toggleActions: "play none play restart",
+			start: "top 50%",
+			end: "+=10",
+			toggleActions: "play none restart restart",
 		},
 	});
 	tl.fromTo(
@@ -400,6 +399,7 @@ window.addEventListener("load", (event) => {
 			isMobile: `(max-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
 		},
 		(context) => {
+			let { isMobile } = context.conditions;
 			testimonialCharacterAnimation();
 			mmsCharacterAnimation();
 			if (!isMobile) {
