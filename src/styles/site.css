@@ -26,7 +26,7 @@
 	/* Font weight */
 	--fw-100: 400;
 	--fw-200: 600;
-	--fw-300: 800;
+	--fw-300: 700;
 	--footerHeight: 12rem;
 	--headerHeight: 10rem;
 	--pullToEnd: calc(((100vw - 1200px - 1rem) / 2) * -1);
@@ -44,31 +44,33 @@ html {
 @font-face {
 	font-family: "Ubuntu", sans-serif;
 	src: url(./Ubuntu-Bold.ttf);
-}
-@font-face {
-	font-family: "Ubuntu", sans-serif;
-	src: url(./Ubuntu-Medium.ttf);
-}
-@font-face {
-	font-family: "Graphik", serif;
-	src: url(./Graphik-Font-Family/GraphikBlack.otf);
-}
-@font-face {
-	font-family: "Graphik", serif;
-	src: url(./Graphik-Font-Family/GraphikBold.otf);
+	font-weight: 700;
 }
 
 @font-face {
-	font-family: "Graphik", serif;
-	src: url(./Graphik-Font-Family/GraphikMedium.otf);
+	font-family: "Source Sans Pro", sans-serif;
+	src: url(./source-sans-pro/SourceSansPro-Regular.ttf);
+	font-weight: 400;
 }
 @font-face {
+	font-family: "Source Sans Pro", sans-serif;
+	src: url(./source-sans-pro/SourceSansPro-SemiBold.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Source Sans Pro", sans-serif;
+	src: url(./source-sans-pro/SourceSansPro-Bold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
 	font-family: "Impact", serif;
-	src: url(../Impact-Font/impact.ttf);
+	src: url(./impact-font/impact.ttf);
 }
 
 body {
-	font-family: "Graphik", serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-size: var(--step-0);
 	font-weight: var(--fw-100);
 	line-height: var(--lh-8);
@@ -143,5 +145,3 @@ a {
 * {
 	box-sizing: border-box;
 }
-
-
