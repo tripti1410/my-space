@@ -11,12 +11,7 @@ const { title } = Astro.props;
 		<Header />
 		<main><slot /></main>
 		<Footer />
-		<a
-			href="#site-header"
-			id="back-to-top"
-			aria-labelledby="back-up"
-			class="back-to-top"
-		>
+		<a id="back-to-top" aria-labelledby="back-up" class="back-to-top">
 			<span id="back-up" hidden=""> Back to top</span>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

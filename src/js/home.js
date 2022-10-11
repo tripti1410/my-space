@@ -4,6 +4,18 @@ import { SplitText } from "gsap/SplitText";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin);
 
+function initScrollToTop() {
+	const scrollToTopBtn = document.getElementById("back-to-top");
+	const rootElement = document.documentElement;
+	function scrollToTop() {
+		rootElement.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	}
+	scrollToTopBtn.addEventListener("click", scrollToTop);
+}
+
 function workSection() {
 	const workHeading = new SplitText("#home-work-title", {
 		type: "chars",
@@ -391,6 +403,7 @@ function testimonialCharacterAnimation() {
 	return tl;
 }
 window.addEventListener("load", (event) => {
+	initScrollToTop();
 	let mm = gsap.matchMedia(),
 		breakPoint = 800;
 	mm.add(
