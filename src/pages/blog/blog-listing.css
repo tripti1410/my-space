@@ -34,9 +34,6 @@
 		grid-template-columns: 3fr 1fr;
 	}
 }
-.blog-post__details time {
-	font-style: italic;
-}
 .tag-list {
 	font-weight: var(--fw-200);
 	cursor: pointer;

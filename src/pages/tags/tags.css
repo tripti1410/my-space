@@ -4,9 +4,7 @@
 .tag-posts-listing li {
 	margin-bottom: 2rem;
 }
-.tag-posts-listing li time {
-	font-style: italic;
-}
+
 .tag-posts-listing li a {
 	text-decoration: underline;
 }

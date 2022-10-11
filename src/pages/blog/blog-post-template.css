@@ -4,9 +4,8 @@
 	max-width: 80ch;
 }
 
-.blog-post__content ol,
-.blog-post__content ul {
-	padding-left: 2rem;
+.blog-post__content ol {
+	padding-left: 1.5rem;
 }
 
 .blog-post__content blockquote p {
@@ -16,11 +15,7 @@
 }
 
 .blog-post__details time {
-	font-style: italic;
 	border-bottom: 0.3rem solid var(--clr-2);
-}
-.blog-post__title {
-	line-height: 1.2;
 }
 
 .blog-post__details {
