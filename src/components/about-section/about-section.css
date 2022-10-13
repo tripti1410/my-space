@@ -9,3 +9,6 @@
 .home-intro {
 	margin-right: var(--pullToEnd);
 }
+.mascot {
+	max-width: 450px;
+}

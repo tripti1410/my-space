@@ -8,13 +8,12 @@ import SkipLinks from "$src/components/skip-links/skip-links.astro";
 	role="banner"
 	id="site-header"
 >
-	<div class="sidebar">
+	<div class="sidebar header-left">
 		<SkipLinks />
 		<a href="/" class="logo">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				width="300px"
-				height="100px"
+				width="100%"
 				viewBox="0 0 300 100"
 				stroke="currentColor"
 			>
@@ -48,7 +47,7 @@ import SkipLinks from "$src/components/skip-links/skip-links.astro";
 	</div>
 
 	<nav class="navigation flex align-items-center justify-content-center">
-		<ul class="menu flex no-list-style">
+		<ul class="menu flex flex-wrap justify-content-center no-list-style">
 			<li class="menu-item">
 				<a class="link" href="/about/">About me</a>
 			</li>

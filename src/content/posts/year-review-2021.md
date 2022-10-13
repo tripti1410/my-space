@@ -7,7 +7,7 @@ tags:
   - journal
 ---
 
-## Work
+### Work
 
 When this year started I was prepared and planned that I am going to do freelancing and other side project. As the year started everything was slow moving. I didn’t have any freelancing client for my web development, so I worked on my side project up-till April. Unfortunately that didn’t worked out well. I started focusing on web development.
 
@@ -25,16 +25,16 @@ I learnt doodling in November 2020. And I have been practicing it throughout 202
 
 I like to plan and organise things in general. So This year I thought of trying to use planner, One of my friend recommended planner by [Alicia Souza](https://aliciasouza.com). I like to write things down with pen and paper, hence I choose this physical planner. I am glad I bought this, I write about everyday in this as nighttime routine, do monthly planning, write summary of every month. This has helped me lot in seeing how I am spending my time, prioritizing stuff and many more.
 
-## Books
+### Books
 
 Read three books — “Becoming”, “Words of gratitude” and “Steal like an artist”.
 The best book I have read this year is **Becoming** by **Michelle Obama**. This book has so much to learn from. It has broadened my views on various aspects of life.
 
-## Personal
+### Personal
 
 It was a very tough year at a personal level. Most of the year I wasn’t well and in September I had a gallbladder removal surgery. After that few months of recovery. Emotionally it was a roller coaster ride throughout the year due to the health and personal life issues. I am glad that I stand still in this and time passed by giving me more confidence and learning for future years.
 
-## Wrapping up
+### Wrapping up
 
 With new plans and learnings from the past year looking forward to the great year ahead.
 HAPPY NEW YEAR!

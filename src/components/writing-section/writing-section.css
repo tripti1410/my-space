@@ -1,5 +1,5 @@
 .home-writing-container .blog a {
-	padding: 2rem 1.2rem;
+	padding: 1rem;
 	position: relative;
 	cursor: pointer;
 }
@@ -8,7 +8,7 @@
 	padding: 0.4rem 1.6rem;
 	border-radius: 0.4rem;
 	position: absolute;
-	top: -2rem;
+	top: -3rem;
 	font-size: var(--step--1);
 }
 /* .flowy-layout {

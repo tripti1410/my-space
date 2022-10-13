@@ -7,4 +7,5 @@
 	bottom: 1rem;
 	right: 1rem;
 	cursor: pointer;
+	width: clamp(30px, calc(30px + 2.5vw), 60px);
 }

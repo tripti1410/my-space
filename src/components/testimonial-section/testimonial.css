@@ -14,7 +14,7 @@
 		grid-template-columns: repeat(6, 1fr);
 	}
 	#testimonial-svg {
-		max-width: 320px;
+		max-width: 450px;
 		grid-column: 1 / span 3;
 		justify-self: center;
 		align-self: center;

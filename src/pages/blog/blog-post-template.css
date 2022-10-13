@@ -21,6 +21,11 @@
 .blog-post__details {
 	margin-bottom: 1rem;
 }
+.blog-post__content a {
+	text-decoration: underline;
+	font-weight: var(--fw-200);
+	cursor: pointer;
+}
 
 .blog-post__content img {
 	width: 80%;
@@ -34,6 +39,7 @@
 	list-style: none;
 	display: flex;
 	grid-column: 1/-1;
+	padding-left: 0;
 }
 .blog-post__tags li {
 	background-color: var(--clr-2);

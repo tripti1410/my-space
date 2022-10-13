@@ -8,13 +8,13 @@ const { blogs } = Astro.props;
 	<h2 class="section-title" id="home-writing-title">
 		articles I have written:
 	</h2>
-	<ul class="blogs autofit-grid no-list-style">
+	<div class="blogs autofit-grid">
 		{
 			blogs.map((blog) => (
-				<li class="blog">
-					<a href={blog.slug} rel="noopener noreferrer" class="card stack">
+				<article class="blog card">
+					<a href={blog.slug} rel="noopener noreferrer" class=" stack">
 						<h3 class="blog__title">{blog.title}</h3>
-						{blog.publication && (
+						{blog.puarticlecation && (
 							<span class="blog__badge clr-4">{blog.publication}</span>
 						)}
 						{blog.publication && blog.type && (
@@ -23,8 +23,8 @@ const { blogs } = Astro.props;
 
 						<p class="blog__subtitle">{blog.subtitle}</p>
 					</a>
-				</li>
+				</article>
 			))
 		}
-	</ul>
+	</div>
 </section>

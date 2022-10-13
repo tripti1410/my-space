@@ -1,9 +1,24 @@
 /* Header */
+.header {
+	margin-bottom: 1rem;
+}
+@media (min-width: 979px) {
+	.navigation {
+		height: var(--headerHeight);
+	}
+	.home .navigation {
+		background-color: var(--clr-2);
+	}
+	.header {
+		margin-bottom: 0rem;
+	}
+}
 
 .navigation .menu-item {
 	font-family: "Ubuntu", sans-serif;
 	transition: color 1s ease-out;
 	font-size: var(--step-1);
+	letter-spacing: 1px;
 }
 
 .home .navigation .menu-item a:hover {
@@ -21,15 +36,7 @@
 .logo {
 	cursor: pointer;
 }
-@media (min-width: 768px) {
-	.home .navigation {
-		height: var(--headerHeight);
-		background-color: var(--clr-2);
-	}
-	.navigation .menu-item {
-		letter-spacing: 1px;
-	}
-}
+
 @media (min-width: 1200px) {
 	.home .navigation {
 		margin-right: var(--pullToEnd);
@@ -50,4 +57,12 @@
 
 .skip-links a:focus {
 	opacity: 1;
+}
+.header-left {
+	max-width: 450px;
+	width: 100%;
+	padding-left: 1rem;
+}
+.menu {
+	padding-left: 0;
 }

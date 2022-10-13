@@ -80,9 +80,7 @@ In the code, I changed the SVG document and wrote entire text inside textPath el
 <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="tripti1410" data-slug-hash="57958a6c7d5c87fd062a8f165b0b5774" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Bend It Like Trapti - a SVG logo ">
 
 <span>See the Pen <a href="https://codepen.io/tripti1410/pen/57958a6c7d5c87fd062a8f165b0b5774">
-
 Bend It Like Trapti - a SVG logo </a> by tripti (<a href="https://codepen.io/tripti1410">@tripti1410</a>)
-
 on <a href="https://codepen.io">CodePen</a>.</span>
 
 </p>
