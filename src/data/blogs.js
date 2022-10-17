@@ -12,7 +12,7 @@ const BLOGS = [
 		id: 302,
 		slug: "https://medium.com/statuscode/thinking-in-css-grid-48922b25ee69",
 		title: "Thinking in CSS Grid",
-		subtitle: "Two dimensional and outside-in. What does it mean ?",
+		subtitle: "Two dimensional and outside-in. What does it mean?",
 		publication: "Medium - Statuscode",
 		type: "popular",
 	},

@@ -35,6 +35,60 @@
 }
 .logo {
 	cursor: pointer;
+	font-family: "Ubuntu", sans-serif;
+}
+@media (prefers-reduced-motion: no-preference) {
+	.logo #curve-path-1 {
+		stroke-dasharray: 1;
+		stroke-dashoffset: 1;
+		animation: draw 5s 0.04s infinite linear;
+	}
+	.logo #curve-path-2 {
+		stroke-dasharray: 1;
+		animation: drawBack 5s 0.04s infinite linear;
+	}
+	.logo #circle-1,
+	.logo #circle-2,
+	.logo #circle-3,
+	.logo #circle-4 {
+		offset-rotate: auto;
+		transform-box: fill-box;
+		transform-origin: "center";
+		animation: move 5s 0.04s infinite both linear;
+	}
+	.logo #circle-1,
+	.logo #circle-2 {
+		offset-path: path("M 0 60 C 140 90 190 0 290 50");
+	}
+	.logo #circle-3,
+	.logo #circle-4 {
+		offset-path: path("M 0 56 C 140 86 190 0 290 46");
+		animation-direction: reverse;
+	}
+	.logo #circle-2,
+	.logo #circle-4 {
+		animation-delay: 0.08s;
+	}
+}
+
+@keyframes move {
+	100% {
+		offset-distance: 100%;
+	}
+}
+
+@keyframes draw {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes drawBack {
+	from {
+		stroke-dashoffset: -1;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
 @media (min-width: 1200px) {

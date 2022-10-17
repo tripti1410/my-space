@@ -14,33 +14,65 @@ import SkipLinks from "$src/components/skip-links/skip-links.astro";
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="100%"
-				viewBox="0 0 300 100"
-				stroke="currentColor"
+				viewBox="-6 0 300 100"
 			>
-				<title id="logo">logo- Trapti Rahangdale</title>
-				<defs>
+				<title id="logo">Trapti Rahangdale</title>
+				<g stroke-linecap="round" stroke-linejoin="round">
 					<path
 						id="curve-path-1"
-						d="M 0 60 C 140 90 190 0 290 50 "
-						stroke-width="3"
+						pathLength="1"
+						d="M 0 60 C 140 90 190 0 290 50"
+						stroke-width="5"
 						stroke="#ffce5c"
 						fill="none"></path>
+
 					<path
 						id="curve-path-2"
+						pathLength="1"
 						d="M 0 56 C 140 86 190 0 290 46 "
-						stroke-width="3"
+						stroke-width="5"
 						stroke="#ff5e6c"
 						fill="none"></path>
-				</defs>
-				<use href="#curve-path-1" fill="currentColor" stroke="currentColor"
-				></use>
-				<use href="#curve-path-2" fill="currentColor" stroke="currentColor"
-				></use>
-				<text font-size="2rem" x="0" y="0" class="name-text">
-					<textPath href="#curve-path-1">
-						<tspan dx="15">trapti</tspan>
-						<tspan dx="15">rahangdale</tspan>
-					</textPath>
+				</g>
+				<circle
+					id="circle-1"
+					cx="0"
+					cy="59.5"
+					r="2.5"
+					fill="#ff5e6c"
+					transform-origin="center"></circle>
+				<circle
+					id="circle-2"
+					cx="0"
+					cy="59.5"
+					r="2.5"
+					fill="#ff5e6c"
+					fill-opacity="0.5"
+					transform-origin="center"></circle>
+				<circle
+					id="circle-3"
+					cx="290"
+					cy="45.5"
+					r="2.5"
+					fill="#ffce5c"
+					r="5"
+					transform-origin="center"></circle>
+				<circle
+					id="circle-4"
+					cx="290"
+					cy="45.5"
+					r="2.5"
+					fill="#ffce5c"
+					fill-opacity="0.5"
+					transform-origin="center"></circle>
+				<text
+					font-size="2.2rem"
+					x="5"
+					font-family="inherit"
+					y="0"
+					letter-spacing="1px"
+				>
+					<textPath xlink:href="#curve-path-1"> trapti rahangdale</textPath>
 				</text>
 			</svg>
 		</a>

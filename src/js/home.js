@@ -1,9 +1,114 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin, MotionPathPlugin);
 
+function mascotAnimation() {
+	let tl = gsap.timeline({
+		defaults: { duration: 2, ease: "power4.in" },
+	});
+	tl.from("#mascot", {
+		xPercent: -10,
+		scale: 0,
+		transformOrigin: "100% 100%",
+		autoAlpha: 0,
+		ease: "elastic.out(0.5, 0.4)",
+	})
+		.from(
+			[
+				"#mascot-eyeball-L",
+				"#mascot-eyeball-R",
+				"#mascot-eyebrow-L",
+				"#mascot-eyebrow-R",
+			],
+			{
+				y: -1,
+				x: -1,
+				ease: "elastic.out(0.5, 0.4)",
+				transformOrigin: "50% 50%",
+			},
+			"-=0.2"
+		)
+		.from("#mascot-specs", { y: -1, x: -1, ease: "elastic.out(0.5, 0.4)" }, "<")
+		.to("#large-drop", {
+			motionPath: {
+				path: "#short-path",
+				align: "#short-path",
+				alignOrigin: [0.5, 0.5],
+			},
+		})
+		.to("#large-drop", {
+			motionPath: {
+				path: "#short-path",
+				align: "#short-path",
+				alignOrigin: [0.5, 0.5],
+				start: 1,
+				end: 0,
+			},
+		})
+		.to(
+			"#small-drop",
+			{
+				keyframes: {
+					rotate: [0, -90, -90],
+				},
+				motionPath: {
+					path: "#long-path",
+					align: "#long-path",
+					alignOrigin: [0.5, 0.5],
+				},
+			},
+			0
+		)
+		.set("#small-drop", { autoAlpha: 0 });
+	// .from(
+	// 	"#mascot-bush",
+	// 	{
+	// 		scale: 0.8,
+	// 		ease: "elastic.out(0.5, 0.4)",
+	// 		transformOrigin: "100% 100%",
+	// 	},
+	// 	"-=0.25"
+	// );
+	// .fromTo(
+	// 	"#mascot-bush",
+	// 	{ rotation: -4 },
+	// 	{
+	// 		rotation: 1,
+	// 		transformOrigin: "70% 70%",
+	// 		repeat: 2,
+	// 		yoyo: true,
+	// 		duration: 0.25,
+	// 		ease: "none",
+	// 	}
+	// )
+	// .from(["#mascot-eyeball-L", "#mascot-eyeball-R"], {
+	// 	scaleY: 0,
+	// 	transformOrigin: "100% 100%",
+	// 	immediateRender: false,
+	// 	repeat: 1,
+	// 	repeatDelay: 0.5,
+	// })
+	// .from(
+	// 	["#mascot-eyecover-L", "#mascot-eyecover-R"],
+	// 	{
+	// 		scaleY: 0.1,
+	// 		transformOrigin: "100% 100%",
+	// 		immediateRender: false,
+	// 		repeat: 1,
+	// 		repeatDelay: 0.5,
+	// 	},
+	// 	"<"
+	// )
+	// .from(
+	// 	"#mascot-mouth",
+	// 	{ scaleY: 0.1, transformOrigin: "50% 50%", duration: 0.2 },
+	// 	"<"
+	// );
+	return tl;
+}
 function workSection() {
 	const workHeading = new SplitText("#home-work-title", {
 		type: "chars",
@@ -400,6 +505,7 @@ window.addEventListener("load", (event) => {
 		},
 		(context) => {
 			let { isMobile } = context.conditions;
+			// mascotAnimation();
 			testimonialCharacterAnimation();
 			mmsCharacterAnimation();
 			if (!isMobile) {
