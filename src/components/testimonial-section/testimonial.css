@@ -7,6 +7,14 @@
 .testimonial-section blockquote footer {
 	padding-top: 0.8rem;
 	font-weight: var(--fw-200);
+	font-style: italic;
+}
+.testimonial-section blockquote::before {
+	content: " ";
+	background: url(../../images/quote.svg) no-repeat center center;
+	width: 1.5rem;
+	display: inline-block;
+	height: 1.5rem;
 }
 
 @media (min-width: 768px) {
