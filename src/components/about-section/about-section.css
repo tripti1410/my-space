@@ -12,3 +12,6 @@
 .mascot {
 	max-width: 450px;
 }
+.cta-container a {
+	margin-right: 1rem;
+}
