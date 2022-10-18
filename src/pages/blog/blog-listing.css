@@ -42,8 +42,9 @@
 	cursor: pointer;
 }
 .blog-listing-intro {
-	font-size: var(--step-2);
+	font-size: var(--step-3);
+	line-height: 1.5;
 }
 #blog-svg {
-	max-width: 450px;
+	max-width: 320px;
 }
