@@ -20,6 +20,9 @@
 	top: -1rem;
 	font-size: var(--step--1);
 }
+.blog-listing-page .blogs {
+	padding-left: 0;
+}
 .blog-listing-page .wrapper h2 {
 	text-decoration: underline;
 	width: 13ch;
@@ -37,4 +40,10 @@
 .tag-list {
 	font-weight: var(--fw-200);
 	cursor: pointer;
+}
+.blog-listing-intro {
+	font-size: var(--step-2);
+}
+#blog-svg {
+	max-width: 450px;
 }
