@@ -2,3 +2,21 @@
   base = "."
   publish = "dist"
   command = "npm run build"
+
+[[redirects]]
+  from = "https://www.iamtrapti.com/*"
+  to = "https://www.trapti.dev/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "https://iamtrapti.com/*"
+  to = "https://www.trapti.dev/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "https://trapti.dev/*"
+  to = "https://www.trapti.dev/:splat"
+  status = 302
+  force = true
