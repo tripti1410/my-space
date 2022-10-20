@@ -26,23 +26,21 @@ const { post } = Astro.props;
 ---
 
 <PostLayout title={post.frontmatter.title}>
-	<div class="wrapper">
-		<Header />
-		<main>
-			<article class="project-post">
-				<h2 itemprop="title" class="project-post__title">
-					{post.frontmatter.title}
-				</h2>
-				<div class="project-post__metadata">
-					<time datetime={post.frontmatter.date}
-						>{toLocaleString(post.frontmatter.date)}
-					</time>
-				</div>
-				<div class="project-post__content">
-					<post.Content />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</div>
+	<Header />
+	<main>
+		<article class="project-post">
+			<h2 itemprop="title" class="project-post__title">
+				{post.frontmatter.title}
+			</h2>
+			<div class="project-post__metadata">
+				<time datetime={post.frontmatter.date}
+					>{toLocaleString(post.frontmatter.date)}
+				</time>
+			</div>
+			<div class="project-post__content">
+				<post.Content />
+			</div>
+		</article>
+	</main>
+	<Footer />
 </PostLayout>

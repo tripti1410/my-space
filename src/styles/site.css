@@ -125,6 +125,9 @@ ul {
 	list-style-image: url("../images/bullet.svg");
 	padding-left: 1.5rem;
 }
+ol {
+	padding-left: 1.5rem;
+}
 ul li::marker {
 	color: var(--clr-2);
 	font-size: var(--step-1);

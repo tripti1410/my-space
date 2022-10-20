@@ -1,6 +1,6 @@
 .project-post {
-	max-width: 90ch;
-	padding: 0;
+	max-width: 83ch;
+	padding: 1rem;
 	margin: 0 auto 2.4rem;
 	display: grid;
 }
@@ -33,4 +33,8 @@
 	padding: 0 2rem;
 	/* font-size: var(--fs-s); */
 	margin-bottom: 4rem;
+}
+.project-post a {
+	text-decoration: underline;
+	font-weight: bold;
 }
