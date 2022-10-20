@@ -26,7 +26,7 @@ const BLOGS = [
 	},
 	{
 		id: 500,
-		slug: "https://blog.soshace.com/setting-css-styles-with-javascript",
+		slug: "https://soshace.com/setting-css-styles-with-javascript/",
 		title: "Setting CSS Styles with JavaScript",
 		subtitle:
 			"It is common to set styles in Javascript. Here are some uses-cases and ways to style elements in Javascript. I will also be describing one common use case at the end of this article.",
@@ -34,7 +34,7 @@ const BLOGS = [
 	},
 	{
 		id: 501,
-		slug: "https://blog.soshace.com/7-concepts%e2%80%8awhy-your-svg-is-the-way-it-is",
+		slug: "https://soshace.com/7-concepts%E2%80%8Awhy-your-svg-is-the-way-it-is/",
 		title: "7 Concepts: Why Your SVG Is the Way It Is?",
 		subtitle:
 			"If you have already worked with SVGs or you are new to it, this article is for you. I am sharing few important concepts which will help you debug and create SVGs.",
