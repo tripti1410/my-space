@@ -10,4 +10,19 @@
 }
 .home-services-container__lets-chat {
 	--space-m: 2rem;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	align-items: end;
+}
+#envelop {
+	visibility: hidden;
+	opacity: 0;
+	width: 176px;
+}
+#envelop-shadow {
+	filter: blur(1px);
+}
+#envelop-highlights > * {
+	visibility: hidden;
+	opacity: 0;
 }

@@ -3,7 +3,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin, MotionPathPlugin);
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+gsap.registerPlugin(
+	ScrollTrigger,
+	SplitText,
+	DrawSVGPlugin,
+	MotionPathPlugin,
+	MorphSVGPlugin
+);
 
 function mascotAnimation() {
 	let tl = gsap.timeline({
@@ -150,7 +157,6 @@ function serviceSection() {
 	const serviceSection_tl = gsap.timeline({
 		scrollTrigger: {
 			trigger: "#hire-me",
-			// markers: { startColor: "black", endColor: "black", fontSize: "12px" },
 			start: "top 70%",
 			fastScrollEnd: true,
 		},
@@ -158,10 +164,6 @@ function serviceSection() {
 	const serviceHeading = new SplitText("#home-service-title", {
 		type: "chars",
 	});
-	const letsChatText = new SplitText(".home-services-container__lets-chat h4", {
-		type: "chars",
-	});
-	gsap.set(letsChatText.chars, { opacity: 0 });
 	serviceSection_tl
 		.set(".home-services-container", { autoAlpha: 1 })
 		.from(serviceHeading.chars, {
@@ -170,11 +172,144 @@ function serviceSection() {
 			xPercent: -100,
 			autoAlpha: 0,
 			duration: 0.1,
-		})
-
-		//.from("#mascot-svg", { autoAlpha: 0, duration: 0.3 })
-		.to(letsChatText.chars, { opacity: 1, stagger: 0.05, duration: 0.3 });
+		});
 	return serviceSection_tl;
+}
+function envelopHighlight(highlight) {
+	let tl = gsap.timeline();
+	const highlightPath = MorphSVGPlugin.convertToPath(highlight);
+
+	tl.fromTo(
+		highlightPath,
+		{ drawSVG: "100%", autoAlpha: 0 },
+		{ duration: 0.1, drawSVG: "100% 50%", autoAlpha: 1 }
+	)
+		.fromTo(
+			highlightPath,
+			{ drawSVG: "0%" },
+			{ duration: 0.1, drawSVG: "10%", immediateRender: false },
+			"<"
+		)
+		.to(highlightPath, { duration: 0.1, drawSVG: "90% 100%" })
+		.to(highlightPath, { duration: 0.1, drawSVG: "100% 100%" });
+	return tl;
+}
+function envelopAnimation() {
+	gsap.set("#envelop", { autoAlpha: 1 });
+	const letterProxy = MorphSVGPlugin.convertToPath("#letter-rect-proxy");
+	gsap.set("#letter-rect-proxy", { autoAlpha: 0 });
+	gsap.set("#envelop-cover-open", { autoAlpha: 0 });
+	gsap.set("#envelop-shadow", { transformOrigin: "50% 50%", scale: 0.7 });
+	let tl = gsap.timeline({
+		scrollTrigger: {
+			trigger: "#envelop",
+			start: () => "top 40%",
+			end: () => "100 50%",
+			toggleActions: "play none restart none",
+		},
+	});
+	tl.fromTo(
+		"#envelop-outer",
+		{ y: 10, scale: 0.7, transformOrigin: "50% 50%" },
+		{ y: -20, rotate: -3, repeat: 4, yoyo: true }
+	)
+		.fromTo(
+			"#envelop-shadow",
+			{ scale: 0.7 },
+			{
+				scale: 0.85,
+				transformOrigin: "50% 50%",
+				repeat: 4,
+				yoyo: true,
+			},
+			"<"
+		)
+		.to(
+			"#envelop-cover-close",
+			{
+				morphSVG: "48.82 185 97.09 215 145.63 185 48.82 185",
+				duration: 0.5,
+				repeat: 4,
+				yoyo: true,
+			},
+			"<"
+		)
+		.to("#envelop-outer", {
+			y: "-=30",
+			scale: 1,
+			rotate: 0,
+			transformOrigin: "50% 50%",
+			ease: "elastic.in(1, 0.5)",
+		})
+		.addLabel("letterPopsUp", "-=0.2")
+		.to(
+			"#envelop-shadow",
+			{
+				scale: 1,
+				transformOrigin: "50% 50%",
+				ease: "elastic.in(1, 0.5)",
+			},
+			"<"
+		)
+		.to(
+			"#envelop-cover-close",
+			{
+				morphSVG: "48.82 184.54 97.31 143.44 145.63 184.36 48.82 184.54",
+				ease: "power4.in",
+			},
+			"letterPopsUp"
+		)
+		.to("#envelop-cover-open", { autoAlpha: 1, duration: 0.01 }, ">")
+		.to("#envelop-cover-close", { autoAlpha: 0, duration: 0.01 }, "<")
+		.to(
+			"#letter-rect",
+			{
+				height: 60,
+				y: -60,
+				duration: 0.2,
+				transformOrigin: "50% 100%",
+				ease: "elastic.in(1, 0.4)",
+			},
+			"-=0.2"
+		)
+		.addLabel("highlight", ">")
+		.to(
+			"#letter-rect",
+			{
+				height: "+=30",
+				y: "-=30",
+				transformOrigin: "50% 100%",
+				duration: 0.2,
+				ease: "sine.in",
+			},
+			"+=0.1"
+		)
+		.add(envelopHighlight("#high-1"), "highlight")
+		.add(envelopHighlight("#high-2"), "highlight+=0.05")
+		.add(envelopHighlight("#high-3"), "highlight")
+		.add(envelopHighlight("#high-4"), "highlight+=0.05")
+		.to("#letter-rect", { autoAlpha: 0, duration: 0 })
+		.to(letterProxy, { autoAlpha: 1, duration: 0 }, "<")
+		.to(letterProxy, {
+			morphSVG:
+				"M126.39,179.54c-21.44-.5-42.87-.99-64.31-1.49-3.58-32.37,.64-67.26,19.51-95.13,21.54,2.39,42.06,4.64,63.49,7.91-16.44,26.55-22.21,58.32-18.69,88.71Z",
+			duration: 0.1,
+		})
+		.to(letterProxy, {
+			motionPath: {
+				path: "#letter-flying-path",
+				align: "#letter-flying-path",
+				autoRotate: 90,
+				alignOrigin: [0.41, 1],
+				start: 0.12,
+				end: 1,
+			},
+			duration: 0.3,
+		})
+		.set(letterProxy, { autoAlpha: 0 }, "<0.2");
+	tl.timeScale(0.75);
+
+	return tl;
 }
 function testimonialSection() {
 	const testimonialSection_tl = gsap.timeline({
@@ -508,8 +643,10 @@ window.addEventListener("load", (event) => {
 			// mascotAnimation();
 			testimonialCharacterAnimation();
 			mmsCharacterAnimation();
+			envelopAnimation();
 			if (!isMobile) {
 				serviceSection();
+
 				workSection();
 				articlesSection();
 				testimonialSection();
