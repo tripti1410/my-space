@@ -1,4 +1,5 @@
 ---
+import CloudinaryVideo from "$src/components/cloudinary-video.astro";
 import "./services-section.css";
 ---
 
@@ -8,7 +9,486 @@ import "./services-section.css";
 	</h2>
 
 	<div class="service with-sidebar">
-		<div class="service-ani-container sidebar"></div>
+		<div class="service-ani-container sidebar">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				id="responsive-devices"
+				width="100%"
+				viewBox="0 0 100 100"
+			>
+				<g id="devices">
+					<g id="phone" stroke="#000" stroke-miterlimit="10" stroke-width=".25">
+						<g>
+							<path
+								id="phone-outer-rect"
+								fill="#dbdada"
+								d="M67.18 43.35v13.28c0 .49-.2.93-.52 1.25s-.76.52-1.25.52H34.07c-.49 0-.93-.2-1.25-.52s-.52-.76-.52-1.25V43.35c0-.49.2-.93.52-1.25s.76-.52 1.25-.52h31.34c.49 0 .93.2 1.25.52s.52.76.52 1.25Z"
+							></path>
+							<path
+								id="phone-inner-rect"
+								fill="#fff"
+								stroke-linecap="square"
+								d="M36.47 57.61h26.6V42.37h-26.6v15.26Z"></path>
+						</g>
+						<path
+							id="phone-bottom-circle"
+							fill="#fff"
+							d="M65.02 48.76a1.23 1.23 0 1 0 0 2.46 1.23 1.23 0 1 0 0-2.46Z"
+						></path>
+						<path
+							id="phone-top-circle"
+							fill="#fff"
+							d="M34.54 49.7a.29.29 0 1 0 0 .58.29.29 0 0 0 0-.58Z"></path>
+					</g>
+					<g id="web-mock-phone">
+						<g id="phone-banner">
+							<rect
+								id="phone-banner-bg"
+								width="14.5"
+								height="7.48"
+								x="42.5"
+								y="39.76"
+								fill="#95c13d"></rect>
+							<g id="phone-banner-content" fill="#f6f6f6">
+								<rect
+									id="phone-banner-content-1"
+									width="3.51"
+									height="3.51"
+									x="44"
+									y="41.88"></rect>
+								<rect
+									id="phone-banner-content-2"
+									width="3.51"
+									height="3.51"
+									x="48"
+									y="41.88"></rect>
+								<rect
+									id="phone-banner-content-3"
+									width="3.51"
+									height="3.51"
+									x="52"
+									y="41.88"></rect>
+							</g>
+						</g>
+						<g id="header-phone">
+							<rect
+								id="phone-header-bg"
+								width="14.6"
+								height="2.66"
+								x="42.4"
+								y="37.1"
+								fill="#1d1d1b"></rect>
+							<rect
+								id="phone-logo"
+								width="5.02"
+								height=".51"
+								x="43.5"
+								y="38.1"
+								fill="#83378d"></rect>
+							<g id="phone-burger-menu" fill="#c7c6c5">
+								<rect width="2" height=".2" x="53.62" y="37.9"></rect>
+								<rect width="2" height=".2" x="53.63" y="38.44"></rect>
+								<rect width="2" height=".2" x="53.62" y="38.9"></rect>
+							</g>
+						</g>
+						<g id="phone-content-1">
+							<rect width="4.95" height="3.94" x="43.5" y="48.98" fill="#83378d"
+							></rect>
+							<g fill="#1d1d1b">
+								<rect width="6.3" height=".44" x="49.6" y="48.95"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="52.46"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="51.74"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="51"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="50.32"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="49.65"></rect>
+							</g>
+						</g>
+						<g id="phone-content-2">
+							<rect width="4.95" height="3.94" x="43.5" y="53.84" fill="#2072b9"
+							></rect>
+							<g fill="#1d1d1b">
+								<rect width="6.3" height=".44" x="49.6" y="53.81"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="57.32"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="56.6"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="55.87"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="55.18"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="54.52"></rect>
+							</g>
+						</g>
+						<g id="phone-content-3">
+							<rect width="4.96" height="3.94" x="43.5" y="58.82" fill="#e75d24"
+							></rect>
+							<g fill="#878787">
+								<rect width="6.3" height=".44" x="49.6" y="58.79"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="62.3"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="61.58"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="60.84"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="60.16"></rect>
+								<rect width="6.3" height=".44" x="49.6" y="59.49"></rect>
+							</g>
+						</g>
+					</g>
+					<g id="monitor">
+						<polygon
+							id="monitor-base-vertical"
+							fill="#dbdada"
+							stroke="#000"
+							stroke-miterlimit="10"
+							stroke-width=".25"
+							points="61.78 87.09 37.7 87.09 39.08 76.72 60.6 76.72 61.78 87.09"
+						></polygon>
+						<path
+							id="monitor-outer-rect"
+							fill="#dbdada"
+							stroke="#000"
+							stroke-miterlimit="10"
+							stroke-width=".25"
+							d="M94.88 11.34H4.6c-1.3 0-2.36 1.06-2.36 2.36v60.74c0 1.3 1.06 2.36 2.36 2.36h90.28c1.3 0 2.36-1.06 2.36-2.36V13.7c0-1.3-1.06-2.36-2.36-2.36Z"
+						></path>
+						<polygon
+							id="monitor-inner-rect"
+							fill="#fff"
+							stroke="#000"
+							stroke-miterlimit="10"
+							stroke-width=".25"
+							points="5.25 14.54 94.11 14.42 94.17 64.44 5.25 64.44 5.25 14.54"
+						></polygon>
+						<g id="web-mock-monitor" fill="#c7c6c5">
+							<rect
+								id="monitor-banner-bg"
+								opacity="0"
+								width="88.2"
+								height="10.63"
+								x="6.1"
+								y="17.8"
+								fill="red"></rect>
+							<g id="monitor-banner-content" fill="#f6f6f6">
+								<rect
+									id="monitor-banner-content-1"
+									width="15.41"
+									height="5"
+									x="24.74"
+									y="20.49"></rect>
+								<rect
+									id="monitor-banner-content-2"
+									width="15.41"
+									height="5"
+									x="41.94"
+									y="20.49"></rect>
+								<rect
+									id="monitor-banner-content-3"
+									width="15.41"
+									height="5"
+									x="59.33"
+									y="20.49"></rect>
+							</g>
+							<rect
+								id="monitor-header-bg"
+								width="88.2"
+								height="3"
+								x="6.1"
+								y="14.8"
+								fill="#1d1d1b"></rect>
+							<rect
+								id="monitor-logo"
+								opacity="0"
+								width="6.9"
+								height=".95"
+								x="7.43"
+								y="15.45"
+								fill="#83378d"></rect>
+							<g id="monitor-burger-menu" fill="#c7c6c5" opacity="0">
+								<rect
+									id="monitor-menu-1"
+									width="3.94"
+									height=".4"
+									x="88.07"
+									y="15.64"
+									rx=".02"
+									ry=".02"></rect>
+								<rect
+									id="monitor-menu-2"
+									width="3.94"
+									height=".4"
+									x="80.2"
+									y="15.64"
+									rx=".02"
+									ry=".02"></rect>
+								<rect
+									id="monitor-menu-3"
+									width="3.94"
+									height=".4"
+									x="72.33"
+									y="15.64"
+									rx=".02"
+									ry=".02"></rect>
+								<rect
+									id="monitor-menu-4"
+									width="3.94"
+									height=".4"
+									x="64.46"
+									y="15.64"
+									rx=".02"
+									ry=".02"></rect>
+							</g>
+							<rect
+								id="monitor-footer"
+								width="88.2"
+								height="4.1"
+								x="6.1"
+								y="60"
+								fill="#1d1d1b"
+								stroke="#1d1d1b"></rect>
+							<g id="desktop-bottom">
+								<rect width="8.52" height="8.52" x="7.63" y="47.05"></rect>
+								<rect width="8.52" height="8.52" x="19.31" y="47.05"></rect>
+								<rect width="8.52" height="8.52" x="31.64" y="47.05"></rect>
+								<rect width="8.52" height="8.52" x="43.98" y="47.05"></rect>
+							</g>
+							<g id="desktop-aside">
+								<rect width=".88" height="22.87" x="56.48" y="30.5"></rect>
+								<rect width="8.52" height="8.52" x="59.33" y="30.57"></rect>
+								<rect width="8.52" height="8.52" x="71.54" y="30.5"></rect>
+								<rect width="8.52" height="8.52" x="83.7" y="30.5"></rect>
+							</g>
+							<g id="desktop-bars">
+								<rect width="32.89" height="1.11" x="59.33" y="41.93"></rect>
+								<rect width="30.97" height="1.11" x="59.33" y="43.78"></rect>
+								<rect width="29.31" height="1.11" x="59.33" y="45.87"></rect>
+								<rect width="27.88" height="1.11" x="59.33" y="47.93"></rect>
+								<rect width="26.4" height="1.11" x="59.33" y="49.88"></rect>
+								<rect width="25.04" height="1.11" x="59.33" y="51.8"></rect>
+								<rect width="23.53" height="1.11" x="59.33" y="53.81"></rect>
+							</g>
+						</g>
+					</g>
+					<g id="tab">
+						<path
+							id="tab-outer-rect"
+							fill="#dbdada"
+							stroke="#000"
+							stroke-miterlimit="10"
+							stroke-width=".25"
+							d="M25.78 36.42v27.15c0 1.52 1.22 2.76 2.72 2.76h42.98c1.5 0 2.72-1.24 2.72-2.76V36.42c0-1.52-1.22-2.76-2.72-2.76H28.51c-1.5 0-2.72 1.24-2.72 2.76Z"
+						></path>
+						<path
+							id="tab-bottom-circle"
+							fill="#fff"
+							stroke="#000"
+							stroke-miterlimit="10"
+							stroke-width=".25"
+							d="M72.69 50a1.419 1.419 0 1 1-2.838.002A1.419 1.419 0 0 1 72.69 50Z"
+						></path>
+						<path
+							id="tab-inner-rect"
+							fill="#fff"
+							stroke="#000"
+							stroke-linecap="square"
+							stroke-miterlimit="10"
+							stroke-width=".25"
+							d="M68.37 35.38v29.24H30.09V35.38h38.28Z"></path>
+						<path
+							id="tab-top-circle"
+							fill="#fff"
+							stroke="#000"
+							stroke-miterlimit="10"
+							stroke-width=".25"
+							d="M27.83 49.47c.3 0 .53.24.53.53s-.24.53-.53.53-.53-.24-.53-.53.24-.53.53-.53Z"
+						></path>
+						<g id="web-mock-tab" transform="translate(-.5)">
+							<g id="tab-banner">
+								<rect
+									id="tab-banner-bg"
+									width="37.5"
+									height="7.48"
+									x="31"
+									y="38.36"
+									fill="#95c13d"></rect>
+								<rect
+									id="tab-banner-content-1"
+									width="9.25"
+									height="3.51"
+									x="35.52"
+									y="40.13"></rect>
+								<rect
+									id="tab-banner-content-2"
+									width="9.25"
+									height="3.51"
+									x="45.84"
+									y="40.13"></rect>
+								<rect
+									id="tab-banner-content-3"
+									width="9.25"
+									height="3.51"
+									x="56.27"
+									y="40.13"></rect>
+							</g>
+							<g id="tab-header">
+								<rect
+									id="tab-header-bg"
+									width="37.5"
+									height="2.66"
+									x="31"
+									y="35.7"
+									fill="#1d1d1b"></rect>
+								<rect
+									id="tab-logo"
+									width="5.02"
+									height=".51"
+									x="31.83"
+									y="36.57"
+									fill="#83378d"></rect>
+								<g id="burger-menu-2" fill="#c7c6c5">
+									<rect
+										id="tab-menu-1"
+										width="2"
+										height=".2"
+										x="65.55"
+										y="36.64"
+										rx=".02"
+										ry=".02"></rect>
+									<rect
+										id="tab-menu-2"
+										width="2"
+										height=".2"
+										x="61.56"
+										y="36.64"
+										rx=".02"
+										ry=".02"></rect>
+									<rect
+										id="tab-menu-3"
+										width="2"
+										height=".2"
+										x="57.57"
+										y="36.64"
+										rx=".02"
+										ry=".02"></rect>
+									<rect
+										id="tab-menu-4"
+										width="2"
+										height=".2"
+										x="53.57"
+										y="36.64"
+										rx=".02"
+										ry=".02"></rect>
+								</g>
+							</g>
+							<g id="tab-content">
+								<g id="tab-content-1">
+									<rect
+										width="4.15"
+										height="3.94"
+										x="31.74"
+										y="47.24"
+										fill="#83378d"></rect>
+									<g fill="#1d1d1b">
+										<rect width="5.76" height=".44" x="36.98" y="47.21"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="50.71"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="49.99"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="49.26"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="48.57"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="47.91"></rect>
+									</g>
+								</g>
+								<g id="tab-content-2">
+									<rect
+										width="4.15"
+										height="3.94"
+										x="31.74"
+										y="52.1"
+										fill="#2072b9"></rect>
+									<g fill="#1d1d1b">
+										<rect width="5.76" height=".44" x="36.98" y="52.07"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="55.57"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="54.85"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="54.12"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="53.43"></rect>
+										<rect width="5.76" height=".44" x="36.98" y="52.77"></rect>
+									</g>
+								</g>
+								<g id="tab-content-3">
+									<rect
+										width="4.15"
+										height="3.94"
+										x="43.91"
+										y="47.25"
+										fill="#e75d24"></rect>
+									<g fill="#878787">
+										<rect width="5.76" height=".44" x="49.15" y="47.22"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="50.73"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="50.01"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="49.27"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="48.58"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="47.92"></rect>
+									</g>
+								</g>
+								<g id="tab-content-4">
+									<rect
+										width="4.15"
+										height="3.94"
+										x="43.91"
+										y="52.03"
+										fill="#e75d24"></rect>
+									<g fill="#878787">
+										<rect width="5.76" height=".44" x="49.15" y="52.01"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="55.51"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="54.79"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="54.06"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="53.37"></rect>
+										<rect width="5.76" height=".44" x="49.15" y="52.71"></rect>
+									</g>
+								</g>
+								<g id="tab-content-5">
+									<rect
+										width="4.15"
+										height="3.94"
+										x="56.39"
+										y="47.25"
+										fill="#e75d24"></rect>
+									<g fill="#878787">
+										<rect width="5.76" height=".44" x="61.63" y="47.22"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="50.73"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="50.01"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="49.27"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="48.58"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="47.92"></rect>
+									</g>
+								</g>
+								<g id="tab-content-6">
+									<rect
+										width="4.15"
+										height="3.94"
+										x="56.39"
+										y="52.03"
+										fill="#e75d24"></rect>
+									<g fill="#878787">
+										<rect width="5.76" height=".44" x="61.63" y="52.01"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="55.51"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="54.79"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="54.06"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="53.37"></rect>
+										<rect width="5.76" height=".44" x="61.63" y="52.71"></rect>
+									</g>
+								</g>
+								<g id="tab-blocks" fill="#939598">
+									<rect width="6.64" height="1.08" x="31.74" y="57.41"></rect>
+									<rect width="6.64" height="1.08" x="41.21" y="57.41"></rect>
+									<rect width="6.64" height="1.08" x="50.68" y="57.32"></rect>
+									<rect width="6.64" height="1.08" x="60.76" y="57.32"></rect>
+								</g>
+							</g>
+							<rect
+								id="tab-footer"
+								width="37.5"
+								height="3.75"
+								x="31"
+								y="60.74"
+								fill="#1d1d1b"></rect>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</div>
 		<div class="stack">
 			<h3>Websites User Interface</h3>
 			<p>
@@ -19,7 +499,8 @@ import "./services-section.css";
 				<strong class="highlight">JS</strong>, I will convert your designs into
 				an accessible, interactive, engaging and performant website. I have
 				experience with,
-			</p><ul>
+			</p>
+			<ul>
 				<li>Static site generators like Astro, 11ty, Gatsby etc.</li>
 				<li>
 					Singe-page Apps and server rendered Multi-page Apps using libraries
@@ -45,10 +526,12 @@ import "./services-section.css";
 				to create animations, I do that as well.
 			</p>
 		</div>
-		<div class="service-ani-container sidebar"></div>
+		<div class="service-ani-container sidebar">
+			<CloudinaryVideo publicId="show-reel-2_teeylo" controls width="100%" />
+		</div>
 	</div>
 
-	<div class="home-services-container__lets-chat  max-width text-center">
+	<div class="home-services-container__lets-chat max-width text-center">
 		<div class="stack">
 			<h4>sounds fun? let's chat!</h4>
 			<a class="button clr-2" href="mailTo:hello@trapti.dev" target="_blank">
@@ -58,7 +541,7 @@ import "./services-section.css";
 
 		<svg
 			id="envelop"
-			width="100px"
+			width="100%"
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 200 244"
 		>

@@ -1,8 +1,15 @@
 .service-ani-container {
-	width: 18.75rem;
-	height: 18.75rem;
+	width: 20rem;
+	height: 20rem;
 	background-color: var(--clr-11);
-	border: 4px solid white;
+	border-radius: 3px;
+}
+.service-ani-container:first-child {
+	padding: 1rem;
+}
+.service-ani-container video {
+	height: 100%;
+	margin: auto;
 	border-radius: 3px;
 }
 .home-services-container .service {
@@ -14,10 +21,11 @@
 	grid-template-columns: 2fr 1fr;
 	align-items: end;
 }
+/* Envelop  */
 #envelop {
 	visibility: hidden;
 	opacity: 0;
-	width: 176px;
+	max-width: 176px;
 }
 #envelop-shadow {
 	filter: blur(1px);
@@ -25,4 +33,102 @@
 #envelop-highlights > * {
 	visibility: hidden;
 	opacity: 0;
+}
+/* Resonsive devices */
+#responsive-devices {
+	visibility: hidden;
+	opacity: 0;
+	--device-periphery: #e8eded;
+	--device-grey-1: #e2e9e9;
+	--device-grey-2: #cdd6cd;
+	--device-grey-3: #808080;
+	--device-clr-1: #eaedd2;
+}
+#phone-outer-rect,
+#monitor-base-vertical {
+	fill: var(--device-periphery);
+	stroke: var(--device-periphery);
+}
+#phone-inner-rect,
+#tab-inner-rect,
+#monitor-inner-rect {
+	fill: #fff;
+	stroke-width: 0.8px;
+	stroke: #000;
+}
+#tab-content-1 g rect,
+#tab-content-2 g rect,
+#tab-content-3 g rect,
+#tab-content-4 g rect,
+#tab-content-5 g rect,
+#tab-content-6 g rect,
+#phone-content-1 g rect,
+#phone-content-2 g rect,
+#phone-content-3 g rect {
+	fill: var(--device-grey-1);
+}
+#tab-content-1 rect,
+#phone-content-1 rect {
+	fill: #0011ff;
+}
+#tab-content-2 rect,
+#phone-content-2 rect {
+	fill: #bdf03c;
+}
+#tab-content-3 rect,
+#phone-content-3 rect {
+	fill: #ff001a;
+}
+#tab-content-4 rect {
+	fill: #36e6eb;
+}
+#tab-content-5 rect {
+	fill: #ffbc00;
+}
+#tab-content-6 rect {
+	fill: #fb00ff;
+}
+#tab-banner-bg,
+#phone-banner-bg {
+	fill: #c5d961;
+}
+#tab-header-bg,
+#phone-header-bg,
+#tab-footer {
+	fill: #2d2d2d;
+	stroke: #2d2d2d;
+	stroke-width: 0;
+}
+#tab-logo {
+	fill: #fb00ff;
+}
+#tab-menu-1,
+#tab-menu-2,
+#tab-menu-3,
+#tab-menu-4,
+#tab-logo,
+#tab-banner-content-1,
+#tab-banner-content-2,
+#tab-banner-content-3,
+#phone-banner-content,
+#phone-burger-menu,
+#phone-logo {
+	fill: var(--device-clr-1);
+}
+#desktop-aside rect:nth-child(2) {
+	fill: #0011ff;
+}
+#desktop-aside rect:nth-child(3) {
+	fill: #ffbc00;
+}
+#desktop-aside rect:nth-child(4) {
+	fill: #fb00ff;
+}
+#desktop-aside,
+#desktop-bars,
+#desktop-bottom {
+	fill: var(--device-grey-2);
+}
+#tab-blocks {
+	fill: var(--device-grey-3);
 }

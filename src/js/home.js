@@ -630,6 +630,209 @@ function testimonialCharacterAnimation() {
 		.to("#tg-mouth-after", { drawSVG: "0% 100%" }, "<");
 	return tl;
 }
+function phoneToTab() {
+	let tl = gsap.timeline();
+	tl.from(["#phone"], { rotate: 90, transformOrigin: "50% 50%" }, "+=0.1")
+		.to(["#web-mock-phone"], { rotate: -90, svgOrigin: "49.6px 50px" }, "<")
+		.to("#phone-outer-rect", { morphSVG: "#tab-outer-rect" }, "<")
+		.to("#phone-inner-rect", { morphSVG: "#tab-inner-rect" }, "<")
+		.to(
+			[
+				"#header-phone",
+				"#phone-banner",
+				"#phone-content-1",
+				"#phone-content-2",
+				"#phone-content-3",
+			],
+			{ x: 10, autoAlpha: 0, duration: 0.1, stagger: 0.02 },
+			0.3
+		)
+		.to(
+			["#phone-top-circle"],
+			{ scale: 1.3, x: -7, transformOrigin: "50% 50%" },
+			0.25
+		)
+		.to(["#phone-bottom-circle"], { x: 6 }, "<");
+	return tl;
+}
+function tabContent(tabFooter) {
+	let tl = gsap.timeline();
+	tl.from(["#tab-header", "#tab-banner"], {
+		yPercent: -100,
+		autoAlpha: 0,
+		duration: 0.1,
+		stagger: 0.01,
+	})
+		.from(
+			[
+				"#tab-content-1",
+				"#tab-content-2",
+				"#tab-content-3",
+				"#tab-content-4",
+				"#tab-content-5",
+				"#tab-content-6",
+			],
+			{ yPercent: -100, autoAlpha: 0, duration: 0.1, stagger: 0.1 },
+			"-=0.1"
+		)
+		.from(
+			gsap.utils.toArray("#tab-blocks rect"),
+			{ autoAlpha: 0, stagger: 0.01 },
+			"-=0.1"
+		)
+		.to(tabFooter, { duration: 0.1, autoAlpha: 1 }, "-=0.3");
+	return tl;
+}
+function tabToMonitor(tabFooter) {
+	let tl = gsap.timeline();
+	tl.to("#phone-outer-rect", {
+		morphSVG: "#monitor-outer-rect",
+	})
+		.to(
+			"#phone-inner-rect",
+			{
+				morphSVG: "#monitor-inner-rect",
+			},
+			"<"
+		)
+		.set(
+			["#phone-top-circle", "#phone-bottom-circle"],
+			{ x: 0, y: 0, autoAlpha: 0, duration: 0.1 },
+			"<"
+		)
+		.from(
+			"#monitor-base-vertical",
+			{ yPercent: -100, autoAlpha: 0, duration: 0.2 },
+			"<0.4"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-header-bg"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-header-bg") },
+			0
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-banner-bg"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-banner-bg") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-banner-content-1"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-banner-content-1") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-banner-content-2"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-banner-content-2") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-banner-content-3"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-banner-content-3") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-logo"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-logo") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-menu-1"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-menu-1") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-menu-2"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-menu-2") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-menu-3"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-menu-3") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-menu-4"),
+			{ morphSVG: MorphSVGPlugin.convertToPath("#monitor-menu-4") },
+			"<"
+		)
+		.to(
+			MorphSVGPlugin.convertToPath("#tab-footer"),
+			{
+				morphSVG: MorphSVGPlugin.convertToPath("#monitor-footer"),
+				autoAlpha: 1,
+				y: 0,
+			},
+			"<"
+		);
+
+	return tl;
+}
+function monitorContent() {
+	let tl = gsap.timeline();
+	tl.from(gsap.utils.toArray("#desktop-bottom rect"), {
+		rotate: 360,
+		transformOrigin: "50% 50%",
+		stagger: 0.01,
+		autoAlpha: 0,
+	})
+		.from(
+			"#desktop-bars rect",
+			{ scaleX: 0, transformOrigin: "0% 0%", stagger: 0.01, autoAlpha: 0 },
+			"<"
+		)
+		.from(
+			gsap.utils.toArray("#desktop-aside rect:not(:first-child)"),
+			{ rotate: 360, transformOrigin: "50% 50%", stagger: 0.01, autoAlpha: 0 },
+			"<"
+		)
+		.from(
+			gsap.utils.toArray("#desktop-aside rect:first-child"),
+			{ scaleY: 0, transformOrigin: "0% 0%", autoAlpha: 0 },
+			"<"
+		)
+		.to(
+			"#tab-content",
+			{ scale: 1.25, x: -19, y: -15, transformOrigin: "50% 50%" },
+			"<"
+		);
+	return tl;
+}
+function responsiveDevice() {
+	let master = gsap.timeline({
+		scrollTrigger: {
+			trigger: "#responsive-devices",
+			start: () => "top 40%",
+			end: () => "bottom 50%",
+			// markers: true,
+			toggleActions: "play none restart none",
+		},
+	});
+	gsap.set("#responsive-devices", { autoAlpha: 1 });
+	gsap.set(
+		[
+			"#tab-inner-rect",
+			"#tab-outer-rect",
+			"#tab-top-circle",
+			"#tab-bottom-circle",
+			"#monitor-inner-rect",
+			"#monitor-outer-rect",
+			"#monitor-header-bg",
+			"#monitor-footer",
+			"#monitor-banner-content",
+			"#monitor-bottom-circle",
+			"#tab-footer",
+		],
+		{ autoAlpha: 0 }
+	);
+	const tabFooter = MorphSVGPlugin.convertToPath("#tab-footer");
+	master
+		.add(phoneToTab())
+		.add(tabContent(tabFooter))
+		.add(tabToMonitor())
+		.add(monitorContent());
+
+	master.timeScale(0.5);
+}
 window.addEventListener("load", (event) => {
 	let mm = gsap.matchMedia(),
 		breakPoint = 800;
@@ -643,6 +846,7 @@ window.addEventListener("load", (event) => {
 			// mascotAnimation();
 			testimonialCharacterAnimation();
 			mmsCharacterAnimation();
+			responsiveDevice();
 			envelopAnimation();
 			if (!isMobile) {
 				serviceSection();
