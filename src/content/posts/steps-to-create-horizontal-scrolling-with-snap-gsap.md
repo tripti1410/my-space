@@ -7,6 +7,7 @@ tags:
   - how-to
   - GSAP
   - ScrollTrigger
+  - tech
 ---
 
 As part of the answering question in the forum, I am writing this blog to help me and other people.

@@ -5,6 +5,7 @@ date: 2019-11-03T17:46:24.033Z
 title: "Bend It Like Trapti - a SVG\_logo"
 tags:
   - SVG
+  - tech
 ---
 
 Creating a wave shape logo using the SVG **textOnAPath**.

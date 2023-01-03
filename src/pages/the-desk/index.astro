@@ -3,66 +3,45 @@ import PageLayout from "$src/layouts/PageLayout.astro";
 import WritingGraphic from "$src/components/writing-graphic/writing-graphic.astro";
 import { toLocaleString } from "$src/js/dateUtils.js";
 import * as blog from "$src/js/posts.js";
-import BLOGS from "$src/data/blogs.js";
-import "./blog-listing.css";
+import "./desk.css";
 
 const allPosts = await Astro.glob("../../content/posts/*.md");
 const posts = blog.sortedPosts(allPosts);
-const techPosts = posts.filter((post) =>
-	post.frontmatter.tags.includes("tech") ? post : null
+const deskPosts = posts.filter((post) =>
+	post.frontmatter.tags.includes("the-desk") ? post : null
 );
 const uniquetags = blog
 	.uniqueTags(posts)
 	.filter((tag) => tag !== "the-desk" && tag !== "tech");
-const popularBlogs = BLOGS.filter((blog) => blog.type === "popular");
 ---
 
 <PageLayout title="Blog">
 	<div class="blog-listing-page">
-		<div class="clr-3 inner-region">
+		<div class="clr-2 inner-region">
 			<div
 				class="with-sidebar wrapper align-items-center justify-content-center"
 			>
 				<div>
 					<p class="blog-listing-intro">
-						I write about my learnings and findings around tech.
+						Notes about travel, freelance, and life.
 					</p>
 					<p>
-						<a href="/the-desk/" class="link">Non-tech blogs</a>, Follow me on
+						<a href="/blog/" class="link">Tech blogs</a>, Follow me on
 						<a href="https://twitter.com/imtraptir" class="link" target="_blank"
 							>Twitter</a
 						>
 					</p>
 				</div>
-
 				<WritingGraphic />
 			</div>
 		</div>
 
 		<div class="wrapper stack inner-region">
-			<h2>Popular blogs</h2>
-			<ul class="blogs autofit-grid no-list-style">
-				{
-					popularBlogs.map((blog) => (
-						<li class="blog card">
-							<a href={blog.slug} rel="noopener noreferrer" target="_blank">
-								<h3 class="blog__title">{blog.title}</h3>
-								{blog.publication && (
-									<span class="blog__badge clr-2">
-										Published at {blog.publication}
-									</span>
-								)}
-								<p class="blog__subtitle">{blog.subtitle}</p>
-							</a>
-						</li>
-					))
-				}
-			</ul>
 			<h2>Latest blogs</h2>
 			<div class="latest-blog">
 				<ul class="blog-list no-list-style stack">
 					{
-						techPosts.map((post) => (
+						deskPosts.map((post) => (
 							<li>
 								<h3 itemprop="title" class="blog-post__title">
 									<a href={post.frontmatter.path}>{post.frontmatter.title}</a>

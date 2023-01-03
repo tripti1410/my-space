@@ -5,6 +5,7 @@ date: 2021-12-29T09:00:00.0Z
 title: "My Freelancing Journey 2021"
 tags:
   - freelancing
+  - the-desk
 ---
 
 In this article I will talk about how I started and my experience as freelancer.

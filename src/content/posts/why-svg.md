@@ -5,6 +5,7 @@ date: 2019-11-17T21:03:17.517Z
 title: Why SVG?
 tags:
   - SVG
+  - tech
 ---
 
 Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics. There are various reasons why we should use this, some are listed below -

@@ -5,6 +5,7 @@ date: 2022-01-01T18:57:25Z
 title: "Year review 2021"
 tags:
   - journal
+  - the-desk
 ---
 
 ### Work
