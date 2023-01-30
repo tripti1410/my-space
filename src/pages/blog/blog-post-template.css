@@ -56,3 +56,11 @@
 	align-items: center;
 	margin-bottom: 3rem;
 }
+.blog-post__content .astro-code {
+	padding: 1rem;
+}
+.blog-post__content p code {
+	background: #dddddd;
+	padding: 4px;
+	border-radius: 5px;
+}
