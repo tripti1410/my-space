@@ -1,7 +1,7 @@
 /* Blog post template */
 .blog-post__content {
 	margin: 2rem auto;
-	max-width: 80ch;
+	max-width: 90ch;
 }
 
 .blog-post__content ol {
@@ -58,9 +58,18 @@
 }
 .blog-post__content .astro-code {
 	padding: 1rem;
+	background-color: var(--clr-11) !important;
+	color: var(--clr-1);
+	border-radius: 7px;
 }
 .blog-post__content p code {
 	background: #dddddd;
 	padding: 4px;
 	border-radius: 5px;
+}
+.blog-post__content h2 {
+	margin-top: 2.4rem;
+}
+.blog-post__content p {
+	margin-top: 1.2rem;
 }

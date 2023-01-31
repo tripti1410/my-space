@@ -17,7 +17,7 @@
 	--step-1: clamp(1.2rem, calc(1.09rem + 0.54vw), 1.5rem);
 	--step-2: clamp(1.44rem, calc(1.24rem + 1.02vw), 1.8rem);
 	--step-3: clamp(1.73rem, calc(1.39rem + 1.7vw), 2.66rem);
-	--step-4: clamp(2.07rem, calc(1.54rem + 2.69vw), 3.55rem);
+	--step-4: clamp(2.07rem, calc(1.54rem + 2.69vw), 3.2rem);
 	--step-5: clamp(2.49rem, calc(1.67rem + 4.09vw), 4.74rem);
 	/* Line height */
 	--lh-2: 1.2;

@@ -12,9 +12,14 @@ const { blogs } = Astro.props;
 		{
 			blogs.map((blog) => (
 				<article class="blog card">
-					<a href={blog.slug} rel="noopener noreferrer" class=" stack">
+					<a
+						href={blog.slug}
+						rel="noopener noreferrer"
+						class="stack"
+						target={blog.publication ? "_blank" : "_self"}
+					>
 						<h3 class="blog__title">{blog.title}</h3>
-						{blog.puarticlecation && (
+						{blog.publication && (
 							<span class="blog__badge clr-4">{blog.publication}</span>
 						)}
 						{blog.publication && blog.type && (
