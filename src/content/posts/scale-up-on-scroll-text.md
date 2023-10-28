@@ -60,4 +60,4 @@ And that's it! Our Scale Up Text on Scroll Effect is complete. Many award-winnin
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-If you have questions or would like me to create similar effects, please comment on YouTube or connect through Twitter and DM. Thank you so much!
+If you have questions or would like me to create similar effects, please comment on YouTube or connect through Twitter and DM.

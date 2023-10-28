@@ -53,5 +53,3 @@ There were a few things I did on toggle on and off.
 **Toggle** **On:** Play the `wakeup_tl` and `highlight_tl` timeline. Once the animation completes, it will call a handler that activates all the actions for light mode.
 
 **Toggle** **Off:** Reverse the `wakeup_tl` timeline. Each click should show the little highlight, so restart `highlight_tl`. Once the animation completes, it will call a handler that activates all the actions for dark mode.
-
-If you have any queries please email me of DM at twitter. Or if you like this demo and blog please consider sharing on twitter.
