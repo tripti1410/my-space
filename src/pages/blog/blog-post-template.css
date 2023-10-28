@@ -73,3 +73,7 @@
 .blog-post__content p {
 	margin-top: 1.2rem;
 }
+.blog-post__content aside {
+	background-color: var(--clr-2);
+	padding: 1rem;
+}
