@@ -11,6 +11,14 @@ tags:
 
 This blog shows how to make a sleek slide-up text effect using GSAP. First, I’ll cover creating the effect for a single line, then move on to multiple lines and how the SplitText plugin simplifies the process.
 
+Here is a preview of what we are going to create.
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="xxWBbOw" data-user="tripti1410" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/tripti1410/pen/xxWBbOw">
+  text-effect with and without split text plugin</a> by trapti (<a href="https://codepen.io/tripti1410">@tripti1410</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
 If you prefer video content, I created a [video](https://youtu.be/trXQ8oFhE-s) of explaining the same.
 
 ## **Single line text animation**
@@ -193,4 +201,3 @@ We can test this by enabling/disabling the reduce motion toggle in our device in
   text-effect with and without split text plugin</a> by trapti (<a href="https://codepen.io/tripti1410">@tripti1410</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
