@@ -1,128 +1,159 @@
 ---
 import PageLayout from "$src/layouts/PageLayout.astro";
 import "../styles/about.css";
-import profileImgJPG from "$src/images/profile.jpg";
-import profileImgWebP from "$src/images/profile.webp";
+import IntroSectionGraphic from "$src/components/about-intro-section.astro";
+import TalkSectionGraphic from "$src/components/about-talk-section.astro";
+import OtherSectionGraphic from "$src/components/about-other-section.astro";
 ---
 
 <PageLayout title="About me">
 	<div class="about-page wrapper inner-region">
-		<h1 class="about-page-heading">Hey there! I'm Trapti</h1>
-		<div class="with-sidebar">
-			<picture class="sidebar">
-				<source srcset={profileImgWebP} />
-				<img
-					src={profileImgJPG}
-					class="home-profile-image"
-					alt="Trapti rahangdale portrait"
-					width="280px"
-				/>
-			</picture><p>
-				I am a Freelance Frontend Engineer with 6 years of experience building
-				content websites, SaaS applications, bespoke animations, and more.
-				Analyse designs with a product mindset. Collaborate with designers,
-				backend developers and managers. Prioritise Accessibility, SEO,
-				Performance, and Maintainability.
+		<IntroSectionGraphic />
+
+		<div class="about-page__intro-text">
+			<h1 class="about-page-heading">Hey! I'm Trapti</h1>
+			<p>
+				I am a Frontend Engineer with 7 years of experience building content
+				websites, SaaS applications, bespoke animations, and more. Analyse
+				designs with a product mindset. Collaborate with designers, backend
+				developers and managers. Prioritise Accessibility, SEO, Performance, and
+				Maintainability.
+			</p>
+			<p>
+				With a Bachelor's Degree in Civil Engineering, I spent 2.4 years working
+				in the same industry. Then I called it quits because I realized that
+				wasn't the right path for me. After careful consideration, I
+				transitioned my career to software development. Above all else in
+				software, my heart belonged to the frontend. I learned everything I
+				needed and got hired by a startup in Gurugram in 2015 as a frontend
+				developer.
+			</p>
+			<p>
+				My blog is where I document and publish what I learn. I am published
+				author at
+				<a
+					class="hightlight"
+					rel="noopener noreferrer"
+					href="https://css-tricks.com/how-to-get-handwriting-animation-with-irregular-svg-strokes/"
+					target="_blank"
+				>
+					CSS-Tricks,
+				</a>
+				<a
+					class="hightlight"
+					rel="noopener noreferrer"
+					href="https://medium.com/statuscode/thinking-in-css-grid-48922b25ee69"
+					target="_blank"
+				>
+					Statuscode(Medium publication),
+				</a>
+				<a
+					class="hightlight"
+					rel="noopener noreferrer"
+					href="https://soshace.com/author/reach-trapti/"
+					target="_blank"
+				>
+					Soshace,
+				</a>
+				<a
+					class="hightlight"
+					rel="noopener noreferrer"
+					href="https://dev.to/imtraptir"
+					target="_blank"
+				>
+					dev.to.
+				</a>
+				I'm also creating video content now.
+			</p>
+			<p>
+				I work with companies and agencies around the world, building Web user
+				interfaces. To collaborate with me, drop me an email at
+				<a
+					rel="noopener noreferrer"
+					class="link"
+					href="mailto:hello@trapti.dev"
+					target="_top"
+				>
+					hello@trapti.dev
+				</a> or reach out to me via
+				<a
+					class="link"
+					rel="noopener noreferrer"
+					href="https://twitter.com/imtraptir"
+					target="_blank"
+				>
+					Twitter DM
+				</a>,providing all the relevant information.
 			</p>
 		</div>
+		<div class="about-page__skills-list">
+			<h2 class="skills-title">Tools of the trade</h2>
+			<ul class="skills-list">
+				<li>HTML, CSS, Javascript, React, Redux, SVG</li>
+				<li>Animation (CSS and GreenSock GSAP)</li>
+				<li>
+					CSS Grid, Flexbox, SASS, CSS Modules, Cube CSS, BEM, ITCSS, SMACCS
+				</li>
+				<li>WordPress, Elementor, ACF(Advanced Custom Fields), Squarespace</li>
+				<li>Static site generators like Gatsby, Astro etc.</li>
+				<li>Typescript, Jest, Enzyme</li>
+				<li>Familiar with Rails, Node.js, PHP, Clojure</li>
+				<li>Illustrator, Figma</li>
+			</ul>
+		</div>
 
-		<h2 class="skills-title">Tools of the trade</h2>
-		<ul class="skills-list">
-			<li>HTML, CSS, Javascript, React, Redux, SVG</li>
-			<li>Animation (CSS and GreenSock GSAP)</li>
-			<li>
-				CSS Grid, Flexbox, SASS, CSS Modules, Cube CSS, BEM, ITCSS, SMACCS
-			</li>
-			<li>WordPress, Elementor, ACF(Advanced Custom Fields), Squarespace</li>
-			<li>Static site generators like Gatsby, Astro etc.</li>
-			<li>Typescript, Jest, Enzyme</li>
-			<li>Familiar with Rails, Node.js, PHP, Clojure</li>
-			<li>Illustrator, Figma</li>
-		</ul>
-		<p>
-			In May 2019, I took a break from <a
-				rel="noopener noreferrer"
-				href="https://www.quintype.com/"
-				target="_blank"
-			>
-				Quintype</a
-			>, having built React based front-end web apps for 3+ years. I wished to
-			upskill myself in SVG, animations and accessibility, and I did.
-		</p>
-		<p>
-			Since mid-2020, I am working as a freelancer. I help companies and
-			agencies around the world, building Web user interfaces. My work focuses
-			on responsive design, animations, accessibility, performance, and
-			innovative tech.
-		</p>
-		<p>
-			When I learn and want to make a note I write it as blog post. I have
-			written a few blogs. I am published at
-			<a
-				class="hightlight"
-				rel="noopener noreferrer"
-				href="https://css-tricks.com/how-to-get-handwriting-animation-with-irregular-svg-strokes/"
-				target="_blank"
-			>
-				CSS-Tricks,
-			</a>
-			<a
-				class="hightlight"
-				rel="noopener noreferrer"
-				href="https://medium.com/statuscode/thinking-in-css-grid-48922b25ee69"
-				target="_blank"
-			>
-				Statuscode(Medium publication),
-			</a>
-			<a
-				class="hightlight"
-				rel="noopener noreferrer"
-				href="https://soshace.com/author/reach-trapti/"
-				target="_blank"
-			>
-				Soshace,
-			</a>
-			<a
-				class="hightlight"
-				rel="noopener noreferrer"
-				href="https://dev.to/imtraptir"
-				target="_blank"
-			>
-				dev.to.
-			</a>
-		</p>
-		<p>
-			If you want to work with me send me an email with details at
-			<a
-				rel="noopener noreferrer"
-				class="link"
-				href="mailto:hello@trapti.dev"
-				target="_top"
-			>
-				hello@trapti.dev
-			</a> or DM on
-			<a
-				class="link"
-				rel="noopener noreferrer"
-				href="https://twitter.com/imtraptir"
-				target="_blank"
-			>
-				Twitter.
-			</a>
-		</p>
-		<p>
-			Read my
-			<a rel="noopener noreferrer" class="link" href="/blog/" target="_top">
-				Tech Blogs
-			</a>. Check
-			<a
-				class="link"
-				rel="noopener noreferrer"
-				href="/the-desk/"
-				target="_blank"
-			>
-				The Desk
-			</a> to know more about me.
-		</p>
+		<div class="about-page__talk-text">
+			<p>
+				This picture is me giving my first ever talk at <a
+					rel="noopener noreferrer"
+					href="https://www.quintype.com/"
+					target="_blank"
+					class="link"
+				>
+					Quintype</a
+				> office on “Thinking in CSS grid”. Later I published this talk’s content
+				as a blog on medium.com. Later, a renowned publisher called StatusCode asked
+				about featuring this blog on their platform. This experience took my confidence
+				to the next level, motivating me to write more.
+			</p>
+			<p>
+				In this process I wrote a couple of paid blogs as well which are on CSS
+				tricks, Soshace and dev.to. In this website, I cover two categories:
+				Tech and non-tech. Tech category is mostly what I learn or how to create
+				demos. The non-tech category primarily covers topics such as
+				freelancing, travel, and personal growth.
+			</p>
+
+			<p>
+				Read my
+				<a rel="noopener noreferrer" class="link" href="/blog/" target="_top">
+					Tech Blogs
+				</a>. Check
+				<a
+					class="link"
+					rel="noopener noreferrer"
+					href="/the-desk/"
+					target="_blank"
+				>
+					The Desk(non-tech)
+				</a>
+			</p>
+		</div>
+		<TalkSectionGraphic />
+		<OtherSectionGraphic />
+		<!-- <div class="about-page__other-text">
+			<p>
+				Apart from coding, writing, and creating videos. I enjoy meeting people,
+				making new connections, reading, sewing, doodling. I post my doodles
+				here. If none of these, then sleep.
+			</p>
+			<p>
+				I mostly work from the comfort of my home in Bangalore, where I live
+				with my incredible partner, Amith George. I love my home office setup.
+				Bangalore has been my home since 2011 when I first started working, and
+				I can't express how much I adore this city.
+			</p>
+		</div> -->
 	</div>
+	<script src="$src/js/about.js"></script>
 </PageLayout>
