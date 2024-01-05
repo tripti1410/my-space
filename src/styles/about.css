@@ -37,7 +37,8 @@
 }
 @media (min-width: 768px) {
 	.about-page {
-		grid-gap: 2rem;
+		grid-column-gap: 2rem;
+		grid-row-gap: 5rem;
 		grid-template-columns: 1fr 0.1fr 1fr;
 	}
 
@@ -55,4 +56,8 @@
 	.about-page__talk-image {
 		grid-row: auto;
 	}
+}
+#highlight-on-talk-image {
+	transform-box: fill-box;
+	transform: scale(2) translate(107px, -17px);
 }

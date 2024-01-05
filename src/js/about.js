@@ -4,6 +4,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
 gsap.set(".svg-wrap", { autoAlpha: 1 });
+
 const tl = gsap.timeline();
 
 tl.fromTo(
@@ -70,10 +71,59 @@ tl.fromTo(
 		"-=3.5"
 	)
 	.from(
-		".line",
+		"#speech *",
 		{
 			drawSVG: "0%",
 			stagger: 0.05,
 		},
 		"-=3.5"
+	);
+const talk_tl = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".about-page__talk-image",
+		start: "top 50%",
+		toggleActions: "play complete reverse reset",
+	},
+});
+
+talk_tl
+	.from(".talk-image-bg", {
+		scaleX: 0,
+		transformOrigin: "left center",
+		ease: "expo.out",
+		duration: 1.2,
+	})
+	.from(
+		".maskSwipeTalkImage",
+		{
+			duration: 1.2,
+			ease: "expo.out",
+			xPercent: -100,
+		},
+		"-=0.5"
+	)
+	.from(
+		[".littleCircle, .bigCircle"],
+		{
+			scale: 0,
+			transformOrigin: "50% 50%",
+			stagger: 0.1,
+		},
+		"-=0.2"
+	)
+	.from(
+		[".hoop"],
+		{
+			drawSVG: 0,
+			stagger: 0.1,
+		},
+		"-=0.2"
+	)
+	.from(
+		"#highlight-on-talk-image *",
+		{
+			drawSVG: 0,
+			stagger: 0.05,
+		},
+		"-=0.2"
 	);

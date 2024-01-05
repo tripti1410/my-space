@@ -4,11 +4,22 @@ import talkImgJPG from "$src/images/talk-pic.jpg";
 
 <div class="about-page__talk-image">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" width="100%">
+		<defs>
+			<mask id="swipeMaskTalkImage">
+				<rect
+					class="maskSwipeTalkImage"
+					x="74"
+					y="70"
+					width="852"
+					height="704"
+					fill="white"></rect>
+			</mask>
+		</defs>
 		<rect width="100%" height="100%" x="0" y="0" fill="#e7e7e8"></rect>
 		<circle
 			class="basic-shape hoop"
 			fill="none"
-			stroke="#ffe430"
+			stroke="#ffce5c"
 			stroke-width="13"
 			cx="950"
 			cy="600"
@@ -33,12 +44,20 @@ import talkImgJPG from "$src/images/talk-pic.jpg";
 		<circle
 			class="basic-shape hoop"
 			fill="none"
-			stroke="#ffe430"
+			stroke="#ffce5c"
 			stroke-width="13"
 			cx="50"
 			cy="180"
 			r="45"></circle>
+		<rect
+			class="talk-image-bg"
+			width="850"
+			height="637"
+			x="75"
+			y="70"
+			fill="#ffce5c"></rect>
 		<image
+			mask="url(#swipeMaskTalkImage)"
 			x="75"
 			y="70"
 			alt="Trapti rahangdale working on laptop"
@@ -46,18 +65,28 @@ import talkImgJPG from "$src/images/talk-pic.jpg";
 			filter="url(#duotone)"
 			xlink:href={talkImgJPG}
 		/>
-		<use
-			class="highlight-talk-pic"
-			href="#speech"
-			x="80"
-			y="35"
-			transform="scale(2) rotate(0)"
-			transform-origin="100 100"
-			style="
-    transform-box: fill-box;
-    rotate: 331deg;
-    transform-origin: center;
-"
-		></use>
+		<g id="highlight-on-talk-image">
+			<path
+				d="M254.13,160.14s7-21.32,8.06-28.74"
+				fill="none"
+				stroke="#ff5e6c"
+				stroke-linecap="round"
+				stroke-miterlimit="10"
+				stroke-width="3"></path>
+			<path
+				d="M272.94,169.61s12.42-15.58,24.84-22.34"
+				fill="none"
+				stroke="#ff5e6c"
+				stroke-linecap="round"
+				stroke-miterlimit="10"
+				stroke-width="3"></path>
+			<path
+				d="M283.88,184.74s23.1-6.06,31.89-9.93"
+				fill="none"
+				stroke="#ff5e6c"
+				stroke-linecap="round"
+				stroke-miterlimit="10"
+				stroke-width="3"></path>
+		</g>
 	</svg>
 </div>
