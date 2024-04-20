@@ -11,6 +11,8 @@
 }
 .mascot {
 	max-width: 450px;
+	opacity: 0;
+	visibility: hidden;
 }
 .cta-container a {
 	margin-right: 1rem;

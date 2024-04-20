@@ -13,9 +13,19 @@ gsap.registerPlugin(
 );
 
 function mascotAnimation() {
-	let tl = gsap.timeline({
-		defaults: { duration: 2, ease: "power4.in" },
-	});
+	gsap.set(".mascot", { autoAlpha: 1 });
+	let tl = gsap.timeline({ defaults: { ease: "power.out" } });
+	gsap.set(["#short-path", "#long-path"], { autoAlpha: 0 });
+	gsap.set(
+		[
+			"#mascot-coffee-spill-4",
+			"#mascot-coffee-spill-5",
+			"#mascot-coffee-spill-6",
+			"#mascot-coffee-spill-7-drop",
+		],
+		{ autoAlpha: 1 }
+	);
+
 	tl.from("#mascot", {
 		xPercent: -10,
 		scale: 0,
@@ -24,96 +34,135 @@ function mascotAnimation() {
 		ease: "elastic.out(0.5, 0.4)",
 	})
 		.from(
+			"#mascot-coffee-spill-4",
+			{
+				x: [10, 0],
+				y: [5, 0],
+				scale: [0, 0.5, 1],
+				transformOrigin: "50% 50%",
+				duration: 0.25,
+				ease: "elastic.out(0.5, 0.4)",
+			},
+			">-0.3"
+		)
+		.to(
+			"#mascot-coffee-spill-5",
+			{
+				motionPath: {
+					path: "#long-path",
+					align: "#long-path",
+					alignOrigin: [0.5, 0.5],
+					autoRotate: true,
+					offsetX: 35,
+					offsetY: 18,
+				},
+				transformOrigin: "50% 50%",
+				scaleY: [0, 0.5, 1.2, 1.2, 1.2, 1, 0],
+				duration: 0.3,
+			},
+			"-=0.4"
+		)
+		.to(
+			"#mascot-coffee-spill-6",
+			{
+				motionPath: {
+					path: "#long-path",
+					align: "#long-path",
+					alignOrigin: [0.5, 0.5],
+					autoRotate: true,
+					offsetX: 5,
+					offsetY: 18,
+				},
+				transformOrigin: "50% 50%",
+				scaleY: [0, 0.5, 1.2, 1.2, 1.2, 1, 0],
+				duration: 0.3,
+			},
+			"-=.4"
+		)
+		.to(
+			"#mascot-coffee-spill-7-drop",
+			{
+				motionPath: {
+					path: "#long-path",
+					align: "#long-path",
+					alignOrigin: [0.5, 0.5],
+					autoRotate: true,
+				},
+				transformOrigin: "50% 50%",
+				scaleY: [0, 0.5, 1.2, 1.2, 1.2, 1, 0],
+				duration: 0.3,
+			},
+			"-=.4"
+		)
+
+		.from(
 			[
 				"#mascot-eyeball-L",
 				"#mascot-eyeball-R",
+				"#mascot-nose",
+				"#mascot-mouth",
 				"#mascot-eyebrow-L",
 				"#mascot-eyebrow-R",
 			],
 			{
 				y: -1,
 				x: -1,
-				ease: "elastic.out(0.5, 0.4)",
+				ease: "sine.inOut",
 				transformOrigin: "50% 50%",
+				duration: 0.2,
 			},
 			"-=0.2"
 		)
-		.from("#mascot-specs", { y: -1, x: -1, ease: "elastic.out(0.5, 0.4)" }, "<")
-		.to("#large-drop", {
-			motionPath: {
-				path: "#short-path",
-				align: "#short-path",
-				alignOrigin: [0.5, 0.5],
-			},
-		})
-		.to("#large-drop", {
-			motionPath: {
-				path: "#short-path",
-				align: "#short-path",
-				alignOrigin: [0.5, 0.5],
-				start: 1,
-				end: 0,
-			},
-		})
-		.to(
-			"#small-drop",
-			{
-				keyframes: {
-					rotate: [0, -90, -90],
-				},
-				motionPath: {
-					path: "#long-path",
-					align: "#long-path",
-					alignOrigin: [0.5, 0.5],
-				},
-			},
-			0
+		.from(
+			"#mascot-specs",
+			{ y: -1, x: -1, ease: "elastic.out(0.5, 0.4)" },
+			"-=0.2"
 		)
-		.set("#small-drop", { autoAlpha: 0 });
-	// .from(
-	// 	"#mascot-bush",
-	// 	{
-	// 		scale: 0.8,
-	// 		ease: "elastic.out(0.5, 0.4)",
-	// 		transformOrigin: "100% 100%",
-	// 	},
-	// 	"-=0.25"
-	// );
-	// .fromTo(
-	// 	"#mascot-bush",
-	// 	{ rotation: -4 },
-	// 	{
-	// 		rotation: 1,
-	// 		transformOrigin: "70% 70%",
-	// 		repeat: 2,
-	// 		yoyo: true,
-	// 		duration: 0.25,
-	// 		ease: "none",
-	// 	}
-	// )
-	// .from(["#mascot-eyeball-L", "#mascot-eyeball-R"], {
-	// 	scaleY: 0,
-	// 	transformOrigin: "100% 100%",
-	// 	immediateRender: false,
-	// 	repeat: 1,
-	// 	repeatDelay: 0.5,
-	// })
-	// .from(
-	// 	["#mascot-eyecover-L", "#mascot-eyecover-R"],
-	// 	{
-	// 		scaleY: 0.1,
-	// 		transformOrigin: "100% 100%",
-	// 		immediateRender: false,
-	// 		repeat: 1,
-	// 		repeatDelay: 0.5,
-	// 	},
-	// 	"<"
-	// )
-	// .from(
-	// 	"#mascot-mouth",
-	// 	{ scaleY: 0.1, transformOrigin: "50% 50%", duration: 0.2 },
-	// 	"<"
-	// );
+		.from(
+			"#mascot-bush",
+			{
+				scale: 1.15,
+				ease: "elastic.out(0.5, 0.4)",
+				transformOrigin: "100% 100%",
+			},
+			"<"
+		)
+		.fromTo(
+			"#mascot-bush",
+			{ rotation: -4 },
+			{
+				rotation: 1,
+				transformOrigin: "70% 70%",
+				repeat: 2,
+				yoyo: true,
+				duration: 0.25,
+				ease: "none",
+			}
+		)
+
+		.from(["#mascot-eyeball-L", "#mascot-eyeball-R"], {
+			scaleY: 0,
+			transformOrigin: "100% 100%",
+			immediateRender: false,
+			repeat: -1,
+			repeatDelay: 1,
+		})
+		.from(
+			["#mascot-eyecover-L", "#mascot-eyecover-R"],
+			{
+				scaleY: 0.1,
+				transformOrigin: "100% 100%",
+				immediateRender: false,
+				repeat: -1,
+				repeatDelay: 1,
+			},
+			"<"
+		)
+		.from(
+			"#mascot-mouth",
+			{ scaleY: 0.1, transformOrigin: "50% 50%", duration: 0.1 },
+			"-=1"
+		);
 	return tl;
 }
 function workSection() {
@@ -843,7 +892,7 @@ window.addEventListener("load", (event) => {
 		},
 		(context) => {
 			let { isMobile } = context.conditions;
-			// mascotAnimation();
+			mascotAnimation();
 			testimonialCharacterAnimation();
 			mmsCharacterAnimation();
 			responsiveDevice();
