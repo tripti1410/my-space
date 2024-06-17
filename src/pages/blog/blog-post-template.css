@@ -27,11 +27,25 @@
 	cursor: pointer;
 }
 
-.blog-post__content img {
-	width: 80%;
-	max-width: 550px;
+.blog-post__content p img:only-of-type,
+.blog-post__content iframe {
+	width: 100%;
 	margin: 2rem auto;
 	display: block;
+}
+
+@media (min-width: 500px) {
+	.blog-post__content p img:only-of-type,
+	.blog-post__content iframe {
+		width: 80%;
+		max-width: 550px;
+	}
+}
+
+p:has(img + img) {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
 }
 
 .blog-post__tags {
