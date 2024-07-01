@@ -11,7 +11,7 @@ tags:
 
 In this blog will create layered panel animation on scroll horizontal and vertical with only CSS. The text animation slides up when scrolling. First, I will explain the horizontal by breaking it down into different components. The vertical is exactly the same, but with a slight change.
 
-I became inspired to create this after coming across a CodePen Demo that showcased the creative use of GSAP and observer.
+I became inspired to create this after coming across a [CodePen Demo](https://codepen.io/BrianCross/pen/PoWapLP) that showcased the creative use of GSAP and observer.
 
 I also created a YouTube video of this. Check it out [here](https://youtu.be/VH-vKHbiGqo?si=xihRZsQUrnQm7vnG).
 
@@ -197,6 +197,21 @@ A key consideration is that the text in the second panel should stay within the 
 		animation-range-start: calc(#{$i}% + 75%);
 		animation-range-end: calc(#{$i}% + 80%);
 	}
+}
+```
+
+You can also hide the scrollbar from the UI if you wish by adding below code.
+
+```css
+// To hide the scrollbar visually
+html {
+	scrollbar-width: none; /* Firefox */
+}
+body {
+	-ms-overflow-style: none; /* IE and Edge */
+}
+body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera */
 }
 ```
 
