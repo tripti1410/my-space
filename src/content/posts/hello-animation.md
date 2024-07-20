@@ -3,6 +3,7 @@ path: /blog/3D-text-line-animation-using-greensock-and-svg/
 slug: 3D-text-line-animation-using-greensock-and-svg
 date: 2023-01-30T11:26:01Z
 title: "'hello' animation - Apple's screensaver recreation using GreenSock and SVG"
+videolink: https://youtu.be/zQ2luDgJp1k
 tags:
   - SVG
   - GSAP

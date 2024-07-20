@@ -74,6 +74,11 @@ const popularBlogs = BLOGS.filter((blog) => blog.type === "popular");
 									>
 										{toLocaleString(post.frontmatter.date)}
 									</time>
+									{post.frontmatter.videolink && (
+										<a href={post.frontmatter.videolink} target="_blank">
+											<span class="video-tag">Video</span>
+										</a>
+									)}
 								</div>
 							</li>
 						))

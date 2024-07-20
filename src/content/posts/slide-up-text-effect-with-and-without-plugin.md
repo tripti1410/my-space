@@ -3,6 +3,7 @@ path: /blog/slide-up-text-effect-with-and-without-GSAP-SplitText-plugin/
 slug: slide-up-text-effect-with-and-without-GSAP-SplitText-plugin
 date: 2023-01-31T11:26:01Z
 title: "Slide-Up Text Effect with and without GSAP SplitText plugin"
+videolink: https://youtu.be/trXQ8oFhE-s
 tags:
   - SplitText
   - GSAP

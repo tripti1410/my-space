@@ -3,6 +3,7 @@ path: /blog/css-only-animation-of-a-line-and-a-circle-that-moves-along-with-the-
 slug: css-only-animation-of-a-line-and-a-circle-that-moves-along-with-the-line-on-scroll
 date: 2024-04-20T17:46:24.033Z
 title: "CSS only: Animation of a line and a circle that moves along with the line on scroll"
+videolink: https://youtu.be/GT0P15xAQpc
 tags:
   - how-to
   - CSS

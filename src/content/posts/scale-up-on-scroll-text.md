@@ -3,6 +3,7 @@ path: /blog/scale-up-on-scroll-text-using-greensock-and-scrollTrigger/
 slug: scale-up-on-scroll-text-using-greensock-and-scrollTrigger
 date: 2023-03-19T17:46:24.033Z
 title: "Creating a Scale Up Text on Scroll Effect with GreenSock"
+videolink: https://www.youtube.com/watch?v=kl0GSH2mIsQ
 tags:
   - how-to
   - GSAP

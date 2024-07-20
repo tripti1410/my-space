@@ -48,3 +48,9 @@
 #blog-svg {
 	max-width: 320px;
 }
+.blog-post__details .video-tag {
+	background-color: var(--clr-3);
+	padding: 0.3rem 1rem;
+	border-radius: 5px;
+	margin-left: 0.5rem;
+}

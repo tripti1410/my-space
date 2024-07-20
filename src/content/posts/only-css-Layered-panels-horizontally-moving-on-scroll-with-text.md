@@ -3,6 +3,7 @@ path: /blog/only-css-Layered-panels-horizontally-moving-on-scroll-with-text/
 slug: only-css-Layered-panels-horizontally-moving-on-scroll-with-text
 date: 2024-07-01T17:46:24.033Z
 title: "Only CSS! Layered panels horizontally moving on scroll with text"
+videolink: https://youtu.be/VH-vKHbiGqo?si=xihRZsQUrnQm7vnG
 tags:
   - how-to
   - CSS
