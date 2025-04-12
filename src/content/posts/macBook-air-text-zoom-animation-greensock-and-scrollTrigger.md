@@ -28,9 +28,9 @@ There are three key things to keep in mind:
 
 ### Setup
 
-I’ve got an image(MacBook Air text) inside a `div` called `text-wrapper`. This `text-wrapper` is nested inside a parent container we’ll call it `.intro-section`
+I’ve got an image(MacBook Air text) inside a `div` called `text-wrapper`. I've nested this text-wrapper inside a parent container, which we'll call `intro-section`.
 
-The panel is a full-width, full-height viewport container, and the `text-wrapper` is centred inside it using flex-box—just standard CSS. Below the `.intro-section`, the rest of the page is made up of regular full-width, full-height sections to add vertical scrolling space. Immediate section of the intro section should be black in order to seamlessly transition. Below I have mentioned the most important part of HTML and CSS and left the pure decorative part.
+The panel is a full-width, full-height viewport container, and the `text-wrapper` is centred inside it using flex-box—just standard CSS. Below the `.intro-section`, the rest of the page comprises regular full-width, full-height sections to add vertical scrolling space. The immediate intro section should be black for a seamless transition. Below I have mentioned the most important part of HTML and CSS and left the pure decorative part.
 
 ```html
 <div class="container intro-section">
@@ -83,7 +83,7 @@ I started by defining a gsap timeline.
 let tlIntro = gsap.timeline();
 ```
 
-To this timeline I will add a tween for `#text-wrapper` .Since this is a zoom effect I will use scale and `transformOrigin: '50% 50%'` . Scale value I started with randomly like 100 and transformOrigin is for it to scale from the center.
+To this timeline I will add a tween for `#text-wrapper` .Since this is a zoom effect, I will use scale and `transformOrigin: '50% 50%'` . Scale value I started with randomly like 100 and transformOrigin is for it to scale from the center.
 
 ```jsx
 tlIntro.to("#text-wrapper", { scale: 100, transaformOrigin: "50% 50%" });
@@ -101,7 +101,7 @@ let tlIntro = gsap.timeline({
 });
 ```
 
-After running this in browser I realised that scaling works fine but when it scales fully the letter ‘O’ ‘s center part is scaling which is white in color.
+white after running this in browser, I realised that scaling works fine but when it scales fully, the letter 'O''s center part is scaling, which is white.
 
 The goal is for the black part of the "O" (in "MacBook Air") to fill the entire screen as it zooms. However, this doesn’t happen by default, so I added `transform: translateX(-410%)` to shift ‘O’ in a way that ‘O’’s black part is center and scaling. Also adjusted scaling value to meet the need.
 
