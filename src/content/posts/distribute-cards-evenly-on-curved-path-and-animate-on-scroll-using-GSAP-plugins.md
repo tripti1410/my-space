@@ -28,7 +28,7 @@ To begin, we need a path along which the cards will move. There are two common w
 1. **Using coordinates directly** via GSAP's `motionPath` plugin.
 2. **Using an SVG path**, which is what we’ll use here.
 
-We’ll embed the SVG in the HTML and refer to its `.id` or `.class` in the animation.
+We’ll embed the SVG in the HTML and refer to its `#id` or `.class` in the animation.
 
 ### The Cards
 
@@ -81,7 +81,7 @@ In the below image I have drawn an example how we distribute cards along a strai
 
 On a curved path, we follow the same logic but with normalized values:
 
-- Total length of curved path = 0 - 1 = 1
+- Total length of curved path = 1
 - Total number of cards = 8
 - Total number of spacing = 8 - 1 = 7
 - All the cards are aligned center
@@ -94,7 +94,7 @@ On a curved path, we follow the same logic but with normalized values:
 We know first card is 0 and last card is 1. For others cards will use below math where `i` is the card position as we will be looping through all the cards. We use `i - 1` because the first and last cards are centered, so part of them sits outside the path bounds.
 
 <aside>
-💡 position of card = spacing \* (i - 1)
+💡 position of card = spacing * (i - 1)
 
 </aside>
 
@@ -143,7 +143,7 @@ cards.forEach((card, i) => {
 
 ### Scroll-Based Animation with ScrollTrigger
 
-We animate the cards on scroll using `ScrollTrigger`. One ScrollTrigger pins the section, while another is used per card to scrub the animation along the path. I am not going in details of scrollTrigger here as the intention here to explain the distribution concept along a curved path.
+We animate the cards on scroll using `ScrollTrigger`. One ScrollTrigger pins the section, while another is used per card to scrub the animation along the path. A detailed explanation of scrollTrigger is beyond the scope of this blog, which focuses on illustrating the distribution concept along a curved path.
 
 All the code and animation be seen on the CodePen demo.
 
