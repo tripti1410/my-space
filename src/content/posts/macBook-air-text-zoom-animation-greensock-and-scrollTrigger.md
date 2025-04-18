@@ -3,7 +3,7 @@ path: /blog/macBook-air-text-zoom-animation-greensock-and-scrollTrigger/
 slug: macBook-air-text-zoom-animation-greensock-and-scrollTrigger
 date: 2025-04-12T17:46:24.033Z
 title: "Apples's MacBook Air text zoom animation on scroll effect with GreenSock & ScrollTrigger"
-videolink: https://www.youtube.com/watch?v=kl0GSH2mIsQ
+videolink: https://youtu.be/QmGHzZETBgA?si=aKU6xrVh0gyc7Pwd
 tags:
   - how-to
   - GSAP

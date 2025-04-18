@@ -3,7 +3,7 @@ path: /blog/scroll-triggered-css-animation-SVG-line-reveals-card/
 slug: scroll-triggered-css-animation-SVG-line-reveals-card
 date: 2025-03-24T17:46:24.033Z
 title: "Scroll-Triggered CSS Animation: SVG Line Reveals Card (Requested by YOU!)"
-videolink: https://youtu.be/TNCj0CxzstI
+videolink: https://youtu.be/TNCj0CxzstI?si=1gw5qIwDKn_Isc2O
 tags:
   - how-to
   - CSS
