@@ -12,7 +12,9 @@ tags:
 
 In this tutorial, we’ll learn how to animate cards along a curved path and trigger that animation based on scroll — using **GSAP**, **ScrollTrigger**, and the **MotionPathPlugin**.
 
-You’ve probably seen this kind of animation on modern websites — especially in fashion e-commerce or platforms that use cards to display content. These cards often animate in a carousel format, shuffle in place, or follow a path-based transition. While this demo is simple, it unlocks possibilities for countless modern UI animations.
+![Demo of distributing cards evenly on scroll](/assets/distribute-cards-evenly-on-curved-path/demo-distribute-cards-evenly.gif)
+
+You’ve probably seen this kind of animation on modern websites — especially in fashion e-commerce or platforms that use cards to display content. These cards often animate in a carousel format, shuffle in place, or follow a path-based transition. While this demo is simple, it unlocks possibilities for countless modern UI animations. Below is the demo CodePen
 
 <p class="codepen" data-height="300" data-slug-hash="XJWvBrY" data-pen-title="cards move on curve GSAP" data-user="tripti1410" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/tripti1410/pen/XJWvBrY">
