@@ -16,7 +16,7 @@ When animating SVGs, you might notice that rotations and other transforms don’
 
 You apply a rotation, but instead of spinning in place, the element moves around unpredictably.
 
-![Demo.gif](</assets/why-transforms-don’t-work-as-expected-inside-SVG-(and-how-to-fix-it)/demo.gif>)
+![Demo.gif](/assets/svg-transforms-fix/demo.gif)
 
 ## Demo: Rotating a Square Around Its Center
 
@@ -27,7 +27,7 @@ Here’s an example:
 - We want the square to rotate around the blue circle.
 - The red circle marks the SVG’s center (not the square’s center).
 
-  ![initial-setuo.png](</assets/why-transforms-don’t-work-as-expected-inside-SVG-(and-how-to-fix-it)/initial-setup.png>)
+  ![initial-setup.png](/assets/svg-transforms-fix/initial-setup.png)
 
 ### First Try: Basic Rotation
 
