@@ -3,6 +3,7 @@ path: /blog/why-transforms-dont-work-as-expected-inside-SVG-(and-how-to-fix-it)/
 slug: why-transforms-dont-work-as-expected-inside-SVG-(and-how-to-fix-it)
 date: 2025-04-27T17:46:24.033Z
 title: "SVG TIP: Why Transforms Don’t Work as Expected inside SVG (And How to Fix It)"
+videolink: https://www.youtube.com/watch?v=ElYG_J0fTLo
 tags:
   - SVG
   - tech
