@@ -18,7 +18,7 @@
 		"@astrojs/react": "^1.2.2",
 		"@astrojs/rss": "^1.2.1",
 		"@astrojs/sitemap": "^1.4.0",
-		"astro": "^1.9.2",
+		"astro": "^4.16.19",
 		"cloudinary": "^1.31.0",
 		"dotenv": "^16.0.2",
 		"gsap": "npm:@gsap/shockingly@^3.11.1",
