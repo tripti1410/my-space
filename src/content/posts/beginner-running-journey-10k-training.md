@@ -36,13 +36,15 @@ I joined a few Sunday runs where I mostly walked and jogged, starting with 3 km.
 
 ### 💪 Building Consistency-My First Training Program
 
-That training package changed everything. I made running my top priority-planning my days around training sessions. Even if I missed a class, I'd make up for it later in the day.
+That training package changed everything. I joined the June to September 2025 batch, and those three months completely reshaped my routine. I made running my top priority - planning my days around training sessions. Even if I missed a class, I'd make up for it later in the day.
 
-Within a few weeks, I started noticing changes: not just physical (some weight loss, better stamina), but also emotional. I was already doing strength training and eating a balanced diet, so the combination worked beautifully.
+Over time, I started noticing actual changes - not overnight, but slow and steady. My stamina improved, my mood lifted, and I felt stronger. I even started waking up early twice a week for those 6AM sessions - something I never imagined doing before.
 
-My mood, energy levels, and confidence improved-it was no longer about losing weight; it was about how good I felt.
+By the end of the program, I had lost around 2 kg, and my VO₂ Max improved from 24 to 26 according to my Apple Watch.
 
-Even though I was the slowest runner in the group of 20 women, it never bothered me. I stayed consistent and pushed myself every single session. By the end of the 3-month program, I could complete 9 km in 1 hour 25 minutes-and that felt amazing!
+Since I was already doing strength training and eating a balanced diet, running added that missing spark - I felt lighter, more energetic, and mentally more focused.
+
+Even though I was the slowest runner in my group, it never bothered me. I stayed consistent and kept pushing myself every single session. By the end of the 3-month program, I could run 9.15 km in 1 hour 27 minutes, and that felt amazing.
 
 ![Apple watch showing my 9km run](/assets/running-journey/apple-watch.jpg)
 ![Group pic with all the women and coach the day I did 9km](/assets/running-journey/group-9km.jpg)
