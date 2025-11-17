@@ -1,7 +1,7 @@
 ---
 path: /blog/beginner-running-journey-10k-training/
 slug: beginner-running-journey-10k-training
-date: 2025-11-08T17:46:24.033Z
+date: 2025-11-17T17:46:24.033Z
 title: "🏃‍♀️ My Beginner Running Journey-From 0 to 10km (And what I learned along the way + Race day reality)"
 tags:
   - travel
