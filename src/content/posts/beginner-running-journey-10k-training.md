@@ -2,7 +2,7 @@
 path: /blog/beginner-running-journey-10k-training/
 slug: beginner-running-journey-10k-training
 date: 2025-11-08T17:46:24.033Z
-title: "🏃‍♀️ My Beginner Running Journey-From 0 to 10km (And what I learned along the way)"
+title: "🏃‍♀️ My Beginner Running Journey-From 0 to 10km (And what I learned along the way + Race day reality)"
 tags:
   - travel
   - the-desk
@@ -51,11 +51,25 @@ Even though I was the slowest runner in my group, it never bothered me. I stayed
 
 ### 🏅 Next Goal-My First 10K Race
 
-Once the program ended, I wanted to keep the momentum going. So I signed up for a 10 km race-the Kaveri Trail Marathon (KTM) happening in Mysore on November 16.
+After months of training, consistency, 5 AM wake-ups, and showing up even on the slow days, my next big goal was my first ever 10K - the Kaveri Trail Marathon.
 
-I've been training three days a week under Coach Adit's plan, with interval runs on Thursdays and easy runs on Tuesdays and Sundays. I'm still slow–but honestly, that doesn't matter. Everyone's journey is unique, and, importantly, I am enjoying mine.
+And now that the run is done, here's how race day really went for me:
 
-My 10km race is just around the corner - the Kaveri Trail Marathon in Mysore. I have trained for months, and I am both nervous and excited. I will be back to share how it went - the race, the emotions, and what I learned from it.
+Race day started with only 4 hours of sleep because our car broke down the previous night. I reached the venue about 10 minutes late, so I didn't get to warm up - maybe there was a warm-up happening, maybe not - but I just had to start running immediately.
+
+The first few kilometres felt surprisingly good. I went slowly, found my rhythm, and pushed a little whenever I had energy.
+But the last stretch was very hard. I almost dragged myself to the finish line. Still, I'm proud I showed up, ran, and completed my first 10K despite the messy start. According to the tracker, I finished in 1:33 hrs, my first personal best.
+
+**What I learned for next time:**
+
+- Keep enough buffer time to reach the hotel one day prior to avoid any last-minute chaos
+- Keep buffer time before the race
+- Do my own warm-up, mobility and stretches
+
+This race wasn't perfect, but it was real - and it taught me exactly what I needed to learn for my next goal.
+
+![Me ruuning on rail](/assets/running-journey/me-running-on-trail.jpg)
+![Me with medal](/assets/running-journey/me-with-medal.jpg)
 
 ### 💡 Lessons I've Learned as a Beginner Runner
 
