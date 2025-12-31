@@ -75,6 +75,12 @@ This process taught me a few things about myself:
 
 In September, I transitioned from Pilates to strength training while continuing to run three days a week.
 
+I hired a driver to learn in my own car—around 15–20 classes and roughly 300 km on the road.
+By the end of it, I was ready for the adventure. With this I overcomed my biggest fear.
+Now, I drive confidently and independently.
+
+![Me with car.jpg](/assets/me-with-car.jpg)
+
 In November, I travelled to Udupi and allowed myself to slow down. I wrote about that trip [here](https://www.trapti.dev/blog/slow-travel-udupi-kapu-beach/).
 
 I ran another 10 km in Mysuru, and my running felt noticeably better compared to June.
