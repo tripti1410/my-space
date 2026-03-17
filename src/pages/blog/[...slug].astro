@@ -7,6 +7,7 @@ import Footer from "$src/components/footer/footer.astro";
 import { toLocaleString } from "$src/js/dateUtils.js";
 import * as blog from "$src/js/posts.js";
 import "./blog-post-template.css";
+import SocialShare from "$src/components/social-share.astro";
 
 export async function getStaticPaths() {
 	const allPosts = await Astro.glob("../../content/posts/*.md");
@@ -62,15 +63,7 @@ const { post } = Astro.props;
 			</div>
 		</article>
 		<div class="blog-post__content wrapper">
-			Thanks for reading, if you like my content then consider sharing it on
-			<a
-				href=`https://www.linkedin.com/shareArticle?url=${Astro.url}`
-				target="_blank">Linkedin</a
-			> and <a
-				href=`https://twitter.com/intent/tweet?url=${Astro.url}`
-				target="_blank">Twitter</a
-			>
-			and do tag me. Stay connected.
+			<SocialShare title={post.frontmatter.title} url={Astro.url.toString()} />
 
 			<div class="wrapper text-center">
 				<a href="/" class="button clr-2 back-home-btn">
