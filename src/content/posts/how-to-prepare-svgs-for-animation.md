@@ -1,7 +1,7 @@
 ---
 path: /blog/how-to-prepare-svgs-for-animation/
 slug: how-to-prepare-svgs-for-animation
-date: 2026-03-24T21:03:17.517Z
+date: 2026-04-11T21:03:17.517Z
 title: Prepare SVGs for Animation (The Step You Shouldn't Skip)
 toc: true
 tags:
