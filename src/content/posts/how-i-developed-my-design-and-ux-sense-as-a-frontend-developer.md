@@ -40,35 +40,37 @@ Here are a few things that genuinely shaped my design and UX understanding:
 
 I’ve had the chance to collaborate with multiple designers, and each one taught me something different, from visual hierarchy to user thinking.
 
-### 2. Understanding business requirements
+### 2. Thinking about real users
+
+I started focusing more on how users actually interact with what we build:
+
+- Is this easy to understand?
+- Can someone use this without guidance?
+- Where can they get confused?
+
+This shift helped me move from “looks good” to “works well.”
+
+### 3. Asking questions and giving suggestions
+
+I learned from every discussion, even when others didn’t accept my ideas. Over time, my suggestions became more practical and grounded.
+
+### 4. Learning beyond code
+
+I stopped limiting myself to programming content and started reading design and UX articles. This broadened my perspective significantly.
+
+### 5. Learning to critique design, not just admire it
+
+Instead of passively scrolling through platforms like Dribbble, I began analyzing designs more critically:
+
+- Would this work in a real product?
+- Is this solving a real problem or just looking good?
+- Is the animation meaningful or just decorative?
+
+### 6. Understanding business requirements
 
 While working on products like CMS and subscription platforms, I realized design isn’t just about aesthetics; it’s about solving business problems and user needs.
 
 This shift also helped me understand products at a deeper level. In my current role, where we build a B2B product without a dedicated designer, these skills have become especially valuable. I’m able to think through UX decisions, question flows, and contribute beyond just implementation.
-
-### 3. Thinking about real users
-
-A design that looks good on Dribbble isn’t always practical. I started asking,
-
-- Is this usable?
-- Is it too complex?
-- Does this interaction actually help the user?
-
-### 4. Asking questions and giving suggestions
-
-I learned from every discussion, even when others didn’t accept my ideas. Over time, my suggestions became more practical and grounded.
-
-### 5. Learning beyond code
-
-I stopped limiting myself to programming content and started reading design and UX articles. This broadened my perspective significantly.
-
-### 6. Observing design critically
-
-Instead of passively scrolling through platforms like Dribbble, I began analyzing:
-
-- Would this work in a real product?
-- Is the animation meaningful or just decorative?
-- Does the design support the user’s goal?
 
 ## What I Believe Now
 
