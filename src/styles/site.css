@@ -86,22 +86,22 @@ h6 {
 	line-height: var(--lh-2);
 }
 h1 {
-	font-size: var(--step-5);
+	font-size: clamp(2.4rem, calc(1.8rem + 3.5vw), 3.8rem);
 }
 h2 {
-	font-size: var(--step-4);
-}
-h3 {
 	font-size: var(--step-3);
 }
-h4 {
+h3 {
 	font-size: var(--step-2);
 }
-h5 {
+h4 {
 	font-size: var(--step-1);
 }
-h6 {
+h5 {
 	font-size: var(--step-0);
+}
+h6 {
+	font-size: var(--step--1);
 }
 
 a {
