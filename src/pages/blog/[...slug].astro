@@ -3,6 +3,7 @@ import PostLayout from "$src/layouts/PostLayout.astro";
 
 import Header from "$src/components/header/header.astro";
 import Footer from "$src/components/footer/footer.astro";
+import TableOfContents from "$src/components/table-of-contents.astro";
 
 import { toLocaleString } from "$src/js/dateUtils.js";
 import * as blog from "$src/js/posts.js";
@@ -24,6 +25,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const { post } = Astro.props;
+const headings = post.getHeadings();
 ---
 
 <PostLayout title={post.frontmatter.title}>
@@ -58,8 +60,11 @@ const { post } = Astro.props;
 				</div>
 			</header>
 
-			<div class="blog-post__content wrapper stack">
-				<post.Content />
+			<div class="blog-post__body wrapper">
+				<div class="blog-post__content stack">
+					<post.Content />
+				</div>
+				{post.frontmatter.toc && <TableOfContents headings={headings} />}
 			</div>
 		</article>
 		<div class="blog-post__content wrapper">

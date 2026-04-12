@@ -1,0 +1,296 @@
+---
+const { headings } = Astro.props;
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{
+	toc.length > 0 && (
+		<>
+			<button
+				class="toc-toggle"
+				aria-label="Open table of contents"
+				aria-expanded="false"
+				aria-controls="toc-nav"
+			>
+				Contents
+			</button>
+			<div class="toc-backdrop" aria-hidden="true" />
+			<nav id="toc-nav" class="toc" aria-label="Table of contents">
+				<div class="toc__header">
+					<p class="toc__title">Table of Contents</p>
+					<button class="toc__close" aria-label="Close table of contents">
+						✕
+					</button>
+				</div>
+				<ol class="toc__list">
+					{toc.map((heading) => (
+						<li
+							class:list={[
+								"toc__item",
+								{ "toc__item--sub": heading.depth === 3 },
+							]}
+						>
+							<a href={`#${heading.slug}`} data-heading={heading.slug}>
+								{heading.text}
+							</a>
+						</li>
+					))}
+				</ol>
+			</nav>
+		</>
+	)
+}
+
+<style>
+	/* ── Desktop sidebar ── */
+	.toc {
+		position: sticky;
+		top: 5rem;
+		/* width: 220px; */
+		flex-shrink: 0;
+		align-self: flex-start;
+		max-height: calc(100vh - 6rem);
+		overflow-y: auto;
+		background-color: var(--clr-3);
+		border-left: 4px solid var(--clr-2);
+		padding: 1.25rem 1.5rem;
+		border-radius: 0 8px 8px 0;
+	}
+
+	.toc__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 0.75rem;
+	}
+
+	.toc__title {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: var(--fw-200);
+		font-size: var(--step-0);
+		color: var(--clr-11);
+		margin: 0;
+	}
+
+	.toc__close {
+		display: none;
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-size: var(--step-0);
+		color: var(--clr-11);
+		padding: 0.25rem 0.5rem;
+		line-height: 1;
+	}
+
+	.toc__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+
+	.toc__item a {
+		font-family: "Ubuntu", sans-serif;
+		font-size: var(--step--1);
+		color: var(--clr-11);
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+		transition: border-color 0.15s ease;
+		display: block;
+		padding: 0.15rem 0;
+	}
+
+	.toc__item a:hover {
+		border-bottom-color: var(--clr-11);
+	}
+
+	.toc__item--sub {
+		padding-left: 1.25rem;
+	}
+
+	.toc__item--sub a {
+		font-size: var(--step--1);
+		opacity: 0.8;
+	}
+
+	/* Active heading highlight */
+	.toc__item a.is-active {
+		border-bottom-color: var(--clr-2);
+		font-weight: var(--fw-200);
+		opacity: 1;
+	}
+
+	/* Toggle button — hidden on desktop */
+	.toc-toggle {
+		display: none;
+	}
+
+	/* Backdrop — hidden on desktop */
+	.toc-backdrop {
+		display: none;
+	}
+
+	/* ── Mobile drawer ── */
+	@media (max-width: 899px) {
+		.toc-toggle {
+			display: block;
+			position: fixed;
+			bottom: 1.5rem;
+			right: 1rem;
+			z-index: 150;
+			background-color: var(--clr-2);
+			color: var(--clr-11);
+			border: none;
+			border-radius: 2rem;
+			padding: 0.5rem 1.25rem;
+			font-family: "Ubuntu", sans-serif;
+			font-size: var(--step--1);
+			font-weight: var(--fw-200);
+			cursor: pointer;
+			letter-spacing: 0.5px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.toc-backdrop {
+			display: block;
+			position: fixed;
+			inset: 0;
+			background: rgba(0, 0, 0, 0.4);
+			z-index: 190;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.3s ease;
+		}
+
+		.toc-backdrop.is-open {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.toc {
+			display: none;
+			position: fixed;
+			right: 0;
+			top: 0;
+			width: min(280px, 85vw);
+			height: 100%;
+			max-height: 100%;
+			transform: translateX(100%);
+			transition: transform 0.3s ease;
+			z-index: 200;
+			border-radius: 0;
+			border-left: 4px solid var(--clr-2);
+		}
+
+		.toc.is-ready {
+			display: block;
+		}
+
+		.toc.is-open {
+			transform: translateX(0);
+		}
+
+		.toc__close {
+			display: block;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.toc,
+		.toc-backdrop,
+		.toc-toggle {
+			transition: none;
+		}
+	}
+</style>
+
+<script>
+	const toggle = document.querySelector<HTMLButtonElement>(".toc-toggle");
+	const backdrop = document.querySelector<HTMLDivElement>(".toc-backdrop");
+	const nav = document.querySelector<HTMLElement>("#toc-nav");
+	const closeBtn = document.querySelector<HTMLButtonElement>(".toc__close");
+
+	if (toggle && nav && backdrop) {
+		const open = () => {
+			nav.classList.add("is-ready");
+			// Wait one frame so display:block is painted before the transition starts
+			requestAnimationFrame(() => {
+				nav.classList.add("is-open");
+				backdrop.classList.add("is-open");
+			});
+			toggle.setAttribute("aria-expanded", "true");
+			closeBtn?.focus();
+		};
+
+		const close = () => {
+			nav.classList.remove("is-open");
+			backdrop.classList.remove("is-open");
+			toggle.setAttribute("aria-expanded", "false");
+			toggle.focus();
+			// Hide completely after slide-out finishes
+			nav.addEventListener(
+				"transitionend",
+				() => nav.classList.remove("is-ready"),
+				{ once: true }
+			);
+		};
+
+		toggle.addEventListener("click", open);
+		closeBtn?.addEventListener("click", close);
+		backdrop.addEventListener("click", close);
+
+		// Close on link click (mobile)
+		nav.querySelectorAll("a").forEach((link) => {
+			link.addEventListener("click", () => {
+				if (window.innerWidth < 900) close();
+			});
+		});
+
+		// Close on Escape
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Escape" && nav.classList.contains("is-open")) close();
+		});
+	}
+
+	// ── Scroll spy ──
+	const links = document.querySelectorAll<HTMLAnchorElement>(
+		".toc__item a[data-heading]"
+	);
+
+	if (links.length > 0) {
+		const headingMap = new Map<string, HTMLAnchorElement>();
+		links.forEach((link) => {
+			const id = link.dataset.heading!;
+			headingMap.set(id, link);
+		});
+
+		let activeId = "";
+
+		// const observer = new IntersectionObserver(
+		// 	(entries) => {
+		// 		entries.forEach((entry) => {
+		// 			if (entry.isIntersecting) {
+		// 				const id = entry.target.id;
+		// 				if (activeId && headingMap.has(activeId)) {
+		// 					headingMap.get(activeId)!.classList.remove("is-active");
+		// 				}
+		// 				activeId = id;
+		// 				headingMap.get(id)?.classList.add("is-active");
+		// 			}
+		// 		});
+		// 	},
+		// 	{
+		// 		rootMargin: "0px 0px -70% 0px",
+		// 		threshold: 0,
+		// 	}
+		// );
+
+		headingMap.forEach((_, id) => {
+			const el = document.getElementById(id);
+			// if (el) observer.observe(el);
+		});
+	}
+</script>

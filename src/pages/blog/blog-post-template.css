@@ -1,7 +1,26 @@
 /* Blog post template */
+
+@media (min-width: 900px) {
+	.blog-post__body {
+		display: flex;
+		gap: 2rem;
+	}
+}
+
 .blog-post__content {
 	margin: 2rem auto;
 	max-width: 90ch;
+	overflow-wrap: break-word;
+	overflow-x: hidden;
+}
+
+@media (max-width: 899px) {
+	.blog-post__content {
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
 .blog-post__content ol {
@@ -25,6 +44,7 @@
 	text-decoration: underline;
 	font-weight: var(--fw-200);
 	cursor: pointer;
+	overflow-wrap: break-word;
 }
 
 .blog-post__content p img:only-of-type,
@@ -75,6 +95,7 @@ p:has(img + img) {
 	background-color: var(--clr-11) !important;
 	color: var(--clr-1);
 	border-radius: 7px;
+	overflow-x: auto;
 }
 .blog-post__content p code {
 	background: #dddddd;
